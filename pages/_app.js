@@ -1,6 +1,8 @@
 import React from "react";
+import App from "next/app";
 import Head from "next/head";
 import { ThemeProvider } from "styled-components";
+import { init } from "@socialgouv/matomo-next";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "../src/bootstrap-theme.scss";
@@ -10,34 +12,31 @@ const theme = {
   colors: {},
 };
 
-function MyApp({ Component, pageProps }) {
-  return (
-    <React.Fragment>
-      <Head>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=yes"
-        />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-      </Head>
-      <ThemeProvider theme={theme}>
-        <Component {...pageProps} />
-      </ThemeProvider>
-    </React.Fragment>
-  );
-}
+const MATOMO_URL = process.env.NEXT_PUBLIC_MATOMO_URL;
+const MATOMO_SITE_ID = process.env.NEXT_PUBLIC_MATOMO_SITE_ID;
 
-// Only uncomment this method if you have blocking data requirements for
-// every single page in your application. This disables the ability to
-// perform automatic static optimization, causing every page in your app to
-// be server-side rendered.
-//
-// MyApp.getInitialProps = async (appContext) => {
-//   // calls page's `getInitialProps` and fills `appProps.pageProps`
-//   const appProps = await App.getInitialProps(appContext);
-//
-//   return { ...appProps }
-// }
+class MyApp extends App {
+  componentDidMount() {
+    init({ url: MATOMO_URL, siteId: MATOMO_SITE_ID });
+  }
+  render() {
+    const { Component, pageProps } = this.props;
+    return (
+      <React.Fragment>
+        <Head>
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=yes"
+          />
+          <meta name="description" content="" />
+          <meta name="author" content="" />
+        </Head>
+        <ThemeProvider theme={theme}>
+          <Component {...pageProps} />
+        </ThemeProvider>
+      </React.Fragment>
+    );
+  }
+}
 
 export default MyApp;

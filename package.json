@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "@socialgouv/matomo-next": "^1.1.2",
     "bootstrap": "^4.5.3",
     "leaflet": "^1.7.1",
     "next": "^10.0.2",
@@ -17,7 +18,8 @@
   "scripts": {
     "dev": "next dev",
     "start": "next start",
-    "build": "next build && next export",
+    "build": "next build",
+    "export": "next export",
     "lint": "eslint pages/*.js"
   },
   "devDependencies": {
