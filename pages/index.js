@@ -1,8 +1,18 @@
 import React from "react";
 import styled from "styled-components";
+import dynamic from "next/dynamic";
 
 import { Row, Col } from "react-bootstrap";
+
 import { Layout } from "../src/components/Layout";
+import { FeatureRow } from "../src/components/FeatureRow";
+
+const LeafletMap = dynamic(
+  () => import("../src/components/Map").then((mod) => mod.Map),
+  {
+    ssr: false,
+  }
+);
 
 export default function index() {
   return (
@@ -20,36 +30,6 @@ export default function index() {
       <br />
       <Contact />
     </Layout>
-  );
-}
-
-function FeatureRow({
-  image,
-  imageSpan = 3,
-  title,
-  reverse = false,
-  children,
-}) {
-  return (
-    <React.Fragment>
-      <Row
-        style={{
-          alignItems: "center",
-          flexDirection: reverse ? "row-reverse" : "row",
-        }}
-      >
-        <Col xs={imageSpan}>
-          <img width={"100%"} src={image} alt={title} />
-        </Col>
-        <Col
-          xs={12 - imageSpan}
-          style={{ textAlign: reverse ? "right" : "left" }}
-        >
-          <h3 style={{ color: "var(--primary)" }}>{title}</h3>
-          {children}
-        </Col>
-      </Row>
-    </React.Fragment>
   );
 }
 
@@ -256,6 +236,9 @@ function Contact() {
             </p>
           </Col>
         </div>
+        <br />
+        <br />
+        <LeafletMap />
       </div>
     </section>
   );
