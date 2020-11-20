@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 export function Header() {
   return (
@@ -62,7 +61,7 @@ export function Header() {
               </div>
             </div>
             <div className="col-lg-4 my-auto d-none d-lg-block">
-              <Image
+              <img
                 src="/img/demo-screen-1.png"
                 className="img-fluid"
                 alt=""

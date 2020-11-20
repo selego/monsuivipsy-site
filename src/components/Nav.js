@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { Container, Nav as BSNav, Navbar } from "react-bootstrap";
 import styled from "styled-components";
@@ -16,7 +15,7 @@ export function Nav() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <div>
           <a href="/#page-top" alt="Retour à l'accueil">
-            <Image
+            <img
               src="/img/logo-MSP.png"
               width={100}
               height={68}
