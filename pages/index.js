@@ -1,8 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Image from "next/image";
-
-import { Container, Button, Navbar, Nav } from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
 
 export default function index() {
   return (
@@ -23,7 +22,7 @@ export default function index() {
   );
 }
 
-function AppNav({}) {
+function AppNav() {
   return (
     <Navbar sticky="top" bg="light" expand="lg">
       <Container>
@@ -55,7 +54,7 @@ function AppNav({}) {
   );
 }
 
-function Header({}) {
+function Header() {
   return (
     <header style={{ height: 700, overflow: "hidden" }}>
       <video
@@ -66,10 +65,10 @@ function Header({}) {
         playsInline
         loop
         style={{
-          width: "100%",
-          height: "auto",
           background: "white",
           filter: "grayscale(30%)",
+          height: "auto",
+          width: "100%",
         }}
       >
         <source src="/home-background.mp4" type="video/mp4" />
@@ -81,8 +80,8 @@ function Header({}) {
               className="col-lg-8 my-auto"
               style={{
                 background: "rgb(66,66,66,0.5)",
-                padding: "2em",
                 borderRadius: 10,
+                padding: "2em",
               }}
             >
               <div style={{ color: "white" }}>
@@ -121,7 +120,7 @@ function Header({}) {
   );
 }
 
-function Pourquoi({}) {
+function Pourquoi() {
   return (
     <section className="features" id="features">
       <div className="container">
@@ -147,7 +146,7 @@ function Pourquoi({}) {
               <div className="row">
                 <div className="col-lg-6">
                   <div className="feature-item">
-                    <i className="icon-screen-smartphone text-primary"></i>
+                    <i className="icon-screen-smartphone text-primary" />
                     <h3>Service gratuit anonyme</h3>
                     <p className="text-muted">
                       Le services est totalement gratuit, anonyme et sans
@@ -157,7 +156,7 @@ function Pourquoi({}) {
                 </div>
                 <div className="col-lg-6">
                   <div className="feature-item">
-                    <i className="icon-camera text-primary"></i>
+                    <i className="icon-camera text-primary" />
                     <h3>Sécurité des données</h3>
                     <p className="text-muted">
                       La personne reste propriétaire de ses données et ne les
@@ -174,7 +173,7 @@ function Pourquoi({}) {
   );
 }
 
-function Section2({}) {
+function Section2() {
   return (
     <section className="features" id="features">
       <div className="container">
@@ -197,7 +196,7 @@ function Section2({}) {
                       alt=""
                     />
                   </div>
-                  <div className="button"></div>
+                  <div className="button" />
                 </div>
               </div>
             </div>
@@ -207,7 +206,7 @@ function Section2({}) {
               <div className="row">
                 <div className="col-lg-6">
                   <div className="feature-item">
-                    <i className="icon-screen-smartphone text-primary"></i>
+                    <i className="icon-screen-smartphone text-primary" />
                     <h3>Device Mockups</h3>
                     <p className="text-muted">
                       Ready to use HTML/CSS device mockups, no Photoshop
@@ -217,7 +216,7 @@ function Section2({}) {
                 </div>
                 <div className="col-lg-6">
                   <div className="feature-item">
-                    <i className="icon-camera text-primary"></i>
+                    <i className="icon-camera text-primary" />
                     <h3>Flexible Use</h3>
                     <p className="text-muted">
                       Put an image, video, animation, or anything else in the
@@ -229,7 +228,7 @@ function Section2({}) {
               <div className="row">
                 <div className="col-lg-6">
                   <div className="feature-item">
-                    <i className="icon-present text-primary"></i>
+                    <i className="icon-present text-primary" />
                     <h3>Free to Use</h3>
                     <p className="text-muted">
                       As always, this theme is free to download and use for any
@@ -239,7 +238,7 @@ function Section2({}) {
                 </div>
                 <div className="col-lg-6">
                   <div className="feature-item">
-                    <i className="icon-lock-open text-primary"></i>
+                    <i className="icon-lock-open text-primary" />
                     <h3>Open Source</h3>
                     <p className="text-muted">
                       Since this theme is MIT licensed, you can use it
@@ -256,7 +255,7 @@ function Section2({}) {
   );
 }
 
-function Section3({}) {
+function Section3() {
   return (
     <section className="cta">
       <div className="cta-content">
@@ -270,38 +269,38 @@ function Section3({}) {
             href="#contact"
             className="btn btn-outline btn-xl js-scroll-trigger"
           >
-            Let's Get Started!
+            Let&pos;s Get Started!
           </a>
         </div>
       </div>
-      <div className="overlay"></div>
+      <div className="overlay" />
     </section>
   );
 }
 
-function Section4({}) {
+function Section4() {
   return (
     <section className="contact bg-primary" id="contact">
       <div className="container">
         <h2>
           We
-          <i className="fas fa-heart"></i>
+          <i className="fas fa-heart" />
           new friends!
         </h2>
         <ul className="list-inline list-social">
           <li className="list-inline-item social-twitter">
             <a href="#">
-              <i className="fab fa-twitter"></i>
+              <i className="fab fa-twitter" />
             </a>
           </li>
           <li className="list-inline-item social-facebook">
             <a href="#">
-              <i className="fab fa-facebook-f"></i>
+              <i className="fab fa-facebook-f" />
             </a>
           </li>
           <li className="list-inline-item social-google-plus">
             <a href="#">
-              <i className="fab fa-google-plus-g"></i>
+              <i className="fab fa-google-plus-g" />
             </a>
           </li>
         </ul>
@@ -310,7 +309,7 @@ function Section4({}) {
   );
 }
 
-function Footer({}) {
+function Footer() {
   return (
     <footer>
       <div className="container">
