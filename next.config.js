@@ -1,3 +1,3 @@
 module.exports = {
-  assetsPrefix: "/monsuivipsy-site/",
+  assetPrefix: "/monsuivipsy-site/",
 };
