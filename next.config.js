@@ -1,3 +1,3 @@
 module.exports = {
-  assetPrefix: "/monsuivipsy-site/",
+  basePath: "/monsuivipsy-site",
 };
