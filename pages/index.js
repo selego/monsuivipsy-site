@@ -1,331 +1,262 @@
 import React from "react";
-import Head from "next/head";
-import Image from "next/image";
-import { Container, Nav, Navbar } from "react-bootstrap";
+import styled from "styled-components";
+
+import { Row, Col } from "react-bootstrap";
+import { Layout } from "../src/components/Layout";
 
 export default function index() {
   return (
-    <React.Fragment>
-      <Head>
-        <title>Some title</title>
-      </Head>
-      <AppNav />
-      <Header />
+    <Layout showHeader>
       <br />
       <br />
       <Pourquoi />
-      <Section2 />
-      <Section3 />
-      <Section4 />
-      <Footer />
+      <br />
+      <br />
+      <Comment />
+      <br />
+      <br />
+      <Qui />
+      <br />
+      <br />
+      <Contact />
+    </Layout>
+  );
+}
+
+function FeatureRow({
+  image,
+  imageSpan = 3,
+  title,
+  reverse = false,
+  children,
+}) {
+  return (
+    <React.Fragment>
+      <Row
+        style={{
+          alignItems: "center",
+          flexDirection: reverse ? "row-reverse" : "row",
+        }}
+      >
+        <Col xs={imageSpan}>
+          <img width={"100%"} src={image} alt={title} />
+        </Col>
+        <Col
+          xs={12 - imageSpan}
+          style={{ textAlign: reverse ? "right" : "left" }}
+        >
+          <h3 style={{ color: "var(--primary)" }}>{title}</h3>
+          {children}
+        </Col>
+      </Row>
     </React.Fragment>
   );
 }
 
-function AppNav() {
-  return (
-    <Navbar sticky="top" bg="light" expand="lg">
-      <Container>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <div>
-          <a href="#page-top" alt="Retour à l'accueil">
-            <Image
-              src="/img/logo-MSP.png"
-              width={100}
-              height={68}
-              alt="Logo MonSuiviPsy"
-            />
-          </a>
-        </div>
-
-        <Navbar.Collapse
-          id="responsive-navbar-nav"
-          className="justify-content-end"
-        >
-          <Nav>
-            <Nav.Link href="#pourquoi">Pourquoi mon suivi psy?</Nav.Link>
-            <Nav.Link href="#features">Comment cela fonctionne</Nav.Link>
-            <Nav.Link href="#who">Qui sommes-nous?</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-  );
-}
-
-function Header() {
-  return (
-    <header style={{ height: 700, overflow: "hidden" }}>
-      <video
-        id="video1"
-        preload="true"
-        autoPlay
-        muted
-        playsInline
-        loop
-        style={{
-          background: "white",
-          filter: "grayscale(30%)",
-          height: "auto",
-          width: "100%",
-        }}
-      >
-        <source src="/home-background.mp4" type="video/mp4" />
-      </video>
-      <div style={{ position: "absolute", top: 150, width: "100%" }}>
-        <div className="container h-100">
-          <div className="row h-100">
-            <div
-              className="col-lg-8 my-auto"
-              style={{
-                background: "rgb(66,66,66,0.5)",
-                borderRadius: 10,
-                padding: "2em",
-              }}
-            >
-              <div style={{ color: "white" }}>
-                <h1 className="mb-5">
-                  <b>MON SUIVI PSY</b>
-                </h1>
-                <h3>
-                  Mieux connaître mes symptômes pour un meilleur accompagnement
-                  par mon médecin
-                </h3>
-                <br />
-                <br />
-                <div>
-                  <a href="#">
-                    <img width={200} src="/img/app-store-badge.svg" alt="" />
-                  </a>
-                  <a href="#">
-                    <img width={200} src="/img/google-play-badge.svg" alt="" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 my-auto">
-              <Image
-                src="/img/demo-screen-1.png"
-                className="img-fluid"
-                alt=""
-                width={300}
-                height={580}
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-  );
-}
+const SectionTitle = styled.h2`
+  color: var(--primary);
+`;
 
 function Pourquoi() {
   return (
-    <section className="features" id="features">
+    <section id="pourquoi">
       <div className="container">
         <div className="section-heading text-center">
-          <h2>Pourquoi mon suivi psy?</h2>
-          <p className="text-muted">
-            Les troubles psychiatriques affectent 1 personne sur 5 chaque année
-            (donnée OMS). Trouver le bon traitement peut prendre plusieurs
-            années. Pendant ce temps-là, les symptômes évoluent et peuvent
-            devenir chroniques. L’état clinique peut s’aggraver et le traitement
-            devenir moins efficace.
-          </p>
-          <p>
-            Plus les informations concernant mes symptômes sont proches de la
-            réalité, de ce que je vis, plus mon médecin sera en mesure de me
-            prescrire le bon traitement et adapter au mieux mon suivi.
-          </p>
-          <hr />
+          <SectionTitle>Pourquoi mon suivi psy?</SectionTitle>
+          <br />
+          <br />
+          <Col xs={{ span: 10, offset: 1 }}>
+            <p className="text-left">
+              <strong>
+                Les troubles psychiatriques affectent 1 personne sur 5 chaque
+                année (donnée OMS).Trouver le bon traitement peut prendre
+                plusieurs années. Pendant ce temps-là, les symptômes évoluent et
+                peuvent devenir chroniques. L’état clinique peut s’aggraver et
+                le traitement devenir moins efficace.
+              </strong>
+            </p>
+            <p style={{ color: "var(--info)" }} className="text-left">
+              <strong>
+                Plus les informations concernant mes symptômes sont proches de
+                la réalité, de ce que je vis, plus mon médecin sera en mesure de
+                me prescrire le bon traitement et adapter au mieux mon suivi.
+              </strong>{" "}
+            </p>
+          </Col>
         </div>
-        <div className="row">
-          <div className="col-lg-12 my-auto">
-            <div className="container-fluid">
-              <div className="row">
-                <div className="col-lg-6">
-                  <div className="feature-item">
-                    <i className="icon-screen-smartphone text-primary" />
-                    <h3>Service gratuit anonyme</h3>
-                    <p className="text-muted">
-                      Le services est totalement gratuit, anonyme et sans
-                      création de compte
-                    </p>
-                  </div>
-                </div>
-                <div className="col-lg-6">
-                  <div className="feature-item">
-                    <i className="icon-camera text-primary" />
-                    <h3>Sécurité des données</h3>
-                    <p className="text-muted">
-                      La personne reste propriétaire de ses données et ne les
-                      partage avec son praticien que s’il le souhaite
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <br />
+        <br />
+        <Row style={{ marginBottom: 40 }}>
+          <Col xs={{ span: 10, offset: 1 }}>
+            <FeatureRow
+              title="Service gratuit anonyme"
+              image="/img/icon-person.png"
+            >
+              Le service est totalement gratuit, anonyme et sans création de
+              compte
+            </FeatureRow>
+          </Col>
+        </Row>
+        <Row>
+          <Col xs={{ span: 10, offset: 1 }}>
+            <FeatureRow title="Sécurité des données" image="/img/icon-eu.png">
+              La personne reste propriétaire de ses données et ne les partage
+              avec son praticien que s’il le souhaite
+            </FeatureRow>
+          </Col>
+        </Row>
       </div>
     </section>
   );
 }
 
-function Section2() {
+const BlueText = styled.p`
+  color: var(--info);
+`;
+
+function Comment() {
   return (
-    <section className="features" id="features">
+    <section id="comment">
       <div className="container">
         <div className="section-heading text-center">
-          <h2>Unlimited Features, Unlimited Fun</h2>
-          <p className="text-muted">
-            Check out what you can do with this app theme!
-          </p>
-          <hr />
+          <SectionTitle style={{ fontSize: "2.5em" }}>
+            Comment cela fonctionne?
+          </SectionTitle>
+          <br />
+          <Col xs={{ span: 10, offset: 1 }}>
+            <BlueText>
+              <strong>
+                Mon Suivi Psy, c’est une aide pour un dialogue avec le
+                praticien, qui s’adresse à tous.
+              </strong>{" "}
+            </BlueText>
+          </Col>
         </div>
-        <div className="row">
-          <div className="col-lg-4 my-auto">
-            <div className="device-container">
-              <div className="device-mockup iphone6_plus portrait white">
-                <div className="device">
-                  <div className="screen">
-                    <img
-                      src="/img/demo-screen-1.jpg"
-                      className="img-fluid"
-                      alt=""
-                    />
-                  </div>
-                  <div className="button" />
-                </div>
+        <br />
+        <br />
+        <Row>
+          <Col xs={{ span: 10, offset: 1 }}>
+            <FeatureRow
+              title="Sélection des symptômes"
+              image="/img/demo-journal.png"
+              imageSpan={4}
+            >
+              La possibilité de sélectionner les symptômes et les effets
+              indésirables des traitements médicamenteux que je souhaite suivre
+              <br />
+              <div className="text-muted">
+                Fonctionnalité non disponible en V1
               </div>
-            </div>
-          </div>
-          <div className="col-lg-8 my-auto">
-            <div className="container-fluid">
-              <div className="row">
-                <div className="col-lg-6">
-                  <div className="feature-item">
-                    <i className="icon-screen-smartphone text-primary" />
-                    <h3>Device Mockups</h3>
-                    <p className="text-muted">
-                      Ready to use HTML/CSS device mockups, no Photoshop
-                      required!
-                    </p>
-                  </div>
-                </div>
-                <div className="col-lg-6">
-                  <div className="feature-item">
-                    <i className="icon-camera text-primary" />
-                    <h3>Flexible Use</h3>
-                    <p className="text-muted">
-                      Put an image, video, animation, or anything else in the
-                      screen!
-                    </p>
-                  </div>
-                </div>
+            </FeatureRow>
+            <FeatureRow
+              title="Un rappel quotidien"
+              image="/img/demo-rappels.png"
+              imageSpan={4}
+              reverse
+            >
+              Un rappel quotidien pour m’aider à y penser
+            </FeatureRow>
+            <FeatureRow
+              title="Une solution simple et ludique"
+              image="/img/demo-mood.png"
+              imageSpan={4}
+            >
+              Des écrans simples permettant une saisie rapide
+            </FeatureRow>
+            <FeatureRow
+              title="Des écrans de synthèses"
+              image="/img/demo-dashboard.png"
+              imageSpan={4}
+              reverse
+            >
+              Une synthèse de l’évolution de l’intensité des symptômes
+            </FeatureRow>
+            <FeatureRow
+              title="Des informations sur les symptômes"
+              image="/img/demo-info.png"
+              imageSpan={4}
+            >
+              Un accès à des données informatives concernant les symptômes
+              suivis
+            </FeatureRow>
+            <FeatureRow
+              title="Transmission au practicien"
+              image="/img/demo-info.png"
+              imageSpan={4}
+              reverse
+            >
+              La possibilité de transmettre au praticien les données par mail
+              <br />
+              <div className="text-muted">
+                Fonctionnalité non disponible en V1. Disponible d’ici
+                mi-novembre
               </div>
-              <div className="row">
-                <div className="col-lg-6">
-                  <div className="feature-item">
-                    <i className="icon-present text-primary" />
-                    <h3>Free to Use</h3>
-                    <p className="text-muted">
-                      As always, this theme is free to download and use for any
-                      purpose!
-                    </p>
-                  </div>
-                </div>
-                <div className="col-lg-6">
-                  <div className="feature-item">
-                    <i className="icon-lock-open text-primary" />
-                    <h3>Open Source</h3>
-                    <p className="text-muted">
-                      Since this theme is MIT licensed, you can use it
-                      commercially!
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+            </FeatureRow>
+          </Col>
+        </Row>
       </div>
     </section>
   );
 }
 
-function Section3() {
+function Qui() {
   return (
-    <section className="cta">
-      <div className="cta-content">
-        <div className="container">
-          <h2>
-            Stop waiting.
-            <br />
-            Start building.
-          </h2>
-          <a
-            href="#contact"
-            className="btn btn-outline btn-xl js-scroll-trigger"
-          >
-            Let&pos;s Get Started!
-          </a>
-        </div>
-      </div>
-      <div className="overlay" />
-    </section>
-  );
-}
-
-function Section4() {
-  return (
-    <section className="contact bg-primary" id="contact">
+    <section id="qui">
       <div className="container">
-        <h2>
-          We
-          <i className="fas fa-heart" />
-          new friends!
-        </h2>
-        <ul className="list-inline list-social">
-          <li className="list-inline-item social-twitter">
-            <a href="#">
-              <i className="fab fa-twitter" />
-            </a>
-          </li>
-          <li className="list-inline-item social-facebook">
-            <a href="#">
-              <i className="fab fa-facebook-f" />
-            </a>
-          </li>
-          <li className="list-inline-item social-google-plus">
-            <a href="#">
-              <i className="fab fa-google-plus-g" />
-            </a>
-          </li>
-        </ul>
+        <hr />
+        <br />
+        <div className="section-heading text-center">
+          <SectionTitle style={{ fontSize: "2.5em" }}>
+            Qui sommes-nous?
+          </SectionTitle>
+          <br />
+          <Col xs={{ span: 10, offset: 1 }}>
+            <p>
+              <strong>
+                Ce service, créé par le Dr Lya Pedron, est développé par la
+                Fabrique Numérique des Ministères Sociaux et le Centre
+                Hospitalier Barthélemy Durand et est financé par l’Agence
+                Régionale de Santé de l’Île de France
+              </strong>{" "}
+            </p>
+          </Col>
+        </div>
+      </div>
+      <div className="text-center">
+        <img
+          src="/img/logo-ministere.png"
+          alt="Logo Minisères des solidarités et de la Santé"
+        />
+        <img src="/img/logo-bd.png" alt="Logo BD" />
+        <img src="/img/logo-ARS.png" alt="Logo ARS" />
       </div>
     </section>
   );
 }
 
-function Footer() {
+function Contact() {
   return (
-    <footer>
+    <section id="contact">
       <div className="container">
-        <p>&copy; Your Website 2020. All Rights Reserved.</p>
-        <ul className="list-inline">
-          <li className="list-inline-item">
-            <a href="#">Privacy</a>
-          </li>
-          <li className="list-inline-item">
-            <a href="#">Terms</a>
-          </li>
-          <li className="list-inline-item">
-            <a href="#">FAQ</a>
-          </li>
-        </ul>
+        <hr />
+        <br />
+        <div className="section-heading text-center">
+          <SectionTitle style={{ fontSize: "2.5em" }}>
+            Contactez-nous
+          </SectionTitle>
+          <br />
+          <Col xs={{ span: 10, offset: 1 }}>
+            <p>
+              <strong>
+                Ce service, créé par le Dr Lya Pedron, est développé par la
+                Fabrique Numérique des Ministères Sociaux et le Centre
+                Hospitalier Barthélemy Durand et est financé par l’Agence
+                Régionale de Santé de l’Île de France
+              </strong>{" "}
+            </p>
+          </Col>
+        </div>
       </div>
-    </footer>
+    </section>
   );
 }

@@ -1,9 +1,14 @@
 import React from "react";
 import Head from "next/head";
+import { createGlobalStyle, ThemeProvider } from "styled-components";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "../src/bootstrap-theme.scss";
 import "../src/main.scss";
+
+const theme = {
+  colors: {},
+};
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -16,7 +21,9 @@ function MyApp({ Component, pageProps }) {
         <meta name="description" content="" />
         <meta name="author" content="" />
       </Head>
-      <Component {...pageProps} />;
+      <ThemeProvider theme={theme}>
+        <Component {...pageProps} />
+      </ThemeProvider>
     </React.Fragment>
   );
 }
