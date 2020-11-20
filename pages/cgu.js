@@ -98,8 +98,15 @@ export default function Mentions() {
         d’éventuelles attaques par déni de service.
       </p>
       <h3>Mentions légales</h3>
-      Éditeur Fabrique numérique des Ministères Sociaux Directeur de la
-      publication : ???? Hébergeur: Microsoft France
+      <li>
+        <b>Éditeur:</b> Fabrique numérique des Ministères Sociaux
+      </li>
+      <li>
+        <b>Directeur de la publication:</b> ????{" "}
+      </li>
+      <li>
+        <b>Hébergeur</b>: Microsoft France
+      </li>
     </Layout>
   );
 }

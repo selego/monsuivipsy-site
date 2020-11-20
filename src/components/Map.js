@@ -23,7 +23,7 @@ export function Map() {
           center={[48.655152, 2.313537]}
           zoom={13}
           scrollWheelZoom={false}
-          style={{ width: 500, height: 400 }}
+          style={{ width: "100%", height: 400 }}
         >
           <TileLayer
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -42,11 +42,14 @@ export function Map() {
         </MapContainer>
       </Col>
       <Col sm={6}>
-        <h5>centre hospitalier barthélémy durand</h5>
+        <h5>Centre Hospitalier Barthélémy Durand</h5>
         2 Route de Longpont, 91700 Sainte-Geneviève-des-Bois
         <br />
         <br />
-        <a href="mailto:lyaantoniap@gmail.com">lyaantoniap@gmail.com</a>
+        Contactez-nous par email{" "}
+        <a href="mailto:lyaantoniap@gmail.com&subject=MonSuiviPsy">
+          lyaantoniap@gmail.com
+        </a>
       </Col>
     </Row>
   );

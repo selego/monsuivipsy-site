@@ -14,14 +14,18 @@ export function FeatureRow({
         style={{
           alignItems: "center",
           flexDirection: reverse ? "row-reverse" : "row",
+          marginBottom: 30,
         }}
       >
-        <Col xs={imageSpan}>
+        <Col xs={12} md={imageSpan} className="mb-3 mb-md-0">
           <img width={"100%"} src={image} alt={title} />
         </Col>
         <Col
-          xs={12 - imageSpan}
-          style={{ textAlign: reverse ? "right" : "left" }}
+          xs={12}
+          md={12 - imageSpan}
+          className={`text-center ${
+            reverse ? "text-md-right" : "text-md-left"
+          }`}
         >
           <h3 style={{ color: "var(--primary)" }}>{title}</h3>
           {children}

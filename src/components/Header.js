@@ -11,6 +11,7 @@ export function Header() {
         muted
         playsInline
         loop
+        className="d-none d-md-block"
         style={{
           background: "white",
           filter: "grayscale(30%)",
@@ -20,6 +21,15 @@ export function Header() {
       >
         <source src="/home-background.mp4" type="video/mp4" />
       </video>
+      <div
+        className="d-md-none"
+        style={{
+          height: "100%",
+          backgroundImage: `url(/img/home-demo-background.jpg)`,
+          backgroundSize: "cover",
+          backgroundPosition: "center center",
+        }}
+      />
       <div style={{ position: "absolute", top: 150, width: "100%" }}>
         <div className="container h-100">
           <div className="row h-100">
@@ -51,7 +61,7 @@ export function Header() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 my-auto">
+            <div className="col-lg-4 my-auto d-none d-lg-block">
               <Image
                 src="/img/demo-screen-1.png"
                 className="img-fluid"

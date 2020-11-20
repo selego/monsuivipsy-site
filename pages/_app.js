@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import { createGlobalStyle, ThemeProvider } from "styled-components";
+import { ThemeProvider } from "styled-components";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "../src/bootstrap-theme.scss";
@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <meta
           name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+          content="width=device-width, initial-scale=1, shrink-to-fit=yes"
         />
         <meta name="description" content="" />
         <meta name="author" content="" />

@@ -161,7 +161,7 @@ function Comment() {
             </FeatureRow>
             <FeatureRow
               title="Transmission au practicien"
-              image="/img/demo-info.png"
+              image="/img/demo-journal.png"
               imageSpan={4}
               reverse
             >
