@@ -6,7 +6,7 @@ include:
 variables:
   AUTO_DEVOPS_RELEASE_AUTO: "🔖"
   AUTO_DEVOPS_PRODUCTION_AUTO: "🚀"
-  NOTIFY_DISABLED: 1
+  AUTO_DEVOPS_TEST_DISABLED: "🛑"
 
 Lint:
   rules:
