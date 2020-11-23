@@ -1,0 +1,20 @@
+include:
+  - project: SocialGouv/gitlab-ci-yml
+    file: /autodevops.yml
+    ref: v17.23.0
+
+variables:
+  AUTO_DEVOPS_RELEASE_AUTO: "🔖"
+  AUTO_DEVOPS_PRODUCTION_AUTO: "🚀"
+  NOTIFY_DISABLED: 1
+
+Lint:
+  rules:
+    - when: never
+
+Register image:
+  extends: .autodevops_register_image
+  variables:
+    DOCKER_BUILD_ARGS: >-
+      --shm-size 512M
+    IMAGE_NAME: $CI_REGISTRY_IMAGE/app
