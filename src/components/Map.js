@@ -47,8 +47,8 @@ export function Map() {
         <br />
         <br />
         Contactez-nous par email{" "}
-        <a href="mailto:lyaantoniap@gmail.com&subject=MonSuiviPsy">
-          lyaantoniap@gmail.com
+        <a href="mailto:monsuivipsy@fabrique.social.gouv.fr&subject=MonSuiviPsy">
+          monsuivipsy@fabrique.social.gouv.fr
         </a>
       </Col>
     </Row>
