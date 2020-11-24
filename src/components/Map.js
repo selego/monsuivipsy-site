@@ -42,7 +42,7 @@ export function Map() {
         </MapContainer>
       </Col>
       <Col sm={6}>
-        <h5>Centre Hospitalier Barthélémy Durand</h5>
+        <h5>Établissement Public de Santé Barthélémy Durand</h5>
         2 Route de Longpont, 91700 Sainte-Geneviève-des-Bois
         <br />
         <br />
