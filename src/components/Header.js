@@ -51,10 +51,16 @@ export function Header() {
                 <br />
                 <br />
                 <div>
-                  <a href="#">
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.monsuivipsy&hl=fr&gl=US"
+                    target="noopener noreferrer"
+                  >
                     <img width={200} src="/img/app-store-badge.svg" alt="" />
                   </a>
-                  <a href="#">
+                  <a
+                    href="https://apps.apple.com/us/app/mon-suivi-psy/id1540061393"
+                    target="noopener noreferrer"
+                  >
                     <img width={200} src="/img/google-play-badge.svg" alt="" />
                   </a>
                 </div>
