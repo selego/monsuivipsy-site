@@ -224,17 +224,6 @@ function Contact() {
           <SectionTitle style={{ fontSize: "2.5em" }}>
             Contactez-nous
           </SectionTitle>
-          <br />
-          <Col xs={{ span: 10, offset: 1 }}>
-            <p>
-              <strong>
-                Ce service, créé par le Dr Lya Pedron, est développé par la
-                Fabrique Numérique des Ministères Sociaux et l’Établissement
-                Public de Santé Barthélémy Durand et est financé par l’Agence
-                Régionale de Santé d’Île de France
-              </strong>{" "}
-            </p>
-          </Col>
         </div>
         <br />
         <br />
