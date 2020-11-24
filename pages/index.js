@@ -42,7 +42,7 @@ function Pourquoi() {
     <section id="pourquoi">
       <div className="container">
         <div className="section-heading text-center">
-          <SectionTitle>Pourquoi mon suivi psy?</SectionTitle>
+          <SectionTitle>Pourquoi mon suivi psy ?</SectionTitle>
           <br />
           <br />
           <Col xs={{ span: 10, offset: 1 }}>
@@ -59,7 +59,7 @@ function Pourquoi() {
               <strong>
                 Plus les informations concernant mes symptômes sont proches de
                 la réalité, de ce que je vis, plus mon médecin sera en mesure de
-                me prescrire le bon traitement et adapter au mieux mon suivi.
+                me prescrire le bon traitement et d'adapter au mieux mon suivi.
               </strong>{" "}
             </p>
           </Col>
@@ -81,7 +81,7 @@ function Pourquoi() {
           <Col xs={{ span: 10, offset: 1 }}>
             <FeatureRow title="Sécurité des données" image="/img/icon-eu.png">
               La personne reste propriétaire de ses données et ne les partage
-              avec son praticien que s’il le souhaite
+              avec son praticien que si elle le souhaite
             </FeatureRow>
           </Col>
         </Row>
@@ -100,13 +100,13 @@ function Comment() {
       <div className="container">
         <div className="section-heading text-center">
           <SectionTitle style={{ fontSize: "2.5em" }}>
-            Comment cela fonctionne?
+            Comment ce service fonctionne ?
           </SectionTitle>
           <br />
           <Col xs={{ span: 10, offset: 1 }}>
             <BlueText>
               <strong>
-                Mon Suivi Psy, c’est une aide pour un dialogue avec le
+                Mon suivi psy, c’est une aide, pour un dialogue avec le
                 praticien, qui s’adresse à tous.
               </strong>{" "}
             </BlueText>
@@ -122,7 +122,7 @@ function Comment() {
               imageSpan={4}
             >
               La possibilité de sélectionner les symptômes et les effets
-              indésirables des traitements médicamenteux que je souhaite suivre
+              indésirables des traitements médicamenteux, que je souhaite suivre
               <br />
               <div className="text-muted">
                 Fonctionnalité non disponible en V1
@@ -187,7 +187,7 @@ function Qui() {
         <br />
         <div className="section-heading text-center">
           <SectionTitle style={{ fontSize: "2.5em" }}>
-            Qui sommes-nous?
+            Qui sommes-nous ?
           </SectionTitle>
           <br />
           <Col xs={{ span: 10, offset: 1 }}>
@@ -229,9 +229,9 @@ function Contact() {
             <p>
               <strong>
                 Ce service, créé par le Dr Lya Pedron, est développé par la
-                Fabrique Numérique des Ministères Sociaux et le Centre
-                Hospitalier Barthélemy Durand et est financé par l’Agence
-                Régionale de Santé de l’Île de France
+                Fabrique Numérique des Ministères Sociaux et l’Établissement
+                Public de Santé Barthélémy Durand et est financé par l’Agence
+                Régionale de Santé d’Île de France
               </strong>{" "}
             </p>
           </Col>
