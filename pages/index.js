@@ -90,10 +90,6 @@ function Pourquoi() {
   );
 }
 
-const BlueText = styled.p`
-  color: var(--info);
-`;
-
 function Comment() {
   return (
     <section id="comment">
@@ -104,12 +100,10 @@ function Comment() {
           </SectionTitle>
           <br />
           <Col xs={{ span: 10, offset: 1 }}>
-            <BlueText>
-              <strong>
-                Mon suivi psy, c’est une aide, pour un dialogue avec le
-                praticien, qui s’adresse à tous.
-              </strong>{" "}
-            </BlueText>
+            <strong>
+              Mon suivi psy, c’est une aide, pour un dialogue avec le praticien,
+              qui s’adresse à tous.
+            </strong>{" "}
           </Col>
         </div>
         <br />
