@@ -111,7 +111,7 @@ function Comment() {
         <Row>
           <Col xs={{ span: 10, offset: 1 }}>
             <FeatureRow
-              title="Sélection des symptômes"
+              title="Le choix des symptômes"
               image="/img/demo-journal.png"
               imageSpan={4}
             >
@@ -154,7 +154,7 @@ function Comment() {
               suivis
             </FeatureRow>
             <FeatureRow
-              title="Transmission au practicien"
+              title="La transmission au practicien"
               image="/img/demo-journal.png"
               imageSpan={4}
               reverse
@@ -188,10 +188,10 @@ function Qui() {
             <p>
               <strong>
                 Ce service, créé par le Dr Lya Pedron, est développé par la
-                Fabrique Numérique des Ministères Sociaux et le Centre
-                Hospitalier Barthélemy Durand et est financé par l’Agence
-                Régionale de Santé de l’Île de France
-              </strong>{" "}
+                Fabrique Numérique des Ministères Sociaux et l’Établissement
+                public de santé Barthélémy Durand et est financé par l’Agence
+                Régionale de Santé d’Île de France.
+              </strong>
             </p>
           </Col>
         </div>
