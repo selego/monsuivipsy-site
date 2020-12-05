@@ -1,5 +1,5 @@
-import { GlobalEnvironment } from "@socialgouv/kosko-charts/types"
+import { GlobalEnvironment } from "@socialgouv/kosko-charts/types";
 
 export default {
   subdomain: `monsuivipsy`,
-} as Partial<GlobalEnvironment>
+} as Partial<GlobalEnvironment>;
