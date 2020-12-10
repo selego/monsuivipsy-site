@@ -113,7 +113,7 @@ metadata:
   namespace: monsuivipsy-site
 spec:
   rules:
-    - host: monsuivipsy-site.fabrique.social.gouv.fr
+    - host: monsuivipsy.fabrique.social.gouv.fr
       http:
         paths:
           - backend:
@@ -122,7 +122,7 @@ spec:
             path: /
   tls:
     - hosts:
-        - monsuivipsy-site.fabrique.social.gouv.fr
+        - monsuivipsy.fabrique.social.gouv.fr
       secretName: app-crt
 apiVersion: extensions/v1beta1
 kind: Ingress
