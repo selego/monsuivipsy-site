@@ -4,9 +4,9 @@ include:
     ref: v20.7.10
 
 variables:
-  AUTO_DEVOPS_KANIKO: "pouet"
+  AUTO_DEVOPS_KANIKO: "🕹️"
+  AUTO_DEVOPS_ENABLE_KAPP: "🕹️"
   AUTO_DEVOPS_RELEASE_AUTO: "🔖"
-  AUTO_DEVOPS_ENABLE_KAPP: "plop"
   AUTO_DEVOPS_PRODUCTION_AUTO: "🚀"
 
 # NOTE(douglasduteil): No install :(
