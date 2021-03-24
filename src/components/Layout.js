@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import { Container } from "react-bootstrap";
+import { Container, Row, Col, Jumbotron } from "react-bootstrap";
 
 import { Nav } from "./Nav";
 import { Header } from "./Header";
@@ -17,5 +17,23 @@ export function Layout({ showHeader, children }) {
       <Container>{children}</Container>
       <Footer />
     </React.Fragment>
+  );
+}
+
+export function ContentLayout({ title, children }) {
+  return (
+    <Layout>
+      <Head>
+        <title>{title}</title>
+      </Head>
+      <Row>
+        <Col xs={{ offset: 1, span: 10 }}>
+          <Jumbotron style={{ padding: "2em", marginTop: 30 }}>
+            <h1>{title}</h1>
+          </Jumbotron>
+          {children}
+        </Col>
+      </Row>
+    </Layout>
   );
 }

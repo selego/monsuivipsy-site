@@ -1,14 +1,9 @@
 import React from "react";
-import Head from "next/head";
-import { Layout } from "../src/components/Layout";
+import { ContentLayout } from "../src/components/Layout";
 
-export default function Mentions() {
+export default function CGU() {
   return (
-    <Layout>
-      <Head>
-        <title>Conditions générales et mentions légales</title>
-      </Head>
-      <h1>Conditions générales et mentions légales</h1>
+    <ContentLayout title="Conditions générales">
       <h3>Présentation</h3>
       <p>
         Mon suivi psy est un service de suivi de la consommation d’alcool à
@@ -97,20 +92,6 @@ export default function Mentions() {
         logiciel par d’autres usagers. Cela nous permet d’anticiper
         d’éventuelles attaques par déni de service.
       </p>
-      <h3>Mentions légales</h3>
-      <li>
-        <b>Éditeur:</b> Fabrique numérique des Ministères Sociaux
-      </li>
-      <li>
-        <b>Directeur de la publication:</b> ????{" "}
-      </li>
-      <li>
-        <b>Hébergeur</b>: Microsoft France
-      </li>
-    </Layout>
+    </ContentLayout>
   );
 }
-/*
-
-
-*/
