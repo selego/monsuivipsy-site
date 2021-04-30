@@ -202,7 +202,7 @@ function Qui() {
           alt="Logo Minisères des solidarités et de la Santé"
         />
         <img src="/img/logo-bd.png" alt="Logo BD" />
-        <img src="/img/logo-ARS.png" alt="Logo ARS" />
+        <img src="/img/logo-ars.png" alt="Logo ARS" />
       </div>
     </section>
   );
