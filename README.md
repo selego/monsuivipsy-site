@@ -1,5 +1,14 @@
 # monsuivipsy-landing
 
+## Modifier le site
+
+Cloner le repo puis :
+
+```sh
+yarn
+yarn dev
+```
+
 ## Env vars
 
 needed at build time :
