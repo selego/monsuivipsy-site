@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import Navigation from "components/navigation";
 import Footer from "components/footer";
@@ -9,6 +9,10 @@ const IOS_URL = "https://apps.apple.com/us/app/mon-suivi-psy/id1540061393";
 
 export default function Index() {
   const [questionNumber, setQuestionNumber] = useState(1);
+
+  useEffect(() => {
+    window.lumiere("sendEvent", "home", "open");
+  }, []);
 
   return (
     <div className="font-karla">
@@ -27,14 +31,14 @@ export default function Index() {
               Mieux connaître mes symptômes pour un meilleur accompagnement
             </p>
             <div className="flex justify-center mb-10 space-x-3 md:justify-start md:space-x-6">
-              <a href={ANDROID_URL}>
+              <a href={ANDROID_URL} onClick={() => window.lumiere("sendEvent", "home", "click_android")}>
                 <img
                   className="h-10 md:h-14"
                   src="images/other/google-play-fr.png"
                   alt=""
                 />
               </a>
-              <a href={IOS_URL}>
+              <a href={IOS_URL} onClick={() => window.lumiere("sendEvent", "home", "click_apple")}>
                 <img
                   className="h-10 md:h-14"
                   src="images/other/app-store-fr.png"
