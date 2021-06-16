@@ -10,10 +10,6 @@ const IOS_URL = "https://apps.apple.com/us/app/mon-suivi-psy/id1540061393";
 export default function Index() {
   const [questionNumber, setQuestionNumber] = useState(1);
 
-  useEffect(() => {
-    window.lumiere("sendEvent", "home", "open");
-  }, []);
-
   return (
     <div className="font-karla">
       <header
