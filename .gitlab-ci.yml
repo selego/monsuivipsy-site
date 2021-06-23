@@ -39,6 +39,9 @@ Build:
     - yarn export
   variables:
     VERSION: ${CI_COMMIT_SHORT_SHA}
+    # needed at build time
+    NEXT_PUBLIC_MATOMO_URL: https://matomo.fabrique.social.gouv.fr
+    NEXT_PUBLIC_MATOMO_SITE_ID: "33"
   artifacts:
     expire_in: 1 day
     paths:
