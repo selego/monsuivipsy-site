@@ -159,7 +159,7 @@ const Index = () => {
               Qui a créé Mon Suivi Psy ?
             </h3>
             <p className="text-xl text-center text-black">
-              Mon Suivi Psy est une application créée par le Docteur Lya Perdon
+              Mon Suivi Psy est une application créée par le Docteur Lya Pedron
               suite à un appel à innovateurs lancé par l’ARS - Ile de France. Le
               service est porté par la Fabrique Numérique, incubateur des
               ministères sociaux.

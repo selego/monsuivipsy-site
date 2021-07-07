@@ -25,7 +25,7 @@ export default function Navigation({ patient = true }) {
           href={patient ? "/pro" : "/"}
           className="px-4 py-2 text-sm font-bold text-white transition-all rounded-full bg-turqoise-500 hover:bg-turqoise-600"
         >
-          {patient ? "Pour les professionels" : "Pour les usagers"}
+          {patient ? "Pour les professionnels" : "Pour les usagers"}
         </a>
       </div>
     </nav>
