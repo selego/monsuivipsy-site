@@ -9,7 +9,8 @@ export default function Navigation({ patient = true }) {
           </span>
         </a>
       </div>
-      <div className="items-center justify-center hidden space-x-6 lg:flex">
+      <div className="items-center justify-center space-x-6 lg:flex">
+        <div className="hidden lg:flex space-x-6">
         <Link name="Accueil" target="/" patient={patient} />
         <Link
           name="Comment ça marche"
@@ -21,13 +22,15 @@ export default function Navigation({ patient = true }) {
           target="mailto:monsuivipsy@fabrique.social.gouv.fr"
           patient={patient}
         />
+        </div>
         <a
           href={patient ? "/pro" : "/"}
-          className="px-4 py-2 text-sm font-bold text-white transition-all rounded-full bg-turqoise-500 hover:bg-turqoise-600"
+          className="px-4 py-2 text-xs font-bold text-white transition-all rounded-full bg-turqoise-500 hover:bg-turqoise-600 lg:text-sm"
         >
-          {patient ? "Pour les professionnels" : "Pour les usagers"}
+          {patient ? "Pour les professionnels" : "Pour les patients"}
         </a>
       </div>
+
     </nav>
   );
 }
