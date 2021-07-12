@@ -576,9 +576,10 @@ const QuestionSix = ({ imageName }) => (
       </div>
     </div>
     <div className="relative hidden col-span-2 col-start-7 md:block lg:pl-8">
-      <img
-        className="relative lg:absolute w-60"
-        src={`images/question/${imageName}.png`}
+      <embed
+        className="relative lg:absolute w-40"
+        src={`images/question/${imageName}.gif`}
+        loop="true"
         alt=""
       />
     </div>
