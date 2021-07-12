@@ -130,7 +130,7 @@ const Index = () => {
               <p className="text-base text-black">Pour vous aider à présenter l'application, nous avons créé des documents explicatifs à : </p>
               <ul className="list-inside list-disc">
               <li className="text-base text-black">Télécharger ici : <a className="ml-1 text-lg" href="MonSuiviPsykitcomplet.pdf">📲</a></li>
-              <li className="text-base text-black">Nous demander par mail de vous les envoyer par la poste (merci d'indiquer votre nom/prénom/adresse postale): <a className="ml-2 text-lg" href="mailto:monsuivipsy@fabrique.social.gouv.fr">✉️ </a></li>
+              <li className="text-base text-black">Faire une demande pour les recevoir par la poste (merci d'indiquer votre nom/prénom/adresse postale): <a className="ml-2 text-lg" href="mailto:monsuivipsy@fabrique.social.gouv.fr">✉️ </a></li>
               </ul>
             </div>
             </div>
