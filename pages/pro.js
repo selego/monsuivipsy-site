@@ -98,7 +98,7 @@ const Index = () => {
               />
               <QuestionCard
                 title="Pour les psychologues"
-                content="il donne une base d’informations fidèles à la réalité quotidienne vécue par le patient, même lorsqu’il s’agit de parler de ce qu’il s’est passé plusieurs semaines auparavant. L’outil intègre notamment les colonnes de Beck et est particulièrement utile dans le cadre des thérapies cognitivo-comportementales."
+                content="Il donne une base d’informations fidèles de ce qui est quotidiennement vécu par le patient, même lorsqu’il s’agit de parler de ce qu’il s’est passé plusieurs semaines auparavant. L’application intègre notamment les colonnes de Beck qui sont particulièrement utiles dans le cadre des thérapies cognitivo-comportementales."
                 icon="chat-plus.svg"
               />
             </div>
@@ -121,13 +121,22 @@ const Index = () => {
             </p>
           </div>
           <div className="w-full space-y-6 lg:w-6/12">
-            <Numlist
-              number="1"
-              content="Expliquez en consultation à votre patient le but et le fonctionnement de Mon Suivi Psy"
-            />
+            <div className="justify-start p-4 rounded-lg flex-center bg-turqoise-0">
+            <div className="relative flex items-center justify-center flex-none w-5 h-5 mr-3 border rounded-full border-turqoise-500">
+              <span className="absolute text-xs font-bold text-turqoise-500">1</span>
+            </div>
+            <div>
+              <p className="text-base text-black">Expliquez en consultation à votre patient le but et le fonctionnement de Mon Suivi Psy</p>
+              <p className="text-base text-black">Pour vous aider à présenter l'application, nous avons créé des documents explicatifs à : </p>
+              <ul className="list-inside list-disc">
+              <li className="text-base text-black">Télécharger ici : <a className="ml-1 text-lg" href="MonSuiviPsykitComplet.pdf">📲</a></li>
+              <li className="text-base text-black">Faire une demande pour les recevoir par la poste (merci d'indiquer votre nom/prénom/adresse postale): <a className="ml-2 text-lg" href="mailto:monsuivipsy@fabrique.social.gouv.fr">✉️ </a></li>
+              </ul>
+            </div>
+            </div>
             <Numlist
               number="2"
-              content="Le patient peut, s’il le souhaite, télécharger l’application sur son smartphone durant la consultation et vous pouvez choisir ensemble les symptômes à suivre, noter les éventuels traitements médicamenteux pris."
+              content="Le patient peut, s’il le souhaite, télécharger l’application sur son smartphone durant la consultation et vous pouvez choisir ensemble les symptômes à suivre, noter les éventuels traitements médicamenteux pris et activer la fonctionnalité ''colonnes de Beck'' si cela s'intègre dans son suivi."
             />
             <Numlist
               number="3"
@@ -135,7 +144,8 @@ const Index = () => {
             />
             <Numlist
               number="4"
-              content="Lors des consultations suivantes, vous pouvez proposer à votre patient d’observer ensemble le journal et les courbes d’évolution des symptômes suivis soit directement sur son smartphone, soit sur le mail qu’il vous aura adressé s’il le souhaite."
+              content="
+              Lors des consultations suivantes, vous pouvez proposer à votre patient d’observer ensemble le journal, les courbes d’évolution des symptômes suivis et les informations saisies dans les ''Colonnes de Beck'', soit directement sur son smartphone, soit sur le mail qu’il vous aura adressé s’il le souhaite."
             />
           </div>
         </div>
@@ -143,7 +153,7 @@ const Index = () => {
         <div className="bg-gray-50">
           <div className="container py-20 lg:pt-30 lg:pb-52">
             <h3 className="mb-6 text-2xl font-bold lg:mb-20 lg:text-4xl text-denim-800">
-              Mon Suivi Psy, comment ca fonctionne ?
+              Mon Suivi Psy, comment ça fonctionne ?
             </h3>
 
             <Tabs
@@ -261,13 +271,14 @@ const Tabs = ({ questionNumber, setQuestionNumber }) => {
             number={5}
             question="Je remplis mon questionnaire quotidien personnalisé"
           />
-          <Tab number={6} question="J’accède au journal des symptômes suivis" />
+          <Tab number={6} question="J’utilise les colonnes de Beck" />
+          <Tab number={7} question="J’accède au journal" />
           <Tab
-            number={7}
+            number={8}
             question="J’accède aux courbes d’évolution des symptômes suivis"
           />
           <Tab
-            number={8}
+            number={9}
             question="J’envoie le récapitulatif des informations recueillies par mail"
           />
         </div>
@@ -280,6 +291,7 @@ const Tabs = ({ questionNumber, setQuestionNumber }) => {
         {questionNumber === 6 && <QuestionSix imageName="six" />}
         {questionNumber === 7 && <QuestionSeven imageName="seven" />}
         {questionNumber === 8 && <QuestionEight imageName="eight" />}
+        {questionNumber === 9 && <QuestionNine imageName="nine" />}
       </div>
     </>
   );
@@ -359,7 +371,7 @@ const QuestionTwo = ({ imageName }) => (
             symptômes plus précis.{" "}
           </li>
           <li>
-            Par exemple, humeur peut être divisé en "tristesse" ou
+            Par exemple, humeur peut être divisée en "tristesse" ou
             "irritabilité". Anxiété peut comprendre "attaque de panique",
             "anxiété anticipatrice", "anxiété diffuse", "peurs spécifiques",
             etc.{" "}
@@ -403,16 +415,18 @@ const QuestionThree = ({ imageName }) => (
       </h5>
       <ul className="mb-3 text-sm text-black list-disc list-inside">
         <li>
-          On peut choisir les traitements médicamenteux pris et leurs dosages
-          quotidiens dans un menu déroulant.
+          Je peux choisir les traitements médicamenteux pris dans un menu déroulant
+        </li>
+        <li>
+        Je peux quotidiennement renseigner le dosage des médicaments traitements médicamenteux que j'ai pris à la fin de mon questionnaire quotidien personnalisé
         </li>
       </ul>
       <div className="p-3 mb-3 rounded-md bg-yellow-50">
         <h6 className="text-sm font-bold text-yellow-700">Nouveauté :</h6>
         <p className="text-xs text-yellow-700 list-disc list-inside">
-          La traitement médicamenteux n’apparaît pas dans la liste proposée ?
+          Le traitement médicamenteux n’apparaît pas dans la liste proposée ?
           Vous pouvez dorénavant ajouter n’importe quel médicament et son dosage
-          dans un champ libre.
+          dans un champs libre.
         </p>
       </div>
     </div>
@@ -440,7 +454,7 @@ const QuestionFour = ({ imageName }) => (
       <div className="p-3 mb-3 rounded-md bg-denim-100">
         <h6 className="text-sm font-bold text-denim-800">Astuces :</h6>
         <p className="text-xs list-disc list-inside text-denim-800">
-          Programmez à l’heure où la personne est la plus disponible ou à
+          Programmez à l’heure où vous êtes le plus disponible ou à
           l’heure qui paraît la plus adaptée pour faire un point sur la journée
           (plutôt en soirée donc habituellement)
         </p>
@@ -517,18 +531,36 @@ const QuestionSix = ({ imageName }) => (
   <div className="grid grid-cols-8 col-span-1 lg:col-span-2 lg:pl-10">
     <div className="col-span-8 md:col-span-5 lg:col-span-6">
       <h5 className="mb-4 text-xl font-bold text-denim-800">
-        J’accède au journal des symptômes suivis
+        J'utilise les colonnes de Beck
       </h5>
       <ul className="mb-3 text-sm text-black list-disc list-inside">
         <li>
-          On peut faire dérouler le journal des symptômes suivis. Ils sont tous
-          listés, jour après jour, avec l’emoticon correspondant associé.
+        Pour activer la fonctionnalité "Colonnes de Beck" (cette fonctionnalité n'est pas activée par défaut), je clique dans le menu en haut à gauche, je sélectionne l'item "Colonnes de Beck" et j'appuie sur le bouton "Activer". Je reviens en suite sur le journal
         </li>
-      </ul>
+        <li>
+        Je peux ensuite remplir les colonnes de Beck :         
+          <ul className="px-4 text-sm mb-2 text-black list-none list-inside">
+            <li className="inline-flex">
+            * J'appuie sur le bouton
+              <img
+                className="w-5 h-5 ml-2"
+                src={`images/other/add.png`}
+                alt=""
+              />
+            </li>
+            <li>
+            * Je choisis l'icône "Colonnes de Beck"
+            </li>
+            <li>
+            * Et c'est parti !
+            </li>
+          </ul>
+          </li>
+        </ul>
       <div className="p-3 mb-3 rounded-md bg-denim-100">
         <h6 className="text-sm font-bold text-denim-800">Astuces :</h6>
         <p className="text-xs list-disc list-inside text-denim-800">
-          On peut intégrer ou modifier les traitements pris et la note
+          Je peux intégrer ou modifier les traitements pris et la note
           quotidienne directement dans le journal, sans repasser par le
           questionnaire quotidien personnalisé
         </p>
@@ -536,10 +568,51 @@ const QuestionSix = ({ imageName }) => (
       <div className="p-3 mb-3 rounded-md bg-yellow-50">
         <h6 className="text-sm font-bold text-yellow-700">Bon à savoir :</h6>
         <p className="text-xs text-yellow-700">
-          On ne peut ni modifier le questionnaire personnalisé quotidien ni la
+          Je ne peux ni modifier le questionnaire personnalisé quotidien ni la
           note, au-delà de la veille. En effet, le principe de Mon Suivi Psy est
+          de rester le plus proche possible du quotidien et au-delà de quelques
+          jours, l’exercice est moins fiable !
+        </p>
+      </div>
+    </div>
+    <div className="relative hidden col-span-2 col-start-7 md:block lg:pl-8">
+      <embed
+        className="relative lg:absolute w-40"
+        src={`images/question/${imageName}.gif`}
+        loop="true"
+        alt=""
+      />
+    </div>
+  </div>
+);
+
+const QuestionSeven = ({ imageName }) => (
+  <div className="grid grid-cols-8 col-span-1 lg:col-span-2 lg:pl-10">
+    <div className="col-span-8 md:col-span-5 lg:col-span-6">
+      <h5 className="mb-4 text-xl font-bold text-denim-800">
+        J’accède au journal
+      </h5>
+      <ul className="mb-3 text-sm text-black list-disc list-inside">
+        <li>
+          Je peux faire dérouler le journal des symptômes suivis. Ils sont tous
+          listés, jour après jour, avec l’emoticon correspondant associé
+        </li>
+      </ul>
+      <div className="p-3 mb-3 rounded-md bg-denim-100">
+        <h6 className="text-sm font-bold text-denim-800">Astuces :</h6>
+        <p className="text-xs list-disc list-inside text-denim-800">
+          Je peux intégrer ou modifier les traitements pris, la note
+          quotidienne, ainsi que les informations saisies dans les colonnes de Beck directement dans le journal
+        </p>
+      </div>
+      <div className="p-3 mb-3 rounded-md bg-yellow-50">
+        <h6 className="text-sm font-bold text-yellow-700">Bon à savoir :</h6>
+        <p className="text-xs text-yellow-700">
+          Je ne peux ni modifier le questionnaire personnalisé quotidien, ni la
+          note, ni les traitements pris, au-delà de la veille. En effet, le principe de Mon Suivi Psy est
           de rester le plus proche possible du quotidien et, au-delà de quelques
           jours, l’exercice est moins fiable !
+          Je peux en revanche modfifier ou compléter les informations saisies dans les colonnes de Beck à tout moment, y compris au delà de 2 jours
         </p>
       </div>
     </div>
@@ -553,7 +626,7 @@ const QuestionSix = ({ imageName }) => (
   </div>
 );
 
-const QuestionSeven = ({ imageName }) => (
+const QuestionEight = ({ imageName }) => (
   <div className="grid grid-cols-8 col-span-1 lg:col-span-2 lg:pl-10">
     <div className="col-span-8 md:col-span-5 lg:col-span-6">
       <h5 className="mb-4 text-xl font-bold text-denim-800">
@@ -569,7 +642,7 @@ const QuestionSeven = ({ imageName }) => (
       <div className="p-3 mb-3 rounded-md bg-denim-100">
         <h6 className="text-sm font-bold text-denim-800">Astuces :</h6>
         <p className="text-xs list-disc list-inside text-denim-800">
-          On peut obtenir les informations de toute une journée en cliquant sur
+          Je peux obtenir les informations de toute une journée en cliquant sur
           1 des points de la courbe d’évolution. On visualise ainsi en un coup
           d’œil toutes les informations de la journée concernée, sans repasser
           par le journal des symptômes suivis.
@@ -625,11 +698,11 @@ const QuestionSeven = ({ imageName }) => (
   </div>
 );
 
-const QuestionEight = ({ imageName }) => (
+const QuestionNine = ({ imageName }) => (
   <div className="grid grid-cols-8 col-span-1 lg:col-span-2 lg:pl-10">
     <div className="col-span-8 md:col-span-5 lg:col-span-6">
       <h5 className="mb-4 text-xl font-bold text-denim-800">
-        Envoyer le récapitulatif des informations recueillies par mail.
+        Envoyer le récapitulatif des informations recueillies par mail
       </h5>
       <ul className="mb-3 text-sm text-black list-disc list-inside">
         <li>
@@ -641,10 +714,12 @@ const QuestionEight = ({ imageName }) => (
           conserver.{" "}
         </li>
         <li>
-          Le mail adressé contient un histogramme mensuel des symptômes suivis,
-          avec pour chaque jour un chiffre attribué par symptôme (chiffre allant
-          de 1 à 5) en fonction des réponses au questionnaire quotidien
-          personnalisé
+          Le mail adressé contient :
+          <ul className="px-4 list-inside list-none">
+            <li>* un histogramme mensuel des symptômes suivis</li>
+            <li>* le récapitulatif de mes notes sur le dernier mois</li>
+            <li>* la synthèse de chacune des informations saisies dans les colonnes de Beck</li>
+          </ul>
         </li>
       </ul>
       <div className="p-3 mb-3 rounded-md bg-yellow-50">
@@ -672,7 +747,7 @@ const QuestionEight = ({ imageName }) => (
               basse possible (symptôme absent).
             </li>
             <li>
-              Les chiffres 2,3 ou 4 correspondent à des intensités et /ou
+              Les chiffres 2, 3 ou 4 correspondent à des intensités et /ou
               fréquence de symptômes de moins en moins importantes.
             </li>
             <li>

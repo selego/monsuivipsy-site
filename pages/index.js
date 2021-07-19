@@ -116,7 +116,7 @@ export default function Index() {
           className="container flex flex-col justify-between py-16 lg:py-24 lg:flex-row"
           id="how-it-works"
         >
-          <div className="w-full mb-6 lg:mb-0 lg:w-5/12">
+          <div className="w-full py-4 lg:py-16 mb-6 lg:mb-0 lg:w-5/12">
             <h3 className="mb-2 text-2xl font-bold leading-normal lg:text-4xl text-denim-800">
               Mon Suivi Psy, ça sert à quoi ?
             </h3>
@@ -135,7 +135,8 @@ export default function Index() {
             </p>
           </div>
           <div className="w-full space-y-6 lg:w-6/12">
-            <Checklist2 content="Mon Suivi Psy me permet de suivre quotidiennement mes symptômes, sur de longues périodes si je le désire." />
+            <Checklist2 content="Mon Suivi Psy me permet de suivre quotidiennement mes symptômes et mes prises de traitement, sur de longues périodes si je le désire." />
+            <Checklist2 content="Les colonnes de Beck en format digital facilitent mon suivi psychothérapique." />
             <Checklist2 content="Les informations que je donne au professionnel lors des consultations sont donc au plus près de ce que je vis, même lorsqu’il s’agit de parler de ce qu’il s’est passé plusieurs semaines auparavant." />
             <Checklist2 content="Plus les informations me concernant sont fidèles, plus le professionnel peut adapter mon suivi, au mieux et au plus vite." />
           </div>
@@ -189,10 +190,13 @@ export default function Index() {
             <h3 className="mb-2 text-2xl font-bold text-center lg:text-4xl text-denim-800">
               Mon Suivi Psy, quel est le principe ?
             </h3>
-            <p className="text-xl text-center text-black">
+            <p className="text-xl py-4 text-center text-black">
               Je suis l’évolution de mes symptômes et de mes prises
               médicamenteuses en remplissant quotidiennement un questionnaire
               personnalisé
+            </p>
+            <p className="text-xl text-center text-black">
+              J'effectue facilement mes exercices de psychothérapie en utilisant les colonnes de Beck 
             </p>
           </div>
         </div>
@@ -200,7 +204,7 @@ export default function Index() {
         <div className="bg-gray-50">
           <div className="container py-20 lg:pt-30 lg:pb-52">
             <h3 className="mb-6 text-2xl font-bold lg:mb-20 lg:text-4xl text-denim-800">
-              Mon Suivi Psy, comment ca fonctionne ?
+              Mon Suivi Psy, comment ça fonctionne ?
             </h3>
 
             <Tabs
@@ -301,13 +305,17 @@ const Tabs = ({ questionNumber, setQuestionNumber }) => {
             number={5}
             question="Je remplis mon questionnaire quotidien personnalisé"
           />
-          <Tab number={6} question="J’accède au journal des symptômes suivis" />
+          <Tab number={6} question="J’utilise les colonnes de Beck" />
           <Tab
             number={7}
-            question="J’accède aux courbes d’évolution des symptômes suivis"
+            question="J’accède au journal"
           />
           <Tab
             number={8}
+            question="J’accède aux courbes d’évolution des symptômes suivis"
+          />
+          <Tab
+            number={9}
             question="J’envoie le récapitulatif des informations recueillies par mail"
           />
         </div>
@@ -320,6 +328,7 @@ const Tabs = ({ questionNumber, setQuestionNumber }) => {
         {questionNumber === 6 && <QuestionSix imageName="six" />}
         {questionNumber === 7 && <QuestionSeven imageName="seven" />}
         {questionNumber === 8 && <QuestionEight imageName="eight" />}
+        {questionNumber === 9 && <QuestionNine imageName="nine" />}
       </div>
     </>
   );
@@ -436,18 +445,15 @@ const QuestionThree = ({ imageName }) => (
       </h5>
       <ul className="mb-3 text-sm text-black list-disc list-inside">
         <li>
-          Je peux choisir les traitements médicamenteux que je prends et leurs
-          dosages quotidiens dans un menu déroulant
+          Je peux choisir les traitements médicamenteux que je prends dans un menu déroulant
+        </li>
+        <li>
+          Si je ne trouve pas mon traitement, je peux l'ajouter grâce à un champs libre
+        </li>
+        <li>
+        Je peux quotidiennement renseigner le dosage des médicaments traitements médicamenteux que j'ai pris à la fin de mon questionnaire quotidien personnalisé
         </li>
       </ul>
-      <div className="p-3 mb-3 rounded-md bg-denim-100">
-        <h6 className="text-sm font-bold text-denim-800">Bientôt ... :</h6>
-        <p className="text-xs list-disc list-inside text-denim-800">
-          Je ne trouve pas mon traitement médicamenteux dans la liste proposée ?
-          Pas de panique, bientôt vous pourrez ajouter n’importe quel médicament
-          et son dosage.
-        </p>
-      </div>
     </div>
     <div className="relative hidden col-span-2 col-start-7 md:block lg:pl-8">
       <img
@@ -514,7 +520,7 @@ const QuestionFive = ({ imageName }) => (
         <h6 className="text-sm font-bold text-yellow-700">Bon à savoir : </h6>
         <p className="text-xs list-disc list-inside text-yellow-700">
           Chaque fois que vous remplissez le questionnaire personnalisé, les
-          symptômes suivis se voient attribués une note allant de 1 à 5.
+          symptômes suivis se voient attribuer une note allant de 1 à 5.
         </p>
         <ul className="text-xs list-disc list-inside text-yellow-700">
           <li>
@@ -548,13 +554,31 @@ const QuestionSix = ({ imageName }) => (
   <div className="grid grid-cols-8 col-span-1 lg:col-span-2 lg:pl-10">
     <div className="col-span-8 md:col-span-5 lg:col-span-6">
       <h5 className="mb-4 text-xl font-bold text-denim-800">
-        J’accède au journal des symptômes suivis
+        J'utilise les colonnes de Beck
       </h5>
       <ul className="mb-3 text-sm text-black list-disc list-inside">
         <li>
-          Je peux faire dérouler le journal des symptômes suivis. Ils sont tous
-          listés, jour après jour.
+        Pour activer la fonctionnalité "Colonnes de Beck" (cette fonctionnalité n'est pas activée par défaut), je clique dans le menu en haut à gauche, je sélectionne l'item "Colonnes de Beck" et j'appuie sur le bouton "Activer". Je reviens en suite sur le journal
         </li>
+        <li>
+        Je peux ensuite remplir les Colonnes de Beck :         
+        <ul className="px-4 text-sm mb-2 text-black list-none list-inside">
+            <li className="inline-flex">
+            * J'appuie sur le bouton
+              <img
+                className="w-5 h-5 ml-2"
+                src={`images/other/add.png`}
+                alt=""
+              />
+            </li>
+            <li>
+            * Je choisis l'icône "Colonnes de Beck"
+            </li>
+            <li>
+            * Et c'est parti !
+            </li>
+          </ul>
+          </li>
       </ul>
       <div className="p-3 mb-3 rounded-md bg-denim-100">
         <h6 className="text-sm font-bold text-denim-800">Astuces :</h6>
@@ -575,6 +599,65 @@ const QuestionSix = ({ imageName }) => (
       </div>
     </div>
     <div className="relative hidden col-span-2 col-start-7 md:block lg:pl-8">
+      <embed
+        className="relative lg:absolute w-40"
+        src={`images/question/${imageName}.gif`}
+        loop="true"
+        alt=""
+      />
+    </div>
+  </div>
+);
+
+const QuestionSeven = ({ imageName }) => (
+  <div className="grid grid-cols-8 col-span-1 lg:col-span-2 lg:pl-10">
+    <div className="col-span-8 md:col-span-5 lg:col-span-6">
+      <h5 className="mb-4 text-xl font-bold text-denim-800">
+        J’accède au journal
+      </h5>
+      <ul className="mb-3 text-sm text-black list-disc list-inside">
+        <li>
+          Je peux faire dérouler le journal des symptômes suivis. Ils sont tous
+          listés, jour après jour.
+        </li>
+        <li>
+          Je retrouve aussi :
+        <ul className="px-4 text-sm mb-2 text-black list-none list-inside">
+          <li>
+          * les traitements médicamenteux pris
+          </li>
+          <li>
+          * les notes 
+          </li>
+          <li>
+          * la synthèse de mes saisies sur les colonnes de Beck
+          </li>
+        </ul>
+        </li>
+      </ul>
+      <div className="p-3 mb-3 rounded-md bg-denim-100">
+        <h6 className="text-sm font-bold text-denim-800">Astuces :</h6>
+        <p className="text-xs list-disc list-inside text-denim-800">
+          Je peux intégrer ou modifier les traitements pris, la note
+          quotidienne, ainsi que les informations saisies dans les colonnes de Beck directement dans le journal
+        </p>
+      </div>
+      <div className="p-3 mb-3 rounded-md bg-yellow-50">
+        <h6 className="text-sm font-bold text-yellow-700">Bon à savoir :</h6>
+        <ul className="text-xs text-yellow-700 list-disc list-inside">
+        <li>
+          Je ne peux ni modifier le questionnaire personnalisé quotidien, ni la
+          note, ni les traitements pris, au-delà de la veille. En effet, le principe de Mon Suivi Psy est
+          de rester le plus proche possible du quotidien et au-delà de quelques
+          jours, l’exercice est moins fiable !
+        </li>
+        <li>
+          Je peux en revanche modifier ou compléter les informations saisies dans les colonnes de Beck à tout moment, y compris au delà de 2 jours
+        </li>
+        </ul>
+      </div>
+    </div>
+    <div className="relative hidden col-span-2 col-start-7 md:block lg:pl-8">
       <img
         className="relative lg:absolute w-60"
         src={`images/question/${imageName}.png`}
@@ -584,7 +667,7 @@ const QuestionSix = ({ imageName }) => (
   </div>
 );
 
-const QuestionSeven = ({ imageName }) => (
+const QuestionEight = ({ imageName }) => (
   <div className="grid grid-cols-8 col-span-1 lg:col-span-2 lg:pl-10">
     <div className="col-span-8 md:col-span-5 lg:col-span-6">
       <h5 className="mb-4 text-xl font-bold text-denim-800">
@@ -656,7 +739,7 @@ const QuestionSeven = ({ imageName }) => (
   </div>
 );
 
-const QuestionEight = ({ imageName }) => (
+const QuestionNine = ({ imageName }) => (
   <div className="grid grid-cols-8 col-span-1 lg:col-span-2 lg:pl-10">
     <div className="col-span-8 md:col-span-5 lg:col-span-6">
       <h5 className="mb-4 text-xl font-bold text-denim-800">
@@ -669,7 +752,12 @@ const QuestionEight = ({ imageName }) => (
         </li>
         <li>A moi-même pour conserver les informations</li>
         <li>
-          Le mail adressé contient un histogramme mensuel des symptômes suivis
+          Le mail adressé contient :
+          <ul className="px-4 list-inside list-none">
+            <li>* un histogramme mensuel des symptômes suivis</li>
+            <li>* le récapitulatif de mes notes sur le dernier mois</li>
+            <li>* la synthèse de chacune des informations saisies dans les colonnes de Beck</li>
+          </ul>
         </li>
       </ul>
       <div className="p-3 mb-3 rounded-md bg-yellow-50">
