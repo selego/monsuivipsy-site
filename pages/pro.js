@@ -129,7 +129,7 @@ const Index = () => {
               <p className="text-base text-black">Expliquez en consultation à votre patient le but et le fonctionnement de Mon Suivi Psy</p>
               <p className="text-base text-black">Pour vous aider à présenter l'application, nous avons créé des documents explicatifs à : </p>
               <ul className="list-inside list-disc">
-              <li className="text-base text-black">Télécharger ici : <a className="ml-1 text-lg" href="MonSuiviPsykitComplet.pdf">📲</a></li>
+              <li className="text-base text-black">Télécharger ici : <a className="ml-1 text-lg" href="MonSuiviPsykitComplet.pdf" download>📲</a></li>
               <li className="text-base text-black">Faire une demande pour les recevoir par la poste (merci d'indiquer votre nom/prénom/adresse postale): <a className="ml-2 text-lg" href="mailto:monsuivipsy@fabrique.social.gouv.fr">✉️ </a></li>
               </ul>
             </div>
@@ -576,7 +576,7 @@ const QuestionSix = ({ imageName }) => (
       </div>
     </div>
     <div className="relative hidden col-span-2 col-start-7 md:block lg:pl-8">
-      <embed
+      <img
         className="relative lg:absolute w-40"
         src={`images/question/${imageName}.gif`}
         loop="true"
