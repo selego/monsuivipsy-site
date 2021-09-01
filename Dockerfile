@@ -1,5 +1,8 @@
 FROM node:15.9-alpine
 
+ENV NEXT_PUBLIC_MATOMO_URL="https://matomo.fabrique.social.gouv.fr"
+ENV NEXT_PUBLIC_MATOMO_SITE_ID="33"
+
 WORKDIR /app
 
 COPY . /app/
