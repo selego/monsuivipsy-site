@@ -11,26 +11,26 @@ export default function Navigation({ patient = true }) {
       </div>
       <div className="items-center justify-center space-x-6 lg:flex">
         <div className="hidden lg:flex space-x-6">
-        <Link name="Accueil" target="/" patient={patient} />
-        <Link
-          name="Comment ça marche"
-          target="#how-it-works"
-          patient={patient}
-        />
-        <Link
-          name="Nous contacter"
-          target="mailto:monsuivipsy@fabrique.social.gouv.fr"
-          patient={patient}
-        />
+          <Link name="Accueil" target="/" patient={patient} />
+          <Link
+            name="Comment ça marche"
+            target="#how-it-works"
+            patient={patient}
+          />
+          <Link
+            name="Nous contacter"
+            target="mailto:monsuivipsy@fabrique.social.gouv.fr"
+            patient={patient}
+          />
         </div>
         <a
           href={patient ? "/pro" : "/"}
           className="px-4 py-2 text-xs font-bold text-white transition-all rounded-full bg-turqoise-500 hover:bg-turqoise-600 lg:text-sm"
         >
-          {patient ? "Pour les professionnels" : "Pour les patients"}
+          {/* spaces are nbsp (option+space) */}
+          {patient ? "Pour les professionnels" : "Pour les patients"}
         </a>
       </div>
-
     </nav>
   );
 }
