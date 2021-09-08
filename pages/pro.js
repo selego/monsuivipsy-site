@@ -36,6 +36,32 @@ const Index = () => {
               Une application à proposer à vos patients pour voir l’évolution de
               leurs symptômes en un coup d’oeil
             </p>
+            <div className="flex justify-center mb-10 space-x-3 md:justify-start md:space-x-6">
+              <a
+                href={ANDROID_URL}
+                onClick={() =>
+                  window.lumiere("sendEvent", "home", "click_android")
+                }
+              >
+                <img
+                  className="h-10 md:h-14"
+                  src="images/other/google-play-fr.png"
+                  alt="google-play-logo"
+                />
+              </a>
+              <a
+                href={IOS_URL}
+                onClick={() =>
+                  window.lumiere("sendEvent", "home", "click_apple")
+                }
+              >
+                <img
+                  className="h-10 md:h-14"
+                  src="images/other/app-store-fr.png"
+                  alt="app-store-logo"
+                />
+              </a>
+            </div>
             <br />
             <p className="mb-6 text-xl text-center text-denim-200 md:text-left lg:text-xl">
               Des idées pour améliorer l'outil ? Déposez votre email et
@@ -56,7 +82,7 @@ const Index = () => {
                   required
                 />
                 <button className="flex-none px-5 py-2 text-sm font-bold text-white transition-all rounded-full focus:outline-none bg-turqoise-500 hover:bg-turqoise-600">
-                  Recevoir des informations
+                  Valider
                 </button>
               </form>
             </div>
@@ -75,7 +101,7 @@ const Index = () => {
               />
             </div>
           </div>
-          <div className="items-center justify-center hidden w-1/2 lg:flex">
+          <div className="justify-center hidden w-1/2 lg:flex">
             <img src="images/other/hero2.png" alt="" />
           </div>
         </div>
