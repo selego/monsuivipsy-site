@@ -62,6 +62,20 @@ const Index = () => {
                 />
               </a>
             </div>
+            <div className="flex flex-col space-y-6">
+              <Checklist
+                title="Auto-observation simple et rapide pour le patient via l’application"
+                subtitle="En quelques secondes par jour, le patient remplit le questionnaire personnalisé que vous avez élaboré ensemble pour suivre son quotidien. Un rappel paramétré améliore son assiduité."
+              />
+              <Checklist
+                title="Visualisation instantanée de l’évolution des symptômes sur les 30 derniers jours, avec notes et prises de médicaments"
+                subtitle="A chaque consultation, regardez et analysez ensemble les résultats sous forme de graphiques. Vous adaptez votre suivi au plus près des symptômes ressentis."
+              />
+              <Checklist
+                title="Application gratuite et anonyme, sans création de compte "
+                subtitle="Le patient reste propriétaire et maître des données saisies. Il peut vous montrer les résultats sur son smartphone ou vous les envoyer par mail s’il le souhaite."
+              />
+            </div>
             <br />
             <p className="mb-6 text-xl text-center text-denim-200 md:text-left lg:text-xl">
               Des idées pour améliorer l'outil ? Déposez votre email et
@@ -85,20 +99,6 @@ const Index = () => {
                   Valider
                 </button>
               </form>
-            </div>
-            <div className="flex flex-col space-y-6">
-              <Checklist
-                title="Auto-observation simple et rapide pour le patient via l’application"
-                subtitle="En quelques secondes par jour, le patient remplit le questionnaire personnalisé que vous avez élaboré ensemble pour suivre son quotidien. Un rappel paramétré améliore son assiduité."
-              />
-              <Checklist
-                title="Visualisation instantanée de l’évolution des symptômes sur les 30 derniers jours, avec notes et prises de médicaments"
-                subtitle="A chaque consultation, regardez et analysez ensemble les résultats sous forme de graphiques. Vous adaptez votre suivi au plus près des symptômes ressentis."
-              />
-              <Checklist
-                title="Application gratuite et anonyme, sans création de compte "
-                subtitle="Le patient reste propriétaire et maître des données saisies. Il peut vous montrer les résultats sur son smartphone ou vous les envoyer par mail s’il le souhaite."
-              />
             </div>
           </div>
           <div className="justify-center hidden w-1/2 lg:flex">
