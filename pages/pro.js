@@ -5,7 +5,6 @@ import Footer from "components/footer";
 
 import { subscribe } from "../utils";
 
-
 const ANDROID_URL =
   "https://play.google.com/store/apps/details?id=com.monsuivipsy&hl=fr";
 const IOS_URL = "https://apps.apple.com/us/app/mon-suivi-psy/id1540061393";
@@ -39,10 +38,14 @@ const Index = () => {
             </p>
             <br />
             <p className="mb-6 text-xl text-center text-denim-200 md:text-left lg:text-xl">
-            Des idées pour améliorer l'outil ? Déposez votre email et rejoignez notre communauté
+              Des idées pour améliorer l'outil ? Déposez votre email et
+              rejoignez notre communauté
             </p>
             <div className="mb-10">
-              <form className="flex items-center w-full max-w-md p-1 bg-white rounded-full" onSubmit={submit}>
+              <form
+                className="flex items-center w-full max-w-md p-1 bg-white rounded-full"
+                onSubmit={submit}
+              >
                 <input
                   className="flex-1 pl-4 pr-2 text-sm font-medium text-gray-800 placeholder-black placeholder-opacity-40 focus:outline-none"
                   type="email"
@@ -53,7 +56,7 @@ const Index = () => {
                   required
                 />
                 <button className="flex-none px-5 py-2 text-sm font-bold text-white transition-all rounded-full focus:outline-none bg-turqoise-500 hover:bg-turqoise-600">
-                 Recevoir des informations
+                  Recevoir des informations
                 </button>
               </form>
             </div>
@@ -77,7 +80,6 @@ const Index = () => {
           </div>
         </div>
       </header>
-
       <main>
         <div className=" bg-gray-50">
           <div className="container py-20">
@@ -122,17 +124,43 @@ const Index = () => {
           </div>
           <div className="w-full space-y-6 lg:w-6/12">
             <div className="justify-start p-4 rounded-lg flex-center bg-turqoise-0">
-            <div className="relative flex items-center justify-center flex-none w-5 h-5 mr-3 border rounded-full border-turqoise-500">
-              <span className="absolute text-xs font-bold text-turqoise-500">1</span>
-            </div>
-            <div>
-              <p className="text-base text-black">Expliquez en consultation à votre patient le but et le fonctionnement de Mon Suivi Psy</p>
-              <p className="text-base text-black">Pour vous aider à présenter l'application, nous avons créé des documents explicatifs à : </p>
-              <ul className="list-inside list-disc">
-              <li className="text-base text-black">Télécharger ici : <a className="ml-1 text-lg" href="MonSuiviPsykitComplet.pdf" download>📲</a></li>
-              <li className="text-base text-black">Faire une demande pour les recevoir par la poste (merci d'indiquer votre nom/prénom/adresse postale): <a className="ml-2 text-lg" href="mailto:monsuivipsy@fabrique.social.gouv.fr">✉️ </a></li>
-              </ul>
-            </div>
+              <div className="relative flex items-center justify-center flex-none w-5 h-5 mr-3 border rounded-full border-turqoise-500">
+                <span className="absolute text-xs font-bold text-turqoise-500">
+                  1
+                </span>
+              </div>
+              <div>
+                <p className="text-base text-black">
+                  Expliquez en consultation à votre patient le but et le
+                  fonctionnement de Mon Suivi Psy
+                </p>
+                <p className="text-base text-black">
+                  Pour vous aider à présenter l'application, nous avons créé des
+                  documents explicatifs à :{" "}
+                </p>
+                <ul className="list-inside list-disc">
+                  <li className="text-base text-black">
+                    Télécharger ici :{" "}
+                    <a
+                      className="ml-1 text-lg"
+                      href="MonSuiviPsykitComplet.pdf"
+                      download
+                    >
+                      📲
+                    </a>
+                  </li>
+                  <li className="text-base text-black">
+                    Faire une demande pour les recevoir par la poste (merci
+                    d'indiquer votre nom/prénom/adresse postale):{" "}
+                    <a
+                      className="ml-2 text-lg"
+                      href="mailto:monsuivipsy@fabrique.social.gouv.fr"
+                    >
+                      ✉️{" "}
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
             <Numlist
               number="2"
@@ -415,10 +443,13 @@ const QuestionThree = ({ imageName }) => (
       </h5>
       <ul className="mb-3 text-sm text-black list-disc list-inside">
         <li>
-          Je peux choisir les traitements médicamenteux pris dans un menu déroulant
+          Je peux choisir les traitements médicamenteux pris dans un menu
+          déroulant
         </li>
         <li>
-        Je peux quotidiennement renseigner le dosage des médicaments traitements médicamenteux que j'ai pris à la fin de mon questionnaire quotidien personnalisé
+          Je peux quotidiennement renseigner le dosage des médicaments
+          traitements médicamenteux que j'ai pris à la fin de mon questionnaire
+          quotidien personnalisé
         </li>
       </ul>
       <div className="p-3 mb-3 rounded-md bg-yellow-50">
@@ -454,9 +485,9 @@ const QuestionFour = ({ imageName }) => (
       <div className="p-3 mb-3 rounded-md bg-denim-100">
         <h6 className="text-sm font-bold text-denim-800">Astuces :</h6>
         <p className="text-xs list-disc list-inside text-denim-800">
-          Programmez à l’heure où vous êtes le plus disponible ou à
-          l’heure qui paraît la plus adaptée pour faire un point sur la journée
-          (plutôt en soirée donc habituellement)
+          Programmez à l’heure où vous êtes le plus disponible ou à l’heure qui
+          paraît la plus adaptée pour faire un point sur la journée (plutôt en
+          soirée donc habituellement)
         </p>
       </div>
     </div>
@@ -535,28 +566,27 @@ const QuestionSix = ({ imageName }) => (
       </h5>
       <ul className="mb-3 text-sm text-black list-disc list-inside">
         <li>
-        Pour activer la fonctionnalité "Colonnes de Beck" (cette fonctionnalité n'est pas activée par défaut), je clique dans le menu en haut à gauche, je sélectionne l'item "Colonnes de Beck" et j'appuie sur le bouton "Activer". Je reviens en suite sur le journal
+          Pour activer la fonctionnalité "Colonnes de Beck" (cette
+          fonctionnalité n'est pas activée par défaut), je clique dans le menu
+          en haut à gauche, je sélectionne l'item "Colonnes de Beck" et j'appuie
+          sur le bouton "Activer". Je reviens en suite sur le journal
         </li>
         <li>
-        Je peux ensuite remplir les colonnes de Beck :         
+          Je peux ensuite remplir les colonnes de Beck :
           <ul className="px-4 text-sm mb-2 text-black list-none list-inside">
             <li className="inline-flex">
-            * J'appuie sur le bouton
+              * J'appuie sur le bouton
               <img
                 className="w-5 h-5 ml-2"
                 src={`images/other/add.png`}
                 alt=""
               />
             </li>
-            <li>
-            * Je choisis l'icône "Colonnes de Beck"
-            </li>
-            <li>
-            * Et c'est parti !
-            </li>
+            <li>* Je choisis l'icône "Colonnes de Beck"</li>
+            <li>* Et c'est parti !</li>
           </ul>
-          </li>
-        </ul>
+        </li>
+      </ul>
       <div className="p-3 mb-3 rounded-md bg-denim-100">
         <h6 className="text-sm font-bold text-denim-800">Astuces :</h6>
         <p className="text-xs list-disc list-inside text-denim-800">
@@ -602,17 +632,19 @@ const QuestionSeven = ({ imageName }) => (
         <h6 className="text-sm font-bold text-denim-800">Astuces :</h6>
         <p className="text-xs list-disc list-inside text-denim-800">
           Je peux intégrer ou modifier les traitements pris, la note
-          quotidienne, ainsi que les informations saisies dans les colonnes de Beck directement dans le journal
+          quotidienne, ainsi que les informations saisies dans les colonnes de
+          Beck directement dans le journal
         </p>
       </div>
       <div className="p-3 mb-3 rounded-md bg-yellow-50">
         <h6 className="text-sm font-bold text-yellow-700">Bon à savoir :</h6>
         <p className="text-xs text-yellow-700">
           Je ne peux ni modifier le questionnaire personnalisé quotidien, ni la
-          note, ni les traitements pris, au-delà de la veille. En effet, le principe de Mon Suivi Psy est
-          de rester le plus proche possible du quotidien et, au-delà de quelques
-          jours, l’exercice est moins fiable !
-          Je peux en revanche modfifier ou compléter les informations saisies dans les colonnes de Beck à tout moment, y compris au delà de 2 jours
+          note, ni les traitements pris, au-delà de la veille. En effet, le
+          principe de Mon Suivi Psy est de rester le plus proche possible du
+          quotidien et, au-delà de quelques jours, l’exercice est moins fiable !
+          Je peux en revanche modfifier ou compléter les informations saisies
+          dans les colonnes de Beck à tout moment, y compris au delà de 2 jours
         </p>
       </div>
     </div>
@@ -718,7 +750,10 @@ const QuestionNine = ({ imageName }) => (
           <ul className="px-4 list-inside list-none">
             <li>* un histogramme mensuel des symptômes suivis</li>
             <li>* le récapitulatif de mes notes sur le dernier mois</li>
-            <li>* la synthèse de chacune des informations saisies dans les colonnes de Beck</li>
+            <li>
+              * la synthèse de chacune des informations saisies dans les
+              colonnes de Beck
+            </li>
           </ul>
         </li>
       </ul>
