@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navigation from "components/navigation";
 
 import Footer from "components/footer";
+import Video from "components/video";
 
 import { subscribe } from "../utils";
 
@@ -108,6 +109,11 @@ const Index = () => {
       </header>
       <main>
         <div className=" bg-gray-50">
+          <div className="container w-full md:w-1/2 py-10">
+            <div className="items-center justify-center w-full shadow-lg">
+              <Video src="http://msp.cellar-c2.services.clever-cloud.com/videos/presentationMSP.mp4" />
+            </div>
+          </div>
           <div className="container py-20">
             <div className="w-full mx-auto mb-6 md:w-8/12 lg:mb-10">
               <h3 className="mb-2 text-2xl font-bold text-center lg:text-4xl text-denim-800">
@@ -204,8 +210,8 @@ const Index = () => {
           </div>
         </div>
 
-        <div className="bg-gray-50">
-          <div className="container py-20 lg:pt-30 lg:pb-52">
+        <div className="bg-gray-50 py-20 lg:pt-30 lg:pb-52">
+          <div className="container ">
             <h3 className="mb-6 text-2xl font-bold lg:mb-20 lg:text-4xl text-denim-800">
               Mon Suivi Psy, comment ça fonctionne ?
             </h3>
@@ -214,6 +220,11 @@ const Index = () => {
               questionNumber={questionNumber}
               setQuestionNumber={setQuestionNumber}
             />
+          </div>
+          <div className="container w-full md:w-1/2 py-10">
+            <div className="items-center justify-center w-full shadow-lg">
+              <Video src="http://msp.cellar-c2.services.clever-cloud.com/videos/presentationBeck.mp4" />
+            </div>
           </div>
         </div>
 
