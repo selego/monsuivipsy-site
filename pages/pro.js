@@ -111,7 +111,7 @@ const Index = () => {
         <div className=" bg-gray-50">
           <div className="container w-full md:w-1/2 py-10">
             <div className="items-center justify-center w-full shadow-lg">
-              <Video src="https://monsuivipsyprod.blob.core.windows.net/$web/presentation_evandelia.mp4" />
+              <Video src="/videos/presentationMSP.mp4" />
             </div>
           </div>
           <div className="container py-20">
@@ -223,7 +223,7 @@ const Index = () => {
           </div>
           <div className="container w-full md:w-1/2 py-10">
             <div className="items-center justify-center w-full shadow-lg">
-              <Video src="https://monsuivipsyprod.blob.core.windows.net/$web/presentation_colonnes_de_beck.mp4" />
+              <Video src="/videos/presentationBeck.mp4" />
             </div>
           </div>
         </div>
