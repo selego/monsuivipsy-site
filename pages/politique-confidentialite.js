@@ -84,8 +84,8 @@ export default () => {
               <br />
               <p>
                 L'obligation légale est posée par la loi LCEN n° 2004-575 du 21
-                juin 2004 pour la confiance dans l'économie numérique et par les
-                articles 1 et 3 du décret n°2011-219 du 25 février 2011.
+                juin 2004 pour la confiance dans l'économie numérique et par l'
+                article 1 du décret n°2021-1363 du 20 octobre 2021.
               </p>
               <br />
               <p>
@@ -135,8 +135,8 @@ export default () => {
               <br />
               <ul className="list-disc list-inside">
                 <li>
-                  Données de connexion : 12 mois (article 3 du Décret n°
-                  2011-219 du 25 février 2011).
+                  Données de connexion : 12 mois (article 1 du Décret n°
+                  2021-1363 du 20 octobre 2021).
                 </li>
                 <li>
                   Cookies : 13 mois maximum, ou jusqu'au retrait du consentement
