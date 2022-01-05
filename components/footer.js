@@ -6,20 +6,31 @@ export default function Footer() {
           <img className="w-10" src="images/logo.png" alt="" />
         </a>
 
-        <a className="inline-block mb-4 mr-5 lg:mb-10" href="https://www.ars.sante.fr/">
+        <a
+          className="inline-block mb-4 mr-5 lg:mb-10"
+          href="https://www.ars.sante.fr/"
+        >
           <img className="w-11" src="images/logo_ars.png" alt="" />
         </a>
 
-        <a className="inline-block mb-4 mr-5 lg:mb-10" href="http://www.eps-etampes.fr/en/accueil/">
+        <a
+          className="inline-block mb-4 mr-5 lg:mb-10"
+          href="http://www.eps-etampes.fr/en/accueil/"
+        >
           <img className="w-15" src="images/logo_barth.png" alt="" />
         </a>
 
-        <a className="inline-block mb-4 mr-5 lg:mb-10" href="https://solidarites-sante.gouv.fr/">
+        <a
+          className="inline-block mb-4 mr-5 lg:mb-10"
+          href="https://solidarites-sante.gouv.fr/"
+        >
           <img className="w-13" src="images/logo_fab.png" alt="" />
         </a>
 
         <p className="mb-1 text-xs text-black opacity-70">
-          Créé par le dr Lya Pedron, financé par l'ARS et la DINUM,<br />porté par la Fabrique, incubateur des ministères sociaux.
+          Créé par le dr Lya Pedron, financé par l'ARS et la DINUM,
+          <br />
+          porté par la Fabrique, incubateur des ministères sociaux.
         </p>
         <p className="mb-1 text-xs text-black opacity-70">
           Copyright © 2021 Monsuivipsy.
@@ -42,6 +53,9 @@ export default function Footer() {
             href="/politique-confidentialite"
           >
             Politique de confidentialité
+          </a>
+          <a className="text-xs font-semibold text-black opacity-70" href="#">
+            Accessibilité : non conforme
           </a>
         </div>
       </div>
