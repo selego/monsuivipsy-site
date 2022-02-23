@@ -41,18 +41,16 @@ jobs:
     needs: [register]
     environment:
       name: production
-      url: https://monsuivipsy.fabrique.social.gouv.Fr
+      url: https://monsuivipsy.fabrique.social.gouv.fr
     steps:
-    - name: Use autodevops manifests generation
-      uses: SocialGouv/actions/autodevops-manifests@master
-      with:
-        environment: "prod"
-        rancherId: ${{ secrets.RANCHER_PROJECT_ID }}
-        socialgouvBaseDomain: ${{ secrets.SOCIALGOUV_BASE_DOMAIN }}
+    
     - name: Use autodevops deployment
-      uses: SocialGouv/actions/autodevops-deploy@master
+      uses: SocialGouv/actions/autodevops-helm-deploy@v1
       with:
         environment: "prod"
         token: ${{ secrets.GITHUB_TOKEN }}
         kubeconfig: ${{ secrets.SOCIALGOUV_KUBE_CONFIG_PROD }}
         rancherId: ${{ secrets.RANCHER_PROJECT_ID }}
+        rancherProjectName: ${{ secrets.RANCHER_PROJECT_NAME }}
+        imageName: monsuivipsy/monsuivipsy-site
+        productionHost: monsuivipsy.fabrique.social.gouv.fr
