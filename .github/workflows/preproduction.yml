@@ -4,33 +4,25 @@ on:
   push:
     branches:
       - master
+    tags-ignore:
+      - v*
 
 concurrency:
   cancel-in-progress: true
   group: preproduction
 
 jobs:
-  ##############################################################################
-  ## BUILD AND REGISTER DOCKER IMAGES
-  ##############################################################################
   register:
     name: Build & Register application
     runs-on: ubuntu-latest
     steps:
-      - name: Get project name
-        run: |
-          echo "project=${GITHUB_REPOSITORY#*/}" >> $GITHUB_ENV
       - name: Use autodevops build and register
         uses: SocialGouv/actions/autodevops-build-register@v1
         with:
-          environment: "preprod"
-          project: ${{ env.project }}
+          environment: preprod
+          imagePackage: app
           token: ${{ secrets.GITHUB_TOKEN }}
-          imageName: monsuivipsy/monsuivipsy-site
 
-  ##############################################################################
-  ## DEPLOY APPLICATION OVER KUBERNETES
-  ##############################################################################
   deploy:
     name: Deploy application
     runs-on: ubuntu-latest
@@ -39,13 +31,11 @@ jobs:
       name: preproduction
       url: https://monsuivipsy-site-preprod.dev.fabrique.social.gouv.fr
     steps:
-      - name: Use autodevops deployment
-        uses: SocialGouv/actions/autodevops-helm-deploy@v1
+      - name: Use kube-workflow deployment
+        uses: SocialGouv/kube-workflow@v1
         with:
-          environment: "preprod"
+          environment: preprod
           token: ${{ secrets.GITHUB_TOKEN }}
           kubeconfig: ${{ secrets.KUBECONFIG }}
-          rancherId: ${{ secrets.RANCHER_PROJECT_ID }}
+          rancherProjectId: ${{ secrets.RANCHER_PROJECT_ID }}
           rancherProjectName: ${{ secrets.RANCHER_PROJECT_NAME }}
-          socialgouvBaseDomain: ${{ secrets.SOCIALGOUV_BASE_DOMAIN }}
-          imageName: monsuivipsy/monsuivipsy-site
