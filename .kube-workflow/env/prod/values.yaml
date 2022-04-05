@@ -1,5 +1,5 @@
 app:
-  host: monsuivipsy.fr
+  host: monsuivipsy.fabrique.social.gouv.fr
   redirectFrom:
-    - monsuivipsy.fabrique.social.gouv.fr
+    - monsuivipsy.fr
 
