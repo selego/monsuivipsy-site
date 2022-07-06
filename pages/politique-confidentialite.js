@@ -19,7 +19,7 @@ export default () => {
             <Title title="Traitement des données à caractère personnel" />
             <Content>
               <p>
-                Le présent site MonSuiviPsy est à l'initiative de la Direction
+                Le présent site « Ma Tête et Moi«  est à l'initiative de la Direction
                 Générale de la Santé au sein de la Fabrique numérique des
                 ministères sociaux.
               </p>
@@ -30,8 +30,8 @@ export default () => {
             <Title title="Finalité" />
             <Content>
               <p>
-                Le site « MonSuiviPsy » vise à présenter l'application «
-                MonSuiviPsy » et son fonctionnement.
+                Le site « Ma Tête et Moi » vise à présenter l'application «
+                « Ma Tête et Moi » et son fonctionnement.
               </p>
             </Content>
           </div>
