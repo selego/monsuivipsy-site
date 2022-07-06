@@ -19,7 +19,7 @@ export default () => {
             <Title title="Présentation" />
             <Content>
               <p>
-                Mon suivi psy est un service de suivi de dépression à destination des particuliers et de celles et ceux qui
+                Ma Tête et Moi est un service de suivi de dépression à destination des particuliers et de celles et ceux qui
                 les conseillent, dans un cadre professionnel ou bénévole. Il
                 s’agit d’une application mobile qui permet de d’évaluer son
                 niveau de consommation, les risques associés pour la santé et de
@@ -37,11 +37,11 @@ export default () => {
             <Title title="Vocabulaire" />
             <Content>
               <ul className="list-disc list-inside">
-                <li>« Nous » se réfère à l’éditeur de Mon suivi psy.</li>
+                <li>« Nous » se réfère à l’éditeur de Ma Tête et Moi.</li>
                 <li>« Vous » se réfère à un·e usager de Mon suivi psy.</li>
                 <li>
                   « Partenaires » se réfère aux organismes responsables
-                  d’attribuer les aides calculées par Mon suivi psy.
+                  d’attribuer les aides calculées par Ma Tête et Moi.
                 </li>
               </ul>
             </Content>
