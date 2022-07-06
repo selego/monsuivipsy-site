@@ -10,7 +10,7 @@ export function Layout({ showHeader, children }) {
   return (
     <React.Fragment>
       <Head>
-        <title>Mon suivi Psy</title>
+        <title>Ma Tête et Moi</title>
       </Head>
       <Nav />
       {showHeader && <Header />}
