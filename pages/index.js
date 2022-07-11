@@ -133,10 +133,10 @@ export default function Index() {
         >
           <div className="w-full py-4 lg:py-16 mb-6 lg:mb-0 lg:w-5/12">
             <h3 className="mb-2 text-2xl font-bold leading-normal lg:text-4xl text-denim-800">
-              Mon Suivi Psy, ça sert à quoi ?
+              Ma Tête et Moi, ça sert à quoi ?
             </h3>
             <p className="text-base text-black">
-              Mon Suivi Psy souhaite participer à améliorer les suivis
+              Ma Tête et Moi souhaite participer à améliorer les suivis
               psychiatriques ou psychologiques et donc les soins au sens large.
               <br />
               <br />
@@ -145,12 +145,12 @@ export default function Index() {
               donc d’adapter les soins.
               <br />
               <br />
-              Mon Suivi Psy facilite le dialogue avec les professionnels de
+              Ma Tête et Moi facilite le dialogue avec les professionnels de
               santé.
             </p>
           </div>
           <div className="w-full space-y-6 lg:w-6/12">
-            <Checklist2 content="Mon Suivi Psy me permet de suivre quotidiennement mes symptômes et mes prises de traitement, sur de longues périodes si je le désire." />
+            <Checklist2 content="Ma Tête et Moi me permet de suivre quotidiennement mes symptômes et mes prises de traitement, sur de longues périodes si je le désire." />
             <Checklist2 content="Les colonnes de Beck en format digital facilitent mon suivi psychothérapique." />
             <Checklist2 content="Les informations que je donne au professionnel lors des consultations sont donc au plus près de ce que je vis, même lorsqu’il s’agit de parler de ce qu’il s’est passé plusieurs semaines auparavant." />
             <Checklist2 content="Plus les informations me concernant sont fidèles, plus le professionnel peut adapter mon suivi, au mieux et au plus vite." />
@@ -159,10 +159,10 @@ export default function Index() {
 
         <div className="container p-8 lg:p-20 rounded-2xl bg-gray-50">
           <h3 className="mb-2 text-2xl font-bold text-center lg:text-4xl text-denim-800">
-            Mon Suivi Psy, à qui ça s’adresse ?
+            Ma Tête et Moi, à qui ça s’adresse ?
           </h3>
           <p className="mb-10 text-base text-center text-black">
-            Mon Suivi Psy s’adresse à tout le monde
+            Ma Tête et Moi s’adresse à tout le monde
           </p>
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
             <div className="flex items-center p-6 bg-white rounded-2xl">
@@ -203,7 +203,7 @@ export default function Index() {
         <div className="container py-20 lg:py-40">
           <div className="w-full mx-auto lg:w-8/12">
             <h3 className="mb-2 text-2xl font-bold text-center lg:text-4xl text-denim-800">
-              Mon Suivi Psy, quel est le principe ?
+              Ma Tête et Moi, quel est le principe ?
             </h3>
             <p className="text-xl py-4 text-center text-black">
               Je suis l’évolution de mes symptômes et de mes prises
@@ -220,7 +220,7 @@ export default function Index() {
         <div className="bg-gray-50 py-20 lg:pt-30 lg:pb-52">
           <div className="container ">
             <h3 className="mb-6 text-2xl font-bold lg:mb-20 lg:text-4xl text-denim-800">
-              Mon Suivi Psy, comment ça fonctionne ?
+              Ma Tête et Moi, comment ça fonctionne ?
             </h3>
 
             <Tabs
@@ -314,7 +314,7 @@ const Tabs = ({ questionNumber, setQuestionNumber }) => {
         <div className="flex flex-col col-span-1 mb-8 space-y-2 lg:mb-0">
           <Tab
             number={1}
-            question="Je télécharge l’application Mon Suivi Psy"
+            question="Je télécharge l’application Ma Tête et Moi"
           />
           <Tab number={2} question="Je choisis les symptômes à suivre" />
           <Tab
@@ -356,7 +356,7 @@ const QuestionOne = ({ imageName }) => (
   <div className="grid grid-cols-8 col-span-1 lg:col-span-2 lg:pl-10">
     <div className="col-span-8 md:col-span-5 lg:col-span-6">
       <h5 className="mb-4 text-xl font-bold text-denim-800">
-        Je télécharge l’application Mon Suivi Psy
+        Je télécharge l’application Ma Tête et Moi
       </h5>
       <p className="mb-6 text-sm text-black">
         Vous pouvez télécharger l'application ici
@@ -615,7 +615,7 @@ const QuestionSix = ({ imageName }) => (
         <h6 className="text-sm font-bold text-yellow-700">Bon à savoir :</h6>
         <p className="text-xs text-yellow-700">
           Je ne peux ni modifier le questionnaire personnalisé quotidien ni la
-          note, au-delà de la veille. En effet, le principe de Mon Suivi Psy est
+          note, au-delà de la veille. En effet, le principe de Ma Tête et Moi est
           de rester le plus proche possible du quotidien et au-delà de quelques
           jours, l’exercice est moins fiable !
         </p>
@@ -666,7 +666,7 @@ const QuestionSeven = ({ imageName }) => (
           <li>
             Je ne peux ni modifier le questionnaire personnalisé quotidien, ni
             la note, ni les traitements pris, au-delà de la veille. En effet, le
-            principe de Mon Suivi Psy est de rester le plus proche possible du
+            principe de Ma Tête et Moi est de rester le plus proche possible du
             quotidien et au-delà de quelques jours, l’exercice est moins fiable
             !
           </li>
