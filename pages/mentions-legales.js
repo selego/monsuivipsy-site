@@ -19,7 +19,7 @@ export default () => {
             <Title title="Éditeur du site" />
             <Content>
               <p>
-                L’application Ma Tête et Moi est éditée par la Direction Générale
+                L’application MonSuiviPsy est éditée par la Direction Générale
                 de la Santé au sein de la Fabrique numérique des Ministères
                 sociaux située :
               </p>

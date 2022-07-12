@@ -5,7 +5,7 @@ export default function Navigation({ patient = true }) {
         <a className="flex-center" href="/">
           <img className="w-10 mr-3" src="/images/logo.png" alt="" />
           <span className="text-base font-bold text-white lg:text-lg">
-            Ma Tête et Moi
+            Mon suivi psy
           </span>
         </a>
       </div>

@@ -42,7 +42,7 @@ export function Header() {
             >
               <div style={{ color: "white" }}>
                 <h1 className="mb-5">
-                  <b>MA TÊTE ET MOI</b>
+                  <b>MON SUIVI PSY</b>
                 </h1>
                 <h3>
                   Mieux connaître mes symptômes pour un meilleur accompagnement
