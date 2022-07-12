@@ -54,6 +54,12 @@ export default function Footer() {
           >
             Politique de confidentialité
           </a>
+          <a
+            className="text-xs font-semibold text-black opacity-70"
+            href="/stats"
+          >
+            Statistiques
+          </a>
           <a className="text-xs font-semibold text-black opacity-70" href="#">
             Accessibilité : non conforme
           </a>
