@@ -31,7 +31,7 @@ const Index = () => {
         <div className="container flex pt-20 pb-32">
           <div className="w-full lg:w-1/2">
             <h1 className="mb-2 text-3xl font-bold text-center text-white md:text-left lg:text-6xl">
-              Ma Tête et Moi
+              Mon Suivi Psy
             </h1>
             <p className="mb-6 text-2xl font-semibold text-center text-denim-200 md:text-left lg:text-2xl">
               Une application à proposer à vos patients pour voir l’évolution de
