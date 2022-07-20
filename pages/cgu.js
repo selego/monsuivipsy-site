@@ -19,11 +19,10 @@ export default () => {
             <Title title="Présentation" />
             <Content>
               <p>
-                Mon suivi psy est un service de suivi de dépression à destination des particuliers et de celles et ceux qui
-                les conseillent, dans un cadre professionnel ou bénévole. Il
-                s’agit d’une application mobile qui permet de d’évaluer son
-                niveau de consommation, les risques associés pour la santé et de
-                contacter un professionnel de soins.
+                Jardin Mental est un service de suivi de votre état de santé mentale, grâce à un questionnaire quotidien
+                dans lequel vous pouvez évaluer les indicateurs pertinents de votre état de santé mentale.
+                Ces indicateurs peuvent être des symptômes, ressentis, ou encore des comportements.
+                Vous pouvez aussi renseigner vos prises de traitements quotidiennes. 
               </p>
               <br />
               <p>
@@ -37,11 +36,11 @@ export default () => {
             <Title title="Vocabulaire" />
             <Content>
               <ul className="list-disc list-inside">
-                <li>« Nous » se réfère à l’éditeur de Mon suivi psy.</li>
-                <li>« Vous » se réfère à un·e usager de Mon suivi psy.</li>
+                <li>« Nous » se réfère à l’éditeur de Jardin Mental.</li>
+                <li>« Vous » se réfère à un·e usager de Jardin Mental.</li>
                 <li>
                   « Partenaires » se réfère aux organismes responsables
-                  d’attribuer les aides calculées par Mon suivi psy.
+                  d’attribuer les aides calculées par Jardin Mental.
                 </li>
               </ul>
             </Content>
@@ -57,7 +56,7 @@ export default () => {
                 lesquels nous redirigeons la navigation. Ces sites ne sont pas
                 non plus régis par les mêmes conditions d’utilisation, notamment
                 en ce qui concerne leur traitement des données à caractère
-                personnel. Nous mettons Mon suivi psy à disposition sans
+                personnel. Nous mettons Jardin Mental à disposition sans
                 garantie sur sa disponibilité, en « best effort ». Cela signifie
                 que d’éventuelles indisponibilités n’ouvriront pas droit à
                 compensation financière.
@@ -69,7 +68,7 @@ export default () => {
             <Title title="Vos données" />
             <Content>
               <p>
-                Mon suivi psy ne vous demande ni ne stocke d’information
+                Jardin Mental ne vous demande ni ne stocke d’information
                 nominative telle que nom, prénoms ou adresse. Pour autant,
                 lorsque vous que vous demanderez à être contacté, vous nous
                 transmettrez des coordonnées nécessaires à la prise de contact
@@ -77,7 +76,7 @@ export default () => {
                 et nous en avons donc déclaré le traitement auprès de la CNIL.
                 Nous conservons ces données pendant deux ans à compter de la
                 première saisie pour analyser les usages, mesurer l’impact et la
-                diffusion territoriale de Mon suivi psy, et améliorer le
+                diffusion territoriale de Jardin Mental, et améliorer le
                 service. Vous avez un droit d’accès, de rectification et de
                 suppression de vos données. Pour l’exercer, envoyez-nous un
                 courriel à l’adresse à compléter en précisant les coordonnées
@@ -89,7 +88,7 @@ export default () => {
               <p>
                 Nous nous engageons à ne jamais exploiter les informations que
                 vous nous transmettrez dans un but commercial ou publicitaire.
-                De manière générale, Mon suivi psy n’accepte aucune forme de
+                De manière générale, Jardin Mental n’accepte aucune forme de
                 publicité autre que celle que constitue la présentation des
                 aides des partenaires. Nous collectons également des données
                 anonymes d’audience, indépendamment des suivis de consommation
@@ -108,16 +107,16 @@ export default () => {
             <Title title="Évolutions" />
             <Content>
               <p>
-                Nous pouvons faire évoluer Mon suivi psy sans information
+                Nous pouvons faire évoluer Jardin Mental sans information
                 préalable. Nous ajoutons régulièrement des aides, améliorons
                 l’interface et modifions des formulations sur la base de vos
                 retours et des évolutions règlementaires. Nous pouvons suspendre
-                l’accès à Mon suivi psy sans information préalable, notamment
+                l’accès à Jardin Mental sans information préalable, notamment
                 pour des raisons de maintenance. Nous mettons l’application à
                 jour plusieurs fois par semaine. L’indisponibilité ne dépasse
                 généralement pas une dizaine de secondes. Nous pouvons amender
                 ces conditions d’utilisation. En cas de changement significatif,
-                une notification s’affichera lors de l’accès à Mon suivi psy au
+                une notification s’affichera lors de l’accès à Jardin Mental au
                 moins 30 jours avant l’entrée en vigueur des nouvelles
                 conditions. Tout l’historique de ces conditions est librement
                 accessible.
@@ -129,12 +128,11 @@ export default () => {
             <Title title="Utilisation" />
             <Content>
               <p>
-                Mon suivi psy est en téléchargement libre sur les plateformes
+                Jardin Mental est en téléchargement libre sur les plateformes
                 Apple App Store et Google Play. Son utilisation est gratuite et
-                facultative. Si vous effectuez un suivi de votre consommation,
-                vous acceptez ces conditions d’utilisation. Comme indiqué dans
+                facultative. Si vous effectuez un suivi de votre état de santé mentale. Comme indiqué dans
                 l’article L. 112-9 du code des relations entre le public et
-                l’administration. L’utilisation de Mon suivi psy requiert une
+                l’administration. L’utilisation de Jardin Mental requiert une
                 connexion internet et un smartphone récent. Nous nous réservons
                 le droit de bloquer, sans information préalable ni compensation
                 financière, les usages mettant en péril l’utilisation du
