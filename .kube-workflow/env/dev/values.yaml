@@ -1,2 +1,2 @@
 app:
-  host: jardinmental-site-{{ .Values.global.branchSlug }}.dev.fabrique.social.gouv.fr
+  host: jardinmental-{{ .Values.global.branchSlug }}.dev.fabrique.social.gouv.fr
