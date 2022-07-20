@@ -19,7 +19,7 @@ export function Nav() {
               src="/img/logo-MSP.png"
               width={100}
               height={68}
-              alt="Logo MonSuiviPsy"
+              alt="Logo Journal Mental"
             />
           </a>
         </div>

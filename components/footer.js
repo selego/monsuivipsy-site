@@ -33,7 +33,7 @@ export default function Footer() {
           porté par la Fabrique, incubateur des ministères sociaux.
         </p>
         <p className="mb-1 text-xs text-black opacity-70">
-          Copyright © 2021 Monsuivipsy.
+          Copyright © 2021 Jardin Mental.
         </p>
         <div className="flex space-x-3">
           <a
