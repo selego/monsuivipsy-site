@@ -81,9 +81,9 @@ export default function Footer() {
         </p>
         <a
           className="text-base font-bold break-all md:text-lg text-turqoise-500"
-          href="mailto:monsuivipsy@fabrique.social.gouv.fr"
+          href="mailto:jardinmental@fabrique.social.gouv.fr"
         >
-          monsuivipsy@fabrique.social.gouv.fr
+          jardinmental@fabrique.social.gouv.fr
         </a>
       </div>
     </footer>
