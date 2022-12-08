@@ -145,7 +145,8 @@ const Index = () => {
         >
           <div className="w-full mb-6 lg:mb-0 lg:w-5/12">
             <h3 className="mb-2 text-2xl font-bold leading-normal lg:text-4xl text-denim-800">
-              Comment utiliser Jardin&nbsp;Mental avec les personnes que je suis ?
+              Comment utiliser Jardin&nbsp;Mental avec les personnes que je suis
+              ?
             </h3>
             <p className="text-base text-black">
               Après avoir téléchargé préalablement l’application vous-même afin
@@ -186,7 +187,7 @@ const Index = () => {
                     d'indiquer votre nom/prénom/adresse postale):{" "}
                     <a
                       className="ml-2 text-lg"
-                      href="mailto:monsuivipsy@fabrique.social.gouv.fr"
+                      href="mailto:jardinmental@fabrique.social.gouv.fr"
                     >
                       ✉️{" "}
                     </a>
