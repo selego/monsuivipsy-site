@@ -2,9 +2,9 @@ import { useState } from "react";
 import Navigation from "components/navigation";
 
 import Footer from "components/footer";
+import Video from "components/video";
 
 import { subscribe } from "../utils";
-
 
 const ANDROID_URL =
   "https://play.google.com/store/apps/details?id=com.monsuivipsy&hl=fr";
@@ -31,31 +31,37 @@ const Index = () => {
         <div className="container flex pt-20 pb-32">
           <div className="w-full lg:w-1/2">
             <h1 className="mb-2 text-3xl font-bold text-center text-white md:text-left lg:text-6xl">
-              Mon Suivi Psy
+              Jardin Mental
             </h1>
             <p className="mb-6 text-2xl font-semibold text-center text-denim-200 md:text-left lg:text-2xl">
               Une application à proposer à vos patients pour voir l’évolution de
               leurs symptômes en un coup d’oeil
             </p>
-            <br />
-            <p className="mb-6 text-xl text-center text-denim-200 md:text-left lg:text-xl">
-            Des idées pour améliorer l'outil ? Déposez votre email et rejoignez notre communauté
-            </p>
-            <div className="mb-10">
-              <form className="flex items-center w-full max-w-md p-1 bg-white rounded-full" onSubmit={submit}>
-                <input
-                  className="flex-1 pl-4 pr-2 text-sm font-medium text-gray-800 placeholder-black placeholder-opacity-40 focus:outline-none"
-                  type="email"
-                  name="email"
-                  placeholder="Entrer votre email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
+            <div className="flex justify-center mb-10 space-x-3 md:justify-start md:space-x-6">
+              <a
+                href={ANDROID_URL}
+                onClick={() =>
+                  window.lumiere("sendEvent", "home", "click_android")
+                }
+              >
+                <img
+                  className="h-10 md:h-14"
+                  src="images/other/google-play-fr.png"
+                  alt="google-play-logo"
                 />
-                <button className="flex-none px-5 py-2 text-sm font-bold text-white transition-all rounded-full focus:outline-none bg-turqoise-500 hover:bg-turqoise-600">
-                 Recevoir des informations
-                </button>
-              </form>
+              </a>
+              <a
+                href={IOS_URL}
+                onClick={() =>
+                  window.lumiere("sendEvent", "home", "click_apple")
+                }
+              >
+                <img
+                  className="h-10 md:h-14"
+                  src="images/other/app-store-fr.png"
+                  alt="app-store-logo"
+                />
+              </a>
             </div>
             <div className="flex flex-col space-y-6">
               <Checklist
@@ -71,22 +77,50 @@ const Index = () => {
                 subtitle="Le patient reste propriétaire et maître des données saisies. Il peut vous montrer les résultats sur son smartphone ou vous les envoyer par mail s’il le souhaite."
               />
             </div>
+            <br />
+            <p className="mb-6 text-xl text-center text-denim-200 md:text-left lg:text-xl">
+              Des idées pour améliorer l'outil ? Déposez votre email et
+              rejoignez notre communauté
+            </p>
+            <div className="mb-10">
+              <form
+                className="flex items-center w-full max-w-md p-1 bg-white rounded-full"
+                onSubmit={submit}
+              >
+                <input
+                  className="flex-1 pl-4 pr-2 text-sm font-medium text-gray-800 placeholder-black placeholder-opacity-40 focus:outline-none"
+                  type="email"
+                  name="email"
+                  placeholder="Entrer votre email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
+                <button className="flex-none px-5 py-2 text-sm font-bold text-white transition-all rounded-full focus:outline-none bg-turqoise-500 hover:bg-turqoise-600">
+                  Valider
+                </button>
+              </form>
+            </div>
           </div>
-          <div className="items-center justify-center hidden w-1/2 lg:flex">
+          <div className="justify-center hidden w-1/2 lg:flex">
             <img src="images/other/hero2.png" alt="" />
           </div>
         </div>
       </header>
-
       <main>
         <div className=" bg-gray-50">
+          <div className="container w-full md:w-1/2 py-10">
+            <div className="items-center justify-center w-full shadow-lg">
+              <Video src="/videos/presentationMSP.mp4" />
+            </div>
+          </div>
           <div className="container py-20">
             <div className="w-full mx-auto mb-6 md:w-8/12 lg:mb-10">
               <h3 className="mb-2 text-2xl font-bold text-center lg:text-4xl text-denim-800">
                 Pour quels professionnels de santé ?
               </h3>
               <p className="text-base text-center text-black">
-                Mon Suivi Psy a été pensé à destination des psychiatres et des
+                Jardin Mental a été pensé à destination des psychiatres et des
                 psychologues pour faciliter le dialogue avec leurs patients.
               </p>
             </div>
@@ -111,7 +145,8 @@ const Index = () => {
         >
           <div className="w-full mb-6 lg:mb-0 lg:w-5/12">
             <h3 className="mb-2 text-2xl font-bold leading-normal lg:text-4xl text-denim-800">
-              Comment utiliser Mon Suivi Psy avec les personnes que je suis ?
+              Comment utiliser Jardin&nbsp;Mental avec les personnes que je suis
+              ?
             </h3>
             <p className="text-base text-black">
               Après avoir téléchargé préalablement l’application vous-même afin
@@ -122,17 +157,43 @@ const Index = () => {
           </div>
           <div className="w-full space-y-6 lg:w-6/12">
             <div className="justify-start p-4 rounded-lg flex-center bg-turqoise-0">
-            <div className="relative flex items-center justify-center flex-none w-5 h-5 mr-3 border rounded-full border-turqoise-500">
-              <span className="absolute text-xs font-bold text-turqoise-500">1</span>
-            </div>
-            <div>
-              <p className="text-base text-black">Expliquez en consultation à votre patient le but et le fonctionnement de Mon Suivi Psy</p>
-              <p className="text-base text-black">Pour vous aider à présenter l'application, nous avons créé des documents explicatifs à : </p>
-              <ul className="list-inside list-disc">
-              <li className="text-base text-black">Télécharger ici : <a className="ml-1 text-lg" href="MonSuiviPsykitComplet.pdf" download>📲</a></li>
-              <li className="text-base text-black">Faire une demande pour les recevoir par la poste (merci d'indiquer votre nom/prénom/adresse postale): <a className="ml-2 text-lg" href="mailto:monsuivipsy@fabrique.social.gouv.fr">✉️ </a></li>
-              </ul>
-            </div>
+              <div className="relative flex items-center justify-center flex-none w-5 h-5 mr-3 border rounded-full border-turqoise-500">
+                <span className="absolute text-xs font-bold text-turqoise-500">
+                  1
+                </span>
+              </div>
+              <div>
+                <p className="text-base text-black">
+                  Expliquez en consultation à votre patient le but et le
+                  fonctionnement de Jardin Mental
+                </p>
+                <p className="text-base text-black">
+                  Pour vous aider à présenter l'application, nous avons créé des
+                  documents explicatifs à :{" "}
+                </p>
+                <ul className="list-inside list-disc">
+                  <li className="text-base text-black">
+                    Télécharger ici :{" "}
+                    <a
+                      className="ml-1 text-lg"
+                      href="MonSuiviPsykitComplet.pdf"
+                      download
+                    >
+                      📲
+                    </a>
+                  </li>
+                  <li className="text-base text-black">
+                    Faire une demande pour les recevoir par la poste (merci
+                    d'indiquer votre nom/prénom/adresse postale):{" "}
+                    <a
+                      className="ml-2 text-lg"
+                      href="mailto:jardinmental@fabrique.social.gouv.fr"
+                    >
+                      ✉️{" "}
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
             <Numlist
               number="2"
@@ -150,10 +211,10 @@ const Index = () => {
           </div>
         </div>
 
-        <div className="bg-gray-50">
-          <div className="container py-20 lg:pt-30 lg:pb-52">
+        <div className="bg-gray-50 py-20 lg:pt-30 lg:pb-52">
+          <div className="container ">
             <h3 className="mb-6 text-2xl font-bold lg:mb-20 lg:text-4xl text-denim-800">
-              Mon Suivi Psy, comment ça fonctionne ?
+              Jardin Mental, comment ça fonctionne ?
             </h3>
 
             <Tabs
@@ -161,15 +222,20 @@ const Index = () => {
               setQuestionNumber={setQuestionNumber}
             />
           </div>
+          <div className="container w-full md:w-1/2 py-10">
+            <div className="items-center justify-center w-full shadow-lg">
+              <Video src="/videos/presentationBeck.mp4" />
+            </div>
+          </div>
         </div>
 
         <div className="container py-20 lg:py-40">
           <div className="w-full mx-auto lg:w-8/12">
             <h3 className="mb-2 text-2xl font-bold text-center lg:text-4xl text-denim-800">
-              Qui a créé Mon Suivi Psy ?
+              Qui a créé Jardin Mental ?
             </h3>
             <p className="text-xl text-center text-black">
-              Mon Suivi Psy est une application créée par le Docteur Lya Pedron
+              Jardin Mental est une application créée par le Docteur Lya Pedron
               suite à un appel à innovateurs lancé par l’ARS - Ile de France. Le
               service est porté par la Fabrique Numérique, incubateur des
               ministères sociaux.
@@ -259,7 +325,7 @@ const Tabs = ({ questionNumber, setQuestionNumber }) => {
         <div className="flex flex-col col-span-1 mb-8 space-y-2 lg:mb-0">
           <Tab
             number={1}
-            question="Je télécharge l’application Mon Suivi Psy"
+            question="Je télécharge l’application Jardin Mental"
           />
           <Tab number={2} question="Je choisis les symptômes à suivre" />
           <Tab
@@ -301,11 +367,11 @@ const QuestionOne = ({ imageName }) => (
   <div className="grid grid-cols-8 col-span-1 lg:col-span-2 lg:pl-10">
     <div className="col-span-8 md:col-span-5 lg:col-span-6">
       <h5 className="mb-4 text-xl font-bold text-denim-800">
-        Je télécharge l’application Mon Suivi Psy
+        Je télécharge l’application Jardin Mental
       </h5>
       <p className="mb-6 text-sm text-black">
-        Vous pouvez télécharger l'application ici ou en cherchant “Mon Suivi
-        Psy” sur Google Play ou l’App Store.
+        Vous pouvez télécharger l'application ici ou en cherchant “Jardin
+        Mental” sur Google Play ou l’App Store.
       </p>
       <div className="flex justify-center space-x-3 md:justify-start md:space-x-6">
         <a href={ANDROID_URL}>
@@ -415,10 +481,13 @@ const QuestionThree = ({ imageName }) => (
       </h5>
       <ul className="mb-3 text-sm text-black list-disc list-inside">
         <li>
-          Je peux choisir les traitements médicamenteux pris dans un menu déroulant
+          Je peux choisir les traitements médicamenteux pris dans un menu
+          déroulant
         </li>
         <li>
-        Je peux quotidiennement renseigner le dosage des médicaments traitements médicamenteux que j'ai pris à la fin de mon questionnaire quotidien personnalisé
+          Je peux quotidiennement renseigner le dosage des médicaments
+          traitements médicamenteux que j'ai pris à la fin de mon questionnaire
+          quotidien personnalisé
         </li>
       </ul>
       <div className="p-3 mb-3 rounded-md bg-yellow-50">
@@ -454,9 +523,9 @@ const QuestionFour = ({ imageName }) => (
       <div className="p-3 mb-3 rounded-md bg-denim-100">
         <h6 className="text-sm font-bold text-denim-800">Astuces :</h6>
         <p className="text-xs list-disc list-inside text-denim-800">
-          Programmez à l’heure où vous êtes le plus disponible ou à
-          l’heure qui paraît la plus adaptée pour faire un point sur la journée
-          (plutôt en soirée donc habituellement)
+          Programmez à l’heure où vous êtes le plus disponible ou à l’heure qui
+          paraît la plus adaptée pour faire un point sur la journée (plutôt en
+          soirée donc habituellement)
         </p>
       </div>
     </div>
@@ -535,28 +604,27 @@ const QuestionSix = ({ imageName }) => (
       </h5>
       <ul className="mb-3 text-sm text-black list-disc list-inside">
         <li>
-        Pour activer la fonctionnalité "Colonnes de Beck" (cette fonctionnalité n'est pas activée par défaut), je clique dans le menu en haut à gauche, je sélectionne l'item "Colonnes de Beck" et j'appuie sur le bouton "Activer". Je reviens en suite sur le journal
+          Pour activer la fonctionnalité "Colonnes de Beck" (cette
+          fonctionnalité n'est pas activée par défaut), je clique dans le menu
+          en haut à gauche, je sélectionne l'item "Colonnes de Beck" et j'appuie
+          sur le bouton "Activer". Je reviens en suite sur le journal
         </li>
         <li>
-        Je peux ensuite remplir les colonnes de Beck :         
+          Je peux ensuite remplir les colonnes de Beck :
           <ul className="px-4 text-sm mb-2 text-black list-none list-inside">
             <li className="inline-flex">
-            * J'appuie sur le bouton
+              * J'appuie sur le bouton
               <img
                 className="w-5 h-5 ml-2"
                 src={`images/other/add.png`}
                 alt=""
               />
             </li>
-            <li>
-            * Je choisis l'icône "Colonnes de Beck"
-            </li>
-            <li>
-            * Et c'est parti !
-            </li>
+            <li>* Je choisis l'icône "Colonnes de Beck"</li>
+            <li>* Et c'est parti !</li>
           </ul>
-          </li>
-        </ul>
+        </li>
+      </ul>
       <div className="p-3 mb-3 rounded-md bg-denim-100">
         <h6 className="text-sm font-bold text-denim-800">Astuces :</h6>
         <p className="text-xs list-disc list-inside text-denim-800">
@@ -569,7 +637,7 @@ const QuestionSix = ({ imageName }) => (
         <h6 className="text-sm font-bold text-yellow-700">Bon à savoir :</h6>
         <p className="text-xs text-yellow-700">
           Je ne peux ni modifier le questionnaire personnalisé quotidien ni la
-          note, au-delà de la veille. En effet, le principe de Mon Suivi Psy est
+          note, au-delà de la veille. En effet, le principe de Jardin Mental est
           de rester le plus proche possible du quotidien et au-delà de quelques
           jours, l’exercice est moins fiable !
         </p>
@@ -602,17 +670,19 @@ const QuestionSeven = ({ imageName }) => (
         <h6 className="text-sm font-bold text-denim-800">Astuces :</h6>
         <p className="text-xs list-disc list-inside text-denim-800">
           Je peux intégrer ou modifier les traitements pris, la note
-          quotidienne, ainsi que les informations saisies dans les colonnes de Beck directement dans le journal
+          quotidienne, ainsi que les informations saisies dans les colonnes de
+          Beck directement dans le journal
         </p>
       </div>
       <div className="p-3 mb-3 rounded-md bg-yellow-50">
         <h6 className="text-sm font-bold text-yellow-700">Bon à savoir :</h6>
         <p className="text-xs text-yellow-700">
           Je ne peux ni modifier le questionnaire personnalisé quotidien, ni la
-          note, ni les traitements pris, au-delà de la veille. En effet, le principe de Mon Suivi Psy est
-          de rester le plus proche possible du quotidien et, au-delà de quelques
-          jours, l’exercice est moins fiable !
-          Je peux en revanche modfifier ou compléter les informations saisies dans les colonnes de Beck à tout moment, y compris au delà de 2 jours
+          note, ni les traitements pris, au-delà de la veille. En effet, le
+          principe de Jardin Mental est de rester le plus proche possible du
+          quotidien et, au-delà de quelques jours, l’exercice est moins fiable !
+          Je peux en revanche modfifier ou compléter les informations saisies
+          dans les colonnes de Beck à tout moment, y compris au delà de 2 jours
         </p>
       </div>
     </div>
@@ -718,7 +788,10 @@ const QuestionNine = ({ imageName }) => (
           <ul className="px-4 list-inside list-none">
             <li>* un histogramme mensuel des symptômes suivis</li>
             <li>* le récapitulatif de mes notes sur le dernier mois</li>
-            <li>* la synthèse de chacune des informations saisies dans les colonnes de Beck</li>
+            <li>
+              * la synthèse de chacune des informations saisies dans les
+              colonnes de Beck
+            </li>
           </ul>
         </li>
       </ul>
@@ -726,7 +799,7 @@ const QuestionNine = ({ imageName }) => (
         <h6 className="text-sm font-bold text-yellow-700">Bon à savoir : </h6>
         <ul className="text-xs text-yellow-700 list-disc list-inside">
           <li>
-            L’envoi est anonyme au nom de Mon Suivi Psy, n’oubliez pas de
+            L’envoi est anonyme au nom de Jardin Mental, n’oubliez pas de
             prévenir le professionnel qui vous suit que vous lui adressez le
             mail
           </li>
@@ -763,7 +836,7 @@ const QuestionNine = ({ imageName }) => (
             a été rempli. Il peut donc y avoir 30 notes par symptôme suivi si le
             questionnaire a été rempli tous les jours du mois.
           </li>
-          L’envoi est anonyme au nom de Mon Suivi Psy, il faut être prévenu en
+          L’envoi est anonyme au nom de Jardin Mental, il faut être prévenu en
           amont pour faire le lien entre le mail et la personne qui l’a envoyé.
         </ul>
       </div>

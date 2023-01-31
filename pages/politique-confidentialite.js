@@ -19,9 +19,9 @@ export default () => {
             <Title title="Traitement des données à caractère personnel" />
             <Content>
               <p>
-                Le présent site MonSuiviPsy est à l'initiative de la Direction
-                Générale de la Santé au sein de la Fabrique numérique des
-                ministères sociaux.
+                Le présent site « Jardin Mental » est à l'initiative de la
+                Direction Générale de la Santé au sein de la Fabrique numérique
+                des ministères sociaux.
               </p>
             </Content>
           </div>
@@ -30,8 +30,8 @@ export default () => {
             <Title title="Finalité" />
             <Content>
               <p>
-                Le site « MonSuiviPsy » vise à présenter l'application «
-                MonSuiviPsy » et son fonctionnement.
+                Le site « Jardin Mental » vise à présenter l'application «
+                Jardin Mental » et son fonctionnement.
               </p>
             </Content>
           </div>
@@ -174,9 +174,9 @@ export default () => {
                   par voie électronique à l'adresse suivante :{" "}
                   <a
                     className="text-denim-700"
-                    href="mailto:monsuivipsy@fabrique.social.gouv.fr"
+                    href="mailto:jardinmental@fabrique.social.gouv.fr"
                   >
-                    monsuivipsy@fabrique.social.gouv.fr
+                    jardinmental@fabrique.social.gouv.fr
                   </a>
                 </li>
                 <li>

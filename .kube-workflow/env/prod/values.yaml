@@ -1,0 +1,6 @@
+app:
+  host: jardinmental.fabrique.social.gouv.fr
+  redirectFrom:
+    - jardinmental.fr
+    - monsuivipsy.fr
+    - monsuivipsy.fabrique.social.gouv.fr

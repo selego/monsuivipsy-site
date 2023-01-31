@@ -19,7 +19,7 @@ export function Nav() {
               src="/img/logo-MSP.png"
               width={100}
               height={68}
-              alt="Logo MonSuiviPsy"
+              alt="Logo Journal Mental"
             />
           </a>
         </div>
@@ -29,7 +29,7 @@ export function Nav() {
           className="justify-content-end"
         >
           <BSNav>
-            <NavLink href="/#pourquoi">Pourquoi mon suivi psy ?</NavLink>
+            <NavLink href="/#pourquoi">Pourquoi Jardin Mental ?</NavLink>
             <NavLink href="/#comment">Comment ce service fonctionne ?</NavLink>
             <NavLink href="/#qui">Qui sommes-nous ?</NavLink>
             <NavLink href="/#contact">Contact</NavLink>
