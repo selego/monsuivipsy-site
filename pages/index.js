@@ -20,14 +20,14 @@ export default function Index() {
         <Navigation />
         <div className="container flex pt-20 pb-32">
           <div className="w-full lg:w-1/2">
-            <h3 className="text-xl font-bold text-center md:text-left lg:text-2xl text-denim-800">
+            <h3 className="text-xl font-extra-bold text-center md:text-left lg:text-2xl text-turqoise-500 font-karla">
               Mon&nbsp;Suivi&nbsp;Psy change de nom et devient
             </h3>
-            <h1 className="mb-2 text-3xl font-bold text-center md:text-left lg:text-6xl text-denim-800">
+            <h1 className="mb-2 text-3xl font-bold text-center md:text-left lg:text-6xl text-turqoise-500">
               Jardin&nbsp;Mental
             </h1>
-            <p className="mb-10 text-lg leading-normal text-center text-black md:text-left lg:leading-9 lg:text-2xl">
-              Mieux connaître mes symptômes pour un meilleur accompagnement
+            <p className="mb-10 text-lg leading-normal text-center text-black md:text-left lg:leading-9 lg:text-2xl text-denim-800">
+              Mieux connaître mon état psychique pour un meilleur accompagnement
             </p>
             <div className="flex justify-center mb-10 space-x-3 md:justify-start md:space-x-6">
               <a
@@ -66,7 +66,7 @@ export default function Index() {
               />
               <Checklist
                 title="Simple, rapide et intuitive"
-                subtitle="En quelques secondes par jour, je remplis mon questionnaire personnalisé"
+                subtitle="En quelques minutes par jour, je remplis mon questionnaire personnalisé"
               />
             </div>
           </div>
@@ -84,15 +84,15 @@ export default function Index() {
           </div>
           <div className="container py-20">
             <h3 className="mb-8 text-2xl font-bold text-center lg:text-4xl text-denim-800 lg:mb-14">
-              Le contexte actuel des troubles psychiatriques
+              Le contexte actuel des troubles psychiques
             </h3>
             <div className="grid grid-cols-1 gap-4 lg:gap-6 lg:grid-cols-3">
               <div className="p-8 bg-white rounded-2xl h-max">
                 <h6 className="mb-2 text-lg font-bold text-denim-800">
-                  Les troubles psychiatriques sont fréquents{" "}
+                  Les troubles psychiques sont fréquents{" "}
                 </h6>
                 <p className="text-sm text-black">
-                  Les troubles psychiatriques sont bien plus fréquents qu’on ne
+                  Les troubles psychiques sont bien plus fréquents qu’on ne
                   l’imagine. Selon l'OMS 1 personne sur 5 souffrira d'une
                   maladie mentale au cours de sa vie. En France, par exemple, 12
                   millions de personnes sont actuellement concernées.
@@ -100,10 +100,10 @@ export default function Index() {
               </div>
               <div className="p-8 bg-white rounded-2xl h-max">
                 <h6 className="mb-2 text-lg font-bold text-denim-800">
-                  Les maladies mentales peuvent être à l’origine de handicap
+                  Les troubles psychiques peuvent être à l’origine de handicap
                 </h6>
                 <p className="text-sm text-black">
-                  Les maladies mentales sont actuellement au 2ème rang des
+                  Les troubles psychiques sont actuellement au 2ème rang des
                   causes mondiales de handicap, selon l’OMS, et 5 des 10
                   maladies les plus invalidantes sont des maladies mentales.
                 </p>
@@ -139,24 +139,25 @@ export default function Index() {
               Jardin Mental, ça sert à quoi ?
             </h3>
             <p className="text-base text-black">
-              Jardin Mental souhaite participer à améliorer les suivis
-              psychiatriques ou psychologiques et donc les soins au sens large.
+            Jardin Mental participe à l’amélioration des suivis psychiatriques 
+            ou psychologiques, et donc aux soins au sens large.
+
               <br />
               <br />
-              Il m’aide à mieux comprendre ce qui m’arrive : il permet au
-              professionnel qui me suit de mieux se représenter ma situation et
-              donc d’adapter les soins.
+              Il m’aide à mieux me connaître, à comprendre ce qui influe sur ma santé mentale, 
+              et donc à mieux gérer mon trouble.
+
               <br />
               <br />
-              Jardin Mental facilite le dialogue avec les professionnels de
-              santé.
+              Jardin Mental facilite le dialogue avec tous les professionnels de santé impliqués dans mon parcours de soins. 
+              Ils peuvent mieux se représenter ma situation et donc mieux adapter les soins.
             </p>
           </div>
           <div className="w-full space-y-6 lg:w-6/12">
-            <Checklist2 content="Jardin Mental me permet de suivre quotidiennement mes symptômes et mes prises de traitement, sur de longues périodes si je le désire." />
-            <Checklist2 content="Les colonnes de Beck en format digital facilitent mon suivi psychothérapique." />
-            <Checklist2 content="Les informations que je donne au professionnel lors des consultations sont donc au plus près de ce que je vis, même lorsqu’il s’agit de parler de ce qu’il s’est passé plusieurs semaines auparavant." />
-            <Checklist2 content="Plus les informations me concernant sont fidèles, plus le professionnel peut adapter mon suivi, au mieux et au plus vite." />
+            <Checklist2 content="Jardin Mental me permet de suivre quotidiennement tous les indicateurs pertinents qui me permettent d’évaluer mon état de santé de mentale et son évolution." />
+            <Checklist2 content="Je peux suivre mes prises de traitement et, comme dans un journal intime, je peux noter tous les évènements importants de ma journée afin de mieux identifier ce qui influe sur mon état de santé mentale." />
+            <Checklist2 content="Je peux me fixer des objectifs à réaliser et utiliser les colonnes de Beck en format numérique pour faciliter mon suivi psychothérapeutique." />
+            <Checklist2 content="Les informations que je donne au professionnel lors des consultations sont précises et fidèles, même lorsqu’il s’agit de parler de ce qu’il s’est passé plusieurs semaines auparavant. Il peut donc adapter mon suivi au mieux et au plus vite." />
           </div>
         </div>
 
@@ -165,39 +166,34 @@ export default function Index() {
             Jardin Mental, à qui ça s’adresse ?
           </h3>
           <p className="mb-10 text-base text-center text-black">
-            Jardin Mental s’adresse à tout le monde
+            À tout le monde
           </p>
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
             <div className="flex items-center p-6 bg-white rounded-2xl">
               <div
                 className="flex-none w-16 h-16 mr-6 rounded-full flex-center"
-                style={{ background: "#E2FA80", border: "1px solid #C3F009" }}
               >
                 <img
-                  className="opacity-60"
-                  src="images/icon/happy.svg"
-                  alt=""
-                />
-              </div>
-              <p className="text-base text-black">
-                A toute personne qui s’interroge sur son état de santé et qui
-                souhaite apprendre à mieux se connaître en observant
-                quotidiennement ses ressentis
-              </p>
-            </div>
-            <div className="flex items-center p-6 bg-white rounded-2xl">
-              <div
-                className="flex-none w-16 h-16 mr-6 rounded-full flex-center"
-                style={{ background: "#F0F277", border: "1px solid #DDDF45" }}
-              >
-                <img
-                  className="opacity-60"
-                  src="images/icon/smile.svg"
+                  src="images/icon/smiley_vert.png"
                   alt=""
                 />
               </div>
               <p className="text-base text-black">
                 Aux personnes qui sont suivies par un professionnel de santé
+              </p>
+            </div>
+            <div className="flex items-center p-6 bg-white rounded-2xl">
+              <div
+                className="flex-none w-16 h-16 mr-6 rounded-full flex-center"
+              >
+                <img
+                  src="images/icon/smiley_vert_pomme.png"
+                  alt=""
+                />
+              </div>
+              <p className="text-base text-black">
+              À toute personne qui s’interroge sur son état de santé mentale et qui souhaite 
+              apprendre à mieux se connaître en s’observant quotidiennement
               </p>
             </div>
           </div>
@@ -209,13 +205,21 @@ export default function Index() {
               Jardin Mental, quel est le principe ?
             </h3>
             <p className="text-xl py-4 text-center text-black">
-              Je suis l’évolution de mes symptômes et de mes prises
-              médicamenteuses en remplissant quotidiennement un questionnaire
-              personnalisé
+              Je crée un questionnaire quotidien personnalisé qui me permet de suivre mon état 
+              de santé mentale et son évolution
             </p>
             <p className="text-xl text-center text-black">
-              J'effectue facilement mes exercices de psychothérapie en utilisant
-              les colonnes de Beck
+              Je note mes prises médicamenteuses et tous les évènements importants de ma journée, 
+              afin de mieux comprendre ce qui influe sur mon état de santé mentale
+            </p>
+            <p className="text-xl py-4 text-center text-black">
+              Je me fixe des objectifs et je peux utiliser les colonnes de Beck pour faciliter mes exercices de psychothérapie
+            </p>
+            <p className="text-xl py-4 text-center text-black">
+              Je visualise en un coup d’œil toutes mes données grâce à des outils d’analyses simples
+            </p>
+            <p className="text-xl py-4 text-center text-black">
+            Si je le souhaite, j’envoie un récapitulatif de mes données au professionnel de santé qui me suit
             </p>
           </div>
         </div>
@@ -231,9 +235,46 @@ export default function Index() {
               setQuestionNumber={setQuestionNumber}
             />
           </div>
-          <div className="container w-full md:w-1/2 py-10">
-            <div className="items-center justify-center w-full shadow-lg">
-              <Video src="/videos/presentationBeck.mp4" />
+          <div className="container w-full md:w-2/3 py-10">
+          <div className="grid grid-cols-1 gap-8 lg:gap-8 lg:grid-cols-2">
+              <div className="p-12 bg-white rounded-2xl h-max">
+                <h6 className="mb-2 text-lg font-bold text-denim-800">
+                Télécharger la notice et nos conseils d’utilisation{" "}
+                </h6>
+                <a className="p-6" href="images/other/Notice Jardin Mental_v1.01_compressed.pdf" download>
+                <img
+                  src="images/other/preview.png"
+                  alt=""
+                />
+                </a>
+              </div>
+              <div className="p-12 bg-white rounded-2xl h-max">
+                <h6 className="mb-2 text-lg font-bold text-denim-800">
+                  Contacter l’équipe de Jardin Mental pour :
+                </h6>
+                <div>
+                  <ul className="text-xs list-disc list-inside">
+                    <li>
+                      Poser vos questions sur l’application et son utilisation
+                    </li>
+                    <li>
+                      Demander une amélioration
+                    </li>
+                    <li>
+                      Signaler un bug
+                    </li>
+                    <li>
+                      Tester les futures fonctionnalités
+                    </li>
+                  </ul>
+                </div>
+                <div className = "h-max" >
+                <a
+                    href="mailto: jardinmental@fabrique.social.gouv.fr "
+                    className="align-center px-4 py-2 text-xs text-white transition-all rounded-md bg-turqoise-500 hover:bg-turqoise-600 lg:text-sm"
+                  > jardinmental@fabrique.social.gouv.fr </a>
+                </div>
+               </div>
             </div>
           </div>
         </div>
@@ -319,21 +360,21 @@ const Tabs = ({ questionNumber, setQuestionNumber }) => {
             number={1}
             question="Je télécharge l’application Jardin Mental"
           />
-          <Tab number={2} question="Je choisis les symptômes à suivre" />
+          <Tab number={2} question="Je choisis les indicateurs à suivre" />
           <Tab
             number={3}
-            question="Je sélectionne les traitements médicamenteux à suivre"
+            question="Je me fixe des objectifs"
           />
-          <Tab number={4} question="Je paramètre un rappel quotidien" />
+          <Tab number={4} question="Je sélectionne les traitements médicamenteux à suivre" />
           <Tab
             number={5}
-            question="Je remplis mon questionnaire quotidien personnalisé"
+            question="Je paramètre un rappel quotidien"
           />
-          <Tab number={6} question="J’utilise les colonnes de Beck" />
-          <Tab number={7} question="J’accède au journal" />
+          <Tab number={6} question="Je remplis mon questionnaire quotidien personnalisé" />
+          <Tab number={7} question="Je visualise mon état et son évolution grâce aux outils d’analyse" />
           <Tab
             number={8}
-            question="J’accède aux courbes d’évolution des symptômes suivis"
+            question="J’utilise les colonnes de Beck" // J’accède aux courbes d’évolution des symptômes suivis"
           />
           <Tab
             number={9}
@@ -395,7 +436,7 @@ const QuestionTwo = ({ imageName }) => (
   <div className="grid grid-cols-8 col-span-1 lg:col-span-2 lg:pl-10">
     <div className="col-span-8 md:col-span-5 lg:col-span-6">
       <h5 className="mb-4 text-xl font-bold text-denim-800">
-        Je choisis les symptômes à suivre
+        Je choisis les indicateurs à suivre
       </h5>
       <ul className="mb-3 text-sm text-black list-disc list-inside">
         <li>
@@ -403,10 +444,13 @@ const QuestionTwo = ({ imageName }) => (
           anxiété, pensées parasites, sensations étranges et sommeil).
         </li>
         <ul className="ml-6 list-disc list-inside">
-          <li>Je peux les garder ou les décocher</li>
+          <li>Les indicateurs peuvent être des ressentis, des pensées, des symptômes ou encore des comportements</li>
           <li>
-            J’ai accès à une définition pour chacun des 5 symptômes pré-remplis
-            en permanence
+            Pour m’aider dans ce choix, des exemples courants me sont proposés au démarrage de l’application
+          </li>
+          <li>
+            Je pourrai modifier ma liste d’indicateurs à suivre quand je le veux dans les paramètres de 
+            l’application. J’y trouverai d’autres exemples et je pourrai aussi créer mes propres indicateurs
           </li>
         </ul>
         <li>
@@ -420,7 +464,7 @@ const QuestionTwo = ({ imageName }) => (
       <div className="p-3 mb-3 rounded-md bg-yellow-50">
         <h6 className="text-sm font-bold text-yellow-700">Besoin d’aide ?</h6>
         <p className="text-xs text-yellow-700">
-          Si je ne sais pas quel symptôme suivre ou ajouter, j’en parle au
+          Si je ne sais pas quel indicateur suivre ou ajouter, j’en parle au
           professionnel qui me suit.
         </p>
       </div>
@@ -428,24 +472,13 @@ const QuestionTwo = ({ imageName }) => (
         <h6 className="text-sm font-bold text-denim-800">Astuces : </h6>
         <ul className="text-xs list-disc list-inside text-denim-800">
           <li>
-            Chacun des 5 symptômes pré-remplis peut être divisé en d’autres
-            symptômes plus précis. Par exemple, humeur peut être divisé en
-            "tristesse" ou "irritabilité". Anxiété peut comprendre "attaque de
-            panique", "anxiété anticipatrice", "anxiété diffuse", "peurs
-            spécifiques", etc{" "}
+            Il est normal de ne pas savoir exactement lesquels choisir au début. 
+            Vous pourrez faire évoluer vos indicateurs (en supprimer ou en ajouter) au fur et à mesure que 
+            vous apprendrez à vous connaître. Avec le temps, vous ﬁnirez par trouver les plus pertinents.{" "}
           </li>
           <li>
-            Donc, au fur et à mesure, n’hésitez pas à être le plus spécifique
-            possible pour être au plus près de vos ressentis !
-          </li>
-          <li>
-            Je peux aussi suivre les effets indésirables des traitement
-            médicamenteux que je prends{" "}
-          </li>
-          <li>
-            Je peux même suivre des symptômes plus diversifiés comme des
-            douleurs ou des sensations physiques
-          </li>
+            Dans tous les cas, ne sélectionnez pas trop d’indicateurs aﬁn de ne pas alourdir votre questionnaire.
+          </li> 
         </ul>
       </div>
     </div>
@@ -463,23 +496,44 @@ const QuestionThree = ({ imageName }) => (
   <div className="grid grid-cols-8 col-span-1 lg:col-span-2 lg:pl-10">
     <div className="col-span-8 md:col-span-5 lg:col-span-6">
       <h5 className="mb-4 text-xl font-bold text-denim-800">
-        Je sélectionne les traitements médicamenteux à suivre
+        Je me fixe des objectifs
       </h5>
       <ul className="mb-3 text-sm text-black list-disc list-inside">
         <li>
-          Je peux choisir les traitements médicamenteux que je prends dans un
-          menu déroulant
+          Fixez-vous des objectifs qui vous aideront à aller mieux ! Ces objectifs peuvent être de natures variées : 
+          des activités, des tâches quotidiennes, des gestes “santé”, 
+          un rappel pour votre traitement ou encore des exercices de psychothérapie.
         </li>
         <li>
-          Si je ne trouve pas mon traitement, je peux l'ajouter grâce à un
-          champs libre
+          Pour m’aider dans ce choix, des exemples me sont proposés au démarrage de l’application
         </li>
         <li>
-          Je peux quotidiennement renseigner le dosage des médicaments
-          traitements médicamenteux que j'ai pris à la fin de mon questionnaire
-          quotidien personnalisé
+          Je pourrai modifier mes objectifs 
+          quand je le veux dans les paramètres de l’application. J’y trouverai d’autres exemples et je pourrai aussi créer les miens
         </li>
       </ul>
+      <div className="p-3 mb-3 rounded-md bg-yellow-50 ">
+        <h6 className="text-sm font-bold text-yellow-700">Besoin d'aide ?</h6>
+        <p className="text-xs list-disc list-inside text-yellow-700">
+        Je peux demander à mon professionnel de santé de m’aider à définir des objectifs
+        </p>
+      </div>
+      <div className="p-3 mb-3 rounded-md bg-denim-100">
+        <h6 className="text-sm font-bold text-denim-800 ">Bon à savoir :</h6>
+        <ul className="text-xs text-denim-800 list-disc list-inside">
+          <li>
+          Certains objectifs sont difficilement réalisables tous les jours. Je limite mon nombre d’objectifs et 
+          je paramètre la récurrence de chacun de mes objectifs pour commencer en douceur.
+          </li>
+          <li>
+            Je pense à programmer un rappel pour chacun de mes objectifs
+          </li>
+          <li>
+            Je n’hésite pas à utiliser cette fonctionnalité pour ne plus oublier de prendre mon traitement 
+            (c’est un objectif aussi ☺ )
+          </li>
+        </ul>
+      </div>
     </div>
     <div className="relative hidden col-span-2 col-start-7 md:block lg:pl-8">
       <img
@@ -492,6 +546,50 @@ const QuestionThree = ({ imageName }) => (
 );
 
 const QuestionFour = ({ imageName }) => (
+  <div className="grid grid-cols-8 col-span-1 lg:col-span-2 lg:pl-10">
+    <div className="col-span-8 md:col-span-5 lg:col-span-6">
+      <h5 className="mb-4 text-xl font-bold text-denim-800">
+        Je sélectionne les traitements médicamenteux à suivre
+      </h5>
+      <ul className="mb-3 text-sm text-black list-disc list-inside">
+        <li>
+          Je peux choisir les traitements médicamenteux que je prends dans un
+          menu déroulant
+        </li>
+        <li>
+          Si je ne trouve pas mon traitement, je peux l'ajouter grâce au champ libre « Ajouter »
+        </li>
+        <li>
+          Je peux quotidiennement renseigner le dosage des médicaments
+          traitements médicamenteux que j'ai pris à la fin de mon questionnaire
+          quotidien personnalisé
+        </li>
+      </ul>
+      <div className="p-3 mb-3 rounded-md bg-denim-100">
+        <h6 className="text-sm font-bold text-denim-800">Astuces : </h6>
+        <ul className="text-xs list-disc list-inside text-denim-800">
+          <li>
+            Grâce à la barre de recherche, je peux trouver mon traitement dans la liste 
+            déroulante grâce à son nom commercial ou au nom de sa molécule{" "}
+          </li>
+          <li>
+          Je peux ajouter tous les traitements que je souhaite suivre, et pas seulement mon traitement de 
+          fond pour mon trouble psychique (mes « si besoin », mes antalgiques, ou encore ma pilule contraceptive, etc…)
+          </li> 
+        </ul>
+      </div>
+    </div>
+    <div className="relative hidden col-span-2 col-start-7 md:block lg:pl-8">
+      <img
+        className="relative lg:absolute w-60"
+        src={`images/question/${imageName}.png`}
+        alt=""
+      />
+    </div>
+  </div>
+);
+
+const QuestionFive = ({ imageName }) => (
   <div className="grid grid-cols-8 col-span-1 lg:col-span-2 lg:pl-10">
     <div className="col-span-8 md:col-span-5 lg:col-span-6">
       <h5 className="mb-4 text-xl font-bold text-denim-800">
@@ -521,7 +619,7 @@ const QuestionFour = ({ imageName }) => (
   </div>
 );
 
-const QuestionFive = ({ imageName }) => (
+const QuestionSix = ({ imageName }) => (
   <div className="grid grid-cols-8 col-span-1 lg:col-span-2 lg:pl-10">
     <div className="col-span-8 md:col-span-5 lg:col-span-6">
       <h5 className="mb-4 text-xl font-bold text-denim-800">
@@ -529,39 +627,41 @@ const QuestionFive = ({ imageName }) => (
       </h5>
       <ul className="mb-3 text-sm text-black list-disc list-inside">
         <li>
-          Tous les jours, je réponds aux questions concernant chacun des
-          symptômes suivis
+          Je renseigne le niveau ou la survenue de chacun de mes indicateurs, 
+          grâce à des emojis, une jauge ou un simple « oui/non »
         </li>
         <li>
-          Je note mes prises médicamenteuses quotidiennes si cela me concerne et
-          si je le souhaite
+          Je note mes prises médicamenteuses quotidiennes si cela me concerne et si je le souhaite
         </li>
         <li>
-          J’ajoute des informations complémentaires sur mes symptômes ou sur un
-          événement de ma journée, si je le juge important, dans la note à la
-          fin de mon questionnaire quotidien personnalisé
+          J’ajoute des informations complémentaires sur mes indicateurs ou sur un événement de ma journée, si 
+          je le juge important, dans la note générale à la fin de mon questionnaire quotidien personnalisé
+        </li>
+        <li>
+          Je visualise mes objectifs du jour et je renseigne si 
+          je les ai réalisés ou non. Je peux donner des précisions pour chacun d’entre eux.
         </li>
       </ul>
-      <div className="p-3 mb-3 rounded-md bg-yellow-50">
-        <h6 className="text-sm font-bold text-yellow-700">Bon à savoir : </h6>
-        <p className="text-xs list-disc list-inside text-yellow-700">
-          Chaque fois que vous remplissez le questionnaire personnalisé, les
-          symptômes suivis se voient attribuer une note allant de 1 à 5.
-        </p>
-        <ul className="text-xs list-disc list-inside text-yellow-700">
+      <div className="p-3 mb-3 rounded-md bg-denim-100">
+        <h6 className="text-sm font-bold text-denim-800">Astuces : </h6>
+        <ul className="text-xs list-disc list-inside text-denim-800">
           <li>
-            Dans tous les cas, la note 1 correspond à la note la plus basse que
-            l’on peut obtenir et la note 5 à la note la plus haute.{" "}
+          Si je n’aime pas la manière dont un indicateur est évalué (par exemple avec une jauge), 
+          je peux créer mon propre indicateur et choisir si je veux l’évaluer avec des emojis, une jauge ou un « oui/non ».{" "}
           </li>
           <li>
-            Si vous avez un score de 1 à « anxiété » ou à « humeur » par
-            exemple, cela se traduira par l’émoticon rouge le moins content dans
-            le journal des symptômes suivis, si vous avez la note de 5, cela se
-            traduira dans le journal par l’émoticon vert le plus content.
+          Je peux remplir mon questionnaire en plusieurs fois, au fur et à mesure de la journée, 
+          en cliquant sur Valider pour sauvegarder mes modifications.
           </li>
           <li>
-            C’est ainsi pour chaque symptôme qu’ils soient pré-remplis ou
-            ajoutés.
+            Je ne peux faire qu’un questionnaire par jour, mais si je souhaite suivre en détail l’évolution 
+            d’un indicateur sur la journée (par exemple mon humeur), je peux avoir les indicateurs « humeur matinale », 
+            « humeur mi-journée » et « humeur soir » pour être plus précis.
+          </li>
+          <li>
+            JSi je n’ai pas eu le temps de renseigner tous les jours mon questionnaire, 
+            je peux aussi remplir ceux des 6 jours précédents. Je ne peux pas aller au-delà, car les informations 
+            rentrées seraient alors moins fiables.
           </li>
         </ul>
       </div>
@@ -569,64 +669,6 @@ const QuestionFive = ({ imageName }) => (
     <div className="relative hidden col-span-2 col-start-7 md:block lg:pl-8">
       <img
         className="relative lg:absolute w-60"
-        src={`images/question/${imageName}.png`}
-        alt=""
-      />
-    </div>
-  </div>
-);
-
-const QuestionSix = ({ imageName }) => (
-  <div className="grid grid-cols-8 col-span-1 lg:col-span-2 lg:pl-10">
-    <div className="col-span-8 md:col-span-5 lg:col-span-6">
-      <h5 className="mb-4 text-xl font-bold text-denim-800">
-        J'utilise les colonnes de Beck
-      </h5>
-      <ul className="mb-3 text-sm text-black list-disc list-inside">
-        <li>
-          Pour activer la fonctionnalité "Colonnes de Beck" (cette
-          fonctionnalité n'est pas activée par défaut), je clique dans le menu
-          en haut à gauche, je sélectionne l'item "Colonnes de Beck" et j'appuie
-          sur le bouton "Activer". Je reviens en suite sur le journal
-        </li>
-        <li>
-          Je peux ensuite remplir les Colonnes de Beck : Je peux ensuite remplir
-          les Colonnes de Beck : Je peux ensuite remplir les Colonnes de Beck :
-          <ul className="px-4 text-sm mb-2 text-black list-none list-inside">
-            <li className="inline-flex">
-              * J'appuie sur le bouton
-              <img
-                className="w-5 h-5 ml-2"
-                src={`images/other/add.png`}
-                alt=""
-              />
-            </li>
-            <li>* Je choisis l'icône "Colonnes de Beck"</li>
-            <li>* Et c'est parti !</li>
-          </ul>
-        </li>
-      </ul>
-      <div className="p-3 mb-3 rounded-md bg-denim-100">
-        <h6 className="text-sm font-bold text-denim-800">Astuces :</h6>
-        <p className="text-xs list-disc list-inside text-denim-800">
-          Je peux intégrer ou modifier les traitements pris et la note
-          quotidienne directement dans le journal, sans repasser par le
-          questionnaire quotidien personnalisé
-        </p>
-      </div>
-      <div className="p-3 mb-3 rounded-md bg-yellow-50">
-        <h6 className="text-sm font-bold text-yellow-700">Bon à savoir :</h6>
-        <p className="text-xs text-yellow-700">
-          Je ne peux ni modifier le questionnaire personnalisé quotidien ni la
-          note, au-delà de la veille. En effet, le principe de Jardin Mental est
-          de rester le plus proche possible du quotidien et au-delà de quelques
-          jours, l’exercice est moins fiable !
-        </p>
-      </div>
-    </div>
-    <div className="relative hidden col-span-2 col-start-7 md:block lg:pl-8">
-      <img
-        className="relative lg:absolute w-40"
         src={`images/question/${imageName}.gif`}
         loop="true"
         alt=""
@@ -635,63 +677,8 @@ const QuestionSix = ({ imageName }) => (
   </div>
 );
 
-const QuestionSeven = ({ imageName }) => (
-  <div className="grid grid-cols-8 col-span-1 lg:col-span-2 lg:pl-10">
-    <div className="col-span-8 md:col-span-5 lg:col-span-6">
-      <h5 className="mb-4 text-xl font-bold text-denim-800">
-        J’accède au journal
-      </h5>
-      <ul className="mb-3 text-sm text-black list-disc list-inside">
-        <li>
-          Je peux faire dérouler le journal des symptômes suivis. Ils sont tous
-          listés, jour après jour.
-        </li>
-        <li>
-          Je retrouve aussi :
-          <ul className="px-4 text-sm mb-2 text-black list-none list-inside">
-            <li>* les traitements médicamenteux pris</li>
-            <li>* les notes</li>
-            <li>* la synthèse de mes saisies sur les colonnes de Beck</li>
-          </ul>
-        </li>
-      </ul>
-      <div className="p-3 mb-3 rounded-md bg-denim-100">
-        <h6 className="text-sm font-bold text-denim-800">Astuces :</h6>
-        <p className="text-xs list-disc list-inside text-denim-800">
-          Je peux intégrer ou modifier les traitements pris, la note
-          quotidienne, ainsi que les informations saisies dans les colonnes de
-          Beck directement dans le journal
-        </p>
-      </div>
-      <div className="p-3 mb-3 rounded-md bg-yellow-50">
-        <h6 className="text-sm font-bold text-yellow-700">Bon à savoir :</h6>
-        <ul className="text-xs text-yellow-700 list-disc list-inside">
-          <li>
-            Je ne peux ni modifier le questionnaire personnalisé quotidien, ni
-            la note, ni les traitements pris, au-delà de la veille. En effet, le
-            principe de Jardin Mental est de rester le plus proche possible du
-            quotidien et au-delà de quelques jours, l’exercice est moins fiable
-            !
-          </li>
-          <li>
-            Je peux en revanche modifier ou compléter les informations saisies
-            dans les colonnes de Beck à tout moment, y compris au delà de 2
-            jours
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div className="relative hidden col-span-2 col-start-7 md:block lg:pl-8">
-      <img
-        className="relative lg:absolute w-60"
-        src={`images/question/${imageName}.png`}
-        alt=""
-      />
-    </div>
-  </div>
-);
 
-const QuestionEight = ({ imageName }) => (
+const QuestionSeven = ({ imageName }) => (
   <div className="grid grid-cols-8 col-span-1 lg:col-span-2 lg:pl-10">
     <div className="col-span-8 md:col-span-5 lg:col-span-6">
       <h5 className="mb-4 text-xl font-bold text-denim-800">
@@ -699,63 +686,80 @@ const QuestionEight = ({ imageName }) => (
       </h5>
       <ul className="mb-3 text-sm text-black list-disc list-inside">
         <li>
-          J’ai accès à des courbes d’évolution hebdomadaire des symptômes que je
-          suis, directement sur mon écran de téléphone, au sein de l’application
+        Les frises me permettent de voir mon évolution et de faire des corrélation entre mes indicateurs 
+        et mes prises de traitement
+        </li>
+        <li>
+        Les courbes me permettent de suivre mon évolution et d’accéder rapidement aux détails de la journée qui 
+        m’intéresse en cliquant sur le point correspondant
+
+        </li>
+        <li>
+          Les statistiques me donnent un bilan de mes indicateurs, du taux de réussite de mes objectifs et des informations 
+          sur mes prises de traitement
+        </li>
+        <li>
+          L’outil « déclencheurs » m’aide à retrouver mes notes personnelles et à comprendre ce 
+          qui influe sur mon état de santé mentale 
         </li>
       </ul>
-
       <div className="p-3 mb-3 rounded-md bg-denim-100">
         <h6 className="text-sm font-bold text-denim-800">Astuces :</h6>
-        <p className="text-xs list-disc list-inside text-denim-800">
-          Je peux obtenir les informations de toute une journée en cliquant sur
-          1 des points de la courbe d’évolution. Je visualise en un coup d’œil
-          ma journée sans repasser par le journal des symptômes suivis.
-        </p>
-      </div>
-
-      <div className="p-3 mb-3 rounded-md bg-yellow-50">
-        <h6 className="text-sm font-bold text-yellow-700">Bon à savoir :</h6>
-        <p className="text-xs text-yellow-700 list-disc list-inside">
-          Pour chaque symptôme suivi, vous avez accès à une courbe d’évolution.
-        </p>
-        <ul className="text-xs text-yellow-700 list-disc list-inside">
+        <ul className="text-xs list-disc list-inside text-denim-800">
           <li>
-            Pour tous les symptômes, plus la courbe est ascendante (monte), plus
-            l’état s’améliore et plus la courbe est descendante (descend), plus
-            l’état s’aggrave.
+            Je peux utiliser les outils d’analyse (frises, statistiques et déclencheurs) sur la période de mon choix.{" "}
           </li>
           <li>
-            Pour tous les symptômes, les points situés en bas représentent une
-            intensité forte et/ou une fréquence élevée du symptôme
-          </li>
+            Je peux utiliser des filtres sur les frises (pour ne voir que le négatif ou que le positif) 
+            pour mieux visualiser ce qui m’intéresse.
+          </li> 
           <li>
-            Pour tous les symptômes, le point situé le plus bas signifie une
-            note de 1 attribuée lorsque le questionnaire a été rempli. Ce point
-            est donc rouge et correspond à l’émoticône le moins content
-          </li>
-          <li>
-            Pour tous les symptômes, les points situés tout en haut des courbes
-            représentent une intensité et une fréquence faible ou absente du
-            symptôme
-          </li>
-          <li>
-            Pour tous les symptômes, le point situé le plus haut signifie une
-            note de 5 attribuée lorsque le questionnaire a été rempli. Ce point
-            est donc vert et correspond à l’émoticône le plus content
-          </li>
-          <li>
-            Pour tous les symptômes, les points situés entre ces 2 extrêmes
-            signifient qu’une note de 2,3 ou 4 a été attribuée lorsque le
-            questionnaire a été rempli. Ces points sont donc oranges ou verts
-            claires et correspondent aux emoticônes suivants :
-          </li>
+            Je peux obtenir les informations de toute une journée en cliquant sur 1 des points de la courbe d’évolution. 
+            Je visualise en un coup d’œil ma journée sans repasser par le journal des symptômes suivis.
+          </li> 
         </ul>
       </div>
     </div>
     <div className="relative hidden col-span-2 col-start-7 md:block lg:pl-8">
       <img
         className="relative lg:absolute w-60"
-        src={`images/question/${imageName}.png`}
+        src={`images/question/${imageName}.gif`}
+        loop="true"
+        alt=""
+      />
+    </div>
+  </div>
+);
+
+const QuestionEight= ({ imageName }) => (
+  <div className="grid grid-cols-8 col-span-1 lg:col-span-2 lg:pl-10">
+    <div className="col-span-8 md:col-span-5 lg:col-span-6">
+      <h5 className="mb-4 text-xl font-bold text-denim-800">
+        J'utilise les colonnes de Beck
+      </h5>
+      <ul className="mb-3 text-sm text-black list-disc list-inside">
+        <li>
+          Les colonnes de Beck sont un outil de gestion des émotions, des comportements et pensées inadaptées
+        </li>
+        <li>
+          Vous trouverez dans Jardin Mental une version numérique de cet outil, qui comporte les étapes suivantes :
+          situation, émotion(s), pensée(s), comportement(s) et restructuration
+        </li>
+      </ul>
+      <div className="p-3 mb-3 rounded-md bg-yellow-50">
+        <h6 className="text-sm font-bold text-yellow-700">Bon à savoir :</h6>
+        <p className="text-xs text-yellow-700">
+          Les colonnes de Beck sont classiquement utilisées en psychothérapie. C’est un exercice qui peut être réalisé seul(e), 
+          mais qui peut nécessiter des explications afin d’être correctement utilisé. N’hésitez pas à en parler à un professionnel
+          de santé pour être accompagné(e).
+        </p>
+      </div>
+    </div>
+    <div className="relative hidden col-span-2 col-start-7 md:block lg:pl-8">
+      <img
+        className="relative lg:absolute w-40"
+        src={`images/question/${imageName}.gif`}
+        loop="true"
         alt=""
       />
     </div>
@@ -786,41 +790,22 @@ const QuestionNine = ({ imageName }) => (
           </ul>
         </li>
       </ul>
-      <div className="p-3 mb-3 rounded-md bg-yellow-50">
-        <h6 className="text-sm font-bold text-yellow-700">Bon à savoir : </h6>
-        <ul className="text-xs list-disc list-inside text-yellow-700">
+      <div className="p-3 mb-3 rounded-md bg-denim-100">
+        <h6 className="text-sm font-bold text-denim-800">Astuces :</h6>
+        <ul className="text-xs list-disc list-inside text-denim-800">
           <li>
-            L’envoi est anonyme au nom de Jardin Mental, n’oubliez pas de
-            prévenir le professionnel qui vous suit que vous lui adressez le
-            mail
+            L’envoi est anonyme au nom de Jardin Mental, 
+            n’oubliez pas de prévenir le professionnel qui vous suit que vous lui adressez le mail.
           </li>
           <li>
-            Pour rappel, chaque symptôme suivi se voit attribuer un chiffre
-            allant de 1 à 5 lorsque le questionnaire personnalisé est rempli.{" "}
-          </li>
+            Pour plus de simplicité, vous pouvez identifier votre envoi en précisant un nom qui apparaîtra dans 
+            l’objet du mail que le professionnel de santé va recevoir.
+          </li> 
           <li>
-            Le système de chiffrage fonctionne de la manière suivante :<br />
-            La chiffre 1 est le plus petit chiffre que l'on peut avoir. Il
-            correspond à l'intensité et/ou la fréquence de symptômes la plus
-            importante possible.
-            <br />
-            Le chiffre 5 est le plus grand chiffre que l'on peut avoir. Il
-            correspond à l'intensité et/ou la fréquence de symptôme la plus
-            basse possible (symptôme absent).
-            <br />
-            Les chiffres 2,3 ou 4 correspondent à des intensités et /ou
-            fréquence de symptômes de moins en moins importantes.
-            <br />
-            Il en découle donc que plus le chiffre sur l'histogramme est élevé,
-            plus la courbe est en haut et moins le symptôme est présent, et ce,
-            pour tous les symptômes, qu'ils soient pré-remplis ou ajouter.
-          </li>
-          <li>
-            Sur l’histogramme mensuel adressé par mail, cette note est visible
-            pour chaque symptôme à chaque fois que le questionnaire personnalisé
-            a été rempli. Il peut donc y avoir 30 notes par symptôme suivi si le
-            questionnaire a été rempli tous les jours du mois.
-          </li>
+            Vous pouvez aussi choisir de ne pas envoyer un récapitulatif de vos données ☺ et simplement d’en 
+            discuter avec votre professionnel de santé lors de la consultation, en utilisant votre téléphone comme 
+            support lors de l’entretien avec lui.
+          </li> 
         </ul>
       </div>
     </div>

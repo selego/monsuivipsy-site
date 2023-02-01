@@ -36,10 +36,6 @@ export function Footer() {
         </p>
         <ul className="list-inline">
           <li className="list-inline-item">
-            <LightLink href="/cgu">condititions générales</LightLink>
-          </li>
-          <Separator />
-          <li className="list-inline-item">
             <LightLink href="/mentions-legales">mentions légales</LightLink>
           </li>
           <Separator />

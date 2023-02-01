@@ -33,15 +33,9 @@ export default function Footer() {
           porté par la Fabrique, incubateur des ministères sociaux.
         </p>
         <p className="mb-1 text-xs text-black opacity-70">
-          Copyright © 2021 Jardin Mental.
+          Copyright © 2023 Jardin Mental.
         </p>
         <div className="flex space-x-3">
-          <a
-            className="text-xs font-semibold text-black opacity-70"
-            href="/cgu"
-          >
-            Conditions générales
-          </a>
           <a
             className="text-xs font-semibold text-black opacity-70"
             href="/mentions-legales"
@@ -68,12 +62,10 @@ export default function Footer() {
 
       <div>
         <p className="mb-2 text-base font-bold text-denim-800">
-          La Fabrique du Numérique des Ministères sociaux
+          La Fabrique Numérique des Ministères sociaux
         </p>
         <p className="mb-2 text-base text-black">
-          La Fabrique du Numérique des Ministères sociaux
-          <br />
-          Mirabeau Tower
+          Tour Mirabeau
           <br />
           39-43 Quai André Citroën
           <br />
