@@ -235,25 +235,29 @@ export default function Index() {
               setQuestionNumber={setQuestionNumber}
             />
           </div>
-          <div className="container w-full md:w-2/3 py-10">
-          <div className="grid grid-cols-1 gap-8 lg:gap-8 lg:grid-cols-2">
-              <div className="p-12 bg-white rounded-2xl h-max">
+          <div className="container bg-gray-50 w-full md:w-3/4 py-10">
+            <div className="grid grid-cols-1 gap-8 lg:gap-8 lg:grid-cols-2">
+              <div className="p-12 bg-white rounded-2xl w-3/4">
                 <h6 className="mb-2 text-lg font-bold text-denim-800">
                 Télécharger la notice et nos conseils d’utilisation{" "}
                 </h6>
-                <a className="p-6" href="images/other/Notice Jardin Mental_v1.01_compressed.pdf" download>
-                <img
+                <div className="flex justify-center">
+                <a href="images/other/Notice Jardin Mental_v1.01_compressed.pdf" download>
+                <img   
+                  className="h-60"ß
                   src="images/other/preview.png"
                   alt=""
                 />
                 </a>
+                </div>
+                
               </div>
-              <div className="p-12 bg-white rounded-2xl h-max">
+              <div className="p-12 bg-white  rounded-2xl h-100 space-y-6 w-3/4">
                 <h6 className="mb-2 text-lg font-bold text-denim-800">
                   Contacter l’équipe de Jardin Mental pour :
                 </h6>
                 <div>
-                  <ul className="text-xs list-disc list-inside">
+                  <ul className="text-xs list-disc list-inside space-y-4">
                     <li>
                       Poser vos questions sur l’application et son utilisation
                     </li>
@@ -268,10 +272,10 @@ export default function Index() {
                     </li>
                   </ul>
                 </div>
-                <div className = "h-max" >
+                <div>
                 <a
                     href="mailto: jardinmental@fabrique.social.gouv.fr "
-                    className="align-center px-4 py-2 text-xs text-white transition-all rounded-md bg-turqoise-500 hover:bg-turqoise-600 lg:text-sm"
+                    className="flex-center px-4 py-2 text-xs text-white transition-all rounded-md bg-turqoise-500 hover:bg-turqoise-600 lg:text-sm"
                   > jardinmental@fabrique.social.gouv.fr </a>
                 </div>
                </div>
