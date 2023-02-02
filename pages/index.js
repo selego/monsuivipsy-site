@@ -20,7 +20,7 @@ export default function Index() {
         <Navigation />
         <div className="container flex pt-20 pb-32">
           <div className="w-full lg:w-1/2">
-            <h3 className="text-xl font-extra-bold text-center md:text-left lg:text-2xl text-turqoise-500 font-karla">
+            <h3 className="text-xl font-extra-bold text-center md:text-left lg:text-2xl text-turqoise-500">
               Mon&nbsp;Suivi&nbsp;Psy change de nom et devient
             </h3>
             <h1 className="mb-2 text-3xl font-bold text-center md:text-left lg:text-6xl text-turqoise-500">
@@ -70,7 +70,7 @@ export default function Index() {
               />
             </div>
           </div>
-          <div className="items-center justify-center hidden w-1/2 lg:flex">
+          <div className="items-center justify-center hidden w-3/4 lg:flex">
             <img src="images/other/hero.png" alt="" />
           </div>
         </div>
@@ -105,7 +105,7 @@ export default function Index() {
                 <p className="text-sm text-black">
                   Les troubles psychiques sont actuellement au 2ème rang des
                   causes mondiales de handicap, selon l’OMS, et 5 des 10
-                  maladies les plus invalidantes sont des maladies mentales.
+                  maladies les plus invalidantes sont des troubles psychiques.
                 </p>
               </div>
               <div className="p-8 bg-white rounded-2xl h-max">
@@ -444,25 +444,14 @@ const QuestionTwo = ({ imageName }) => (
       </h5>
       <ul className="mb-3 text-sm text-black list-disc list-inside">
         <li>
-          Pour m’aider dans ce choix, 5 symptômes sont déjà pré-remplis (humeur,
-          anxiété, pensées parasites, sensations étranges et sommeil).
-        </li>
-        <ul className="ml-6 list-disc list-inside">
-          <li>Les indicateurs peuvent être des ressentis, des pensées, des symptômes ou encore des comportements</li>
-          <li>
-            Pour m’aider dans ce choix, des exemples courants me sont proposés au démarrage de l’application
-          </li>
-          <li>
-            Je pourrai modifier ma liste d’indicateurs à suivre quand je le veux dans les paramètres de 
-            l’application. J’y trouverai d’autres exemples et je pourrai aussi créer mes propres indicateurs
-          </li>
-        </ul>
-        <li>
-          Je peux ajouter autant de symptômes à suivre que je le veux en les
-          renseignant dans le champ libre (capture d’écran)
+          Les indicateurs peuvent être des ressentis, des pensées, des symptômes ou encore des comportements
         </li>
         <li>
-          Je peux modifier ma liste de symptômes à suivre quand je le veux
+          Pour m’aider dans ce choix, des exemples courants me sont proposés au démarrage de l’application
+        </li>
+        <li>
+          Je pourrai modifier ma liste d’indicateurs à suivre quand je le veux dans les paramètres de l’application. 
+          J’y trouverai d’autres exemples et je pourrai aussi créer mes propres indicateurs
         </li>
       </ul>
       <div className="p-3 mb-3 rounded-md bg-yellow-50">
@@ -686,7 +675,7 @@ const QuestionSeven = ({ imageName }) => (
   <div className="grid grid-cols-8 col-span-1 lg:col-span-2 lg:pl-10">
     <div className="col-span-8 md:col-span-5 lg:col-span-6">
       <h5 className="mb-4 text-xl font-bold text-denim-800">
-        J’accède aux courbes d’évolution des symptômes suivis
+        Je visualise mon état et son évolution grâce aux outils d’analyse
       </h5>
       <ul className="mb-3 text-sm text-black list-disc list-inside">
         <li>
