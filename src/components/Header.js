@@ -45,7 +45,7 @@ export function Header() {
                   <b>JARDIN MENTAL</b>
                 </h1>
                 <h3>
-                  Mieux connaître mes symptômes pour un meilleur accompagnement
+                  Mieux connaître mon état de santé psychique pour un meilleur accompagnement
                   par mon médecin
                 </h3>
                 <br />
