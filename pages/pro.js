@@ -30,12 +30,11 @@ const Index = () => {
 
         <div className="container flex pt-20 pb-32">
           <div className="w-full lg:w-1/2">
-            <h1 className="mb-2 text-3xl font-bold text-center text-white md:text-left lg:text-6xl">
+            <h1 className="mb-2 text-3xl font-extrabold text-center text-white md:text-left lg:text-6xl">
               Jardin Mental
             </h1>
             <p className="mb-6 text-2xl font-semibold text-center text-denim-200 md:text-left lg:text-2xl">
-              Une application à proposer à vos patients pour voir l’évolution de
-              leurs symptômes en un coup d’oeil
+              Une application à proposer à vos usagers, pour vous faciliter le suivi et l’éducation thérapeutique
             </p>
             <div className="flex justify-center mb-10 space-x-3 md:justify-start md:space-x-6">
               <a
@@ -65,22 +64,27 @@ const Index = () => {
             </div>
             <div className="flex flex-col space-y-6">
               <Checklist
-                title="Auto-observation simple et rapide pour le patient via l’application"
-                subtitle="En quelques secondes par jour, le patient remplit le questionnaire personnalisé que vous avez élaboré ensemble pour suivre son quotidien. Un rappel paramétré améliore son assiduité."
+                title="Un journal d’auto-observation personnalisable et complet pour l’usager, simple et rapide au quotidien."
+                subtitle="En quelques minutes par jour, l’usager remplit le questionnaire personnalisé que vous avez élaboré ensemble pour suivre son quotidien (indicateurs, évènements, prises de traitements, …)."
               />
               <Checklist
-                title="Visualisation instantanée de l’évolution des symptômes sur les 30 derniers jours, avec notes et prises de médicaments"
-                subtitle="A chaque consultation, regardez et analysez ensemble les résultats sous forme de graphiques. Vous adaptez votre suivi au plus près des symptômes ressentis."
+                title="Une aide pour la psychothérapie"
+                subtitle="Avec vos usagers, fixez des objectifs quotidiens à réaliser (tâches quotidiennes, exercices de psychothérapie simples, observance du traitement, …). Retrouvez aussi une version numérique des colonnes de Beck."
               />
               <Checklist
-                title="Application gratuite et anonyme, sans création de compte "
-                subtitle="Le patient reste propriétaire et maître des données saisies. Il peut vous montrer les résultats sur son smartphone ou vous les envoyer par mail s’il le souhaite."
+                title="Visualisation instantanée de l’état de santé mentale de l’usager et de son évolution"
+                subtitle="Recevez par mail un récapitulatif des données des 30 derniers jours et/ou, lors de la consultation, regardez et analysez ensemble les résultats grâce aux outils de l’application. Vous adaptez votre suivi au plus près du vécu de l’usager."
+              />
+              <Checklist
+                title="Application gratuite et anonyme, sans création de compte"
+                subtitle="L’usager reste propriétaire et maître des données saisies. Il peut vous montrer les résultats sur son smartphone ou vous les envoyer par mail s’il le souhaite."
               />
             </div>
             <br />
             <p className="mb-6 text-xl text-center text-denim-200 md:text-left lg:text-xl">
-              Des idées pour améliorer l'outil ? Déposez votre email et
-              rejoignez notre communauté
+            Vous souhaitez être au courant des prochaines évolutions et actualités de Jardin Mental ? 
+            Laissez-nous votre email et rejoignez notre communauté
+
             </p>
             <div className="mb-10">
               <form
@@ -114,28 +118,62 @@ const Index = () => {
               <Video src="/videos/presentationMSP.mp4" />
             </div>
           </div>
-          <div className="container py-20">
+          <div className="items-center py-20">
             <div className="w-full mx-auto mb-6 md:w-8/12 lg:mb-10">
               <h3 className="mb-2 text-2xl font-bold text-center lg:text-4xl text-denim-800">
                 Pour quels professionnels de santé ?
               </h3>
               <p className="text-base text-center text-black">
-                Jardin Mental a été pensé à destination des psychiatres et des
-                psychologues pour faciliter le dialogue avec leurs patients.
+                Jardin Mental est aujourd’hui utilisé par tous les professionnels de santé 
+                impliqués dans le parcours de soin de l’usager, aussi bien en libéral qu’en 
+                établissement de santé : psychiatres, psychologues, infirmiers(ères), pair-aidants, coachs, éducateurs 
+                spécialisés, etc...
               </p>
             </div>
-            <div className="grid grid-cols-1 gap-6 lg:gap-10 lg:grid-cols-2">
-              <QuestionCard
-                title="Pour les psychiatres"
-                content="Il permet de suivre l’évolution des symptômes, ainsi qu’observer les effets bénéfiques ou indésirables des traitements médicamenteux. Cela contribue à trouver plus rapidement le traitement adapté au patient."
-                icon="medicine.svg"
-              />
-              <QuestionCard
-                title="Pour les psychologues"
-                content="Il donne une base d’informations fidèles de ce qui est quotidiennement vécu par le patient, même lorsqu’il s’agit de parler de ce qu’il s’est passé plusieurs semaines auparavant. L’application intègre notamment les colonnes de Beck qui sont particulièrement utiles dans le cadre des thérapies cognitivo-comportementales."
-                icon="chat-plus.svg"
-              />
+            <div className="grid grid-cols-1 gap-6 lg:gap-10 lg:grid-cols-4 justify-self-center w-3/4 ">
+              <div className="flex items-center w-2/3">
+                <img className=" justify-center" src="images/icon/bulles_icon.png" alt=""/>
+              </div>
+              <div className="grid italic grid-cols-1 col-span-3 gap-6 lg:gap-10 lg:grid-cols-3 p-12 justify-center">
+                <div className="p-4 flex items-center bg-white rounded-2xl h-100">
+                    <p className="text-sm text-center text-black">
+                      “Cela m'a permis d'identifier les passages d'une phase dépressive à maniaque, 
+                      et de diagnostiquer un trouble bipolaire”
+                    </p>
+                </div>
+                <div className="p-4 bg-white flex items-center rounded-2xl h-100">
+                    <p className="text-sm text-center text-black">
+                      “La patiente m’a dit qu’elle allait très bien. Mais en regardant le niveau d’anxiété, 
+                      je me suis rendu compte qu’il était toujours élevé. J’ai donc pu adapter le traitement avec 
+                      cette information“
+                    </p>
+                </div>
+                <div className="p-4 bg-white flex items-center text-center rounded-2xl h-100">
+                    <p className="text-sm text-black">
+                      "C’est un moyen pour le patient d’accroître sa motivation entre deux séances et d’être plus autonome 
+                      dans la prise en charge de sa maladie“
+                    </p>
+                </div>
+                <div className="p-4 bg-white flex items-center rounded-2xl h-100">
+                    <p className="text-sm text-center text-black">
+                      “Plus besoin de fiches ou de carnet pour faire les exercices que je donne comme les colonnes de Beck, 
+                      les 3 choses positives de la journée ou le journal de la gratitude que je mets en objectifs“
+                    </p>
+                </div>
+                <div className="p-4 bg-white flex items-center rounded-2xl h-100">
+                    <p className="text-sm text-center text-black">
+                      “Grâce à l’envoi données, j’ai pu anticiper une crise suicidaire chez un patient“
+                    </p>
+                </div>
+                <div className="p-4 bg-white flex items-center rounded-2xl h-100">
+                    <p className="text-sm text-center text-black">
+                      “Tous les jours, en quelques minutes, le patient va recenser des informations précieuses au niveau 
+                      cognitif et émotionnel, ce qui va lui permettre de mieux prendre conscience de sa pathologie“
+                    </p>
+                </div>
+              </div>
             </div>
+            
           </div>
         </div>
 
@@ -852,3 +890,49 @@ const QuestionNine = ({ imageName }) => (
 );
 
 export default Index;
+/*
+<div className="items-center justify-items-center w-2/3 flex">
+              <div className="flex justify-center">
+              <img className="" src="images/icon/bulles_icon.png" alt="" />
+
+              </div>
+              <div className="grid italic grid-cols-1 gap-6 lg:gap-10 lg:grid-cols-3 p-12">
+                <div className="p-4 flex items-center bg-white rounded-2xl h-100">
+                    <p className="text-sm text-center text-black">
+                      “Cela m'a permis d'identifier les passages d'une phase dépressive à maniaque, 
+                      et de diagnostiquer un trouble bipolaire”
+                    </p>
+                </div>
+                <div className="p-4 bg-white flex items-center rounded-2xl h-100">
+                    <p className="text-sm text-center text-black">
+                      “La patiente m’a dit qu’elle allait très bien. Mais en regardant le niveau d’anxiété, 
+                      je me suis rendu compte qu’il était toujours élevé. J’ai donc pu adapter le traitement avec 
+                      cette information“
+                    </p>
+                </div>
+                <div className="p-4 bg-white flex items-center text-center rounded-2xl h-100">
+                    <p className="text-sm text-black">
+                      "C’est un moyen pour le patient d’accroître sa motivation entre deux séances et d’être plus autonome 
+                      dans la prise en charge de sa maladie“
+                    </p>
+                </div>
+                <div className="p-4 bg-white flex items-center rounded-2xl h-100">
+                    <p className="text-sm text-center text-black">
+                      “Plus besoin de fiches ou de carnet pour faire les exercices que je donne comme les colonnes de Beck, 
+                      les 3 choses positives de la journée ou le journal de la gratitude que je mets en objectifs“
+                    </p>
+                </div>
+                <div className="p-4 bg-white flex items-center rounded-2xl h-100">
+                    <p className="text-sm text-center text-black">
+                      “Grâce à l’envoi données, j’ai pu anticiper une crise suicidaire chez un patient“
+                    </p>
+                </div>
+                <div className="p-4 bg-white flex items-center rounded-2xl h-100">
+                    <p className="text-sm text-center text-black">
+                      “Tous les jours, en quelques minutes, le patient va recenser des informations précieuses au niveau 
+                      cognitif et émotionnel, ce qui va lui permettre de mieux prendre conscience de sa pathologie“
+                    </p>
+                </div>
+              </div>
+            </div>
+    */

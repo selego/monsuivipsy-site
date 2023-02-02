@@ -25,7 +25,7 @@ export default function Navigation({ patient = true }) {
           className="px-4 py-2 text-xs font-bold text-white transition-all rounded-full bg-turqoise-500 hover:bg-turqoise-600 lg:text-sm"
         >
           {/* spaces are nbsp (option+space) */}
-          {patient ? "Pour les professionnels" : "Pour les patients"}
+          {patient ? "Pour les professionnels" : "Pour les usagers"}
         </a>
       </div>
     </nav>
