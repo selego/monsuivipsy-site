@@ -20,10 +20,10 @@ export default function Index() {
         <Navigation />
         <div className="container flex pt-20 pb-32">
           <div className="w-full lg:w-1/2">
-            <h3 className="text-xl font-extra-bold text-center md:text-left lg:text-2xl text-turqoise-500">
+            <h3 className="text-xl font-bold text-center md:text-left lg:text-2xl text-turqoise-500">
               Mon&nbsp;Suivi&nbsp;Psy change de nom et devient
             </h3>
-            <h1 className="mb-2 text-3xl font-bold text-center md:text-left lg:text-6xl text-turqoise-500">
+            <h1 className="mb-2 text-3xl font-extrabold text-center md:text-left lg:text-6xl text-turqoise-500">
               Jardin&nbsp;Mental
             </h1>
             <p className="mb-10 text-lg leading-normal text-center text-black md:text-left lg:leading-9 lg:text-2xl text-denim-800">
