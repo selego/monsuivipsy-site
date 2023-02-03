@@ -74,7 +74,7 @@ export default function Index() {
             <img src="images/other/hero.png" alt="" />
           </div>
         </div>
-        <div className="container flex space-x-4">
+        <div className="container pb-12 flex space-x-4">
           <img src="images/logo_fab.png" alt=""/>
           <img src="images/logo_ars.png" alt=""/>
           <img src="images/logo_barth.png" alt=""/>
