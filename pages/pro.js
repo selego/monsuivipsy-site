@@ -269,7 +269,8 @@ const Index = () => {
                     Une notice :{" "}
                     <a
                       className="ml-2 text-lg"
-                      href="mailto:jardinmental@fabrique.social.gouv.fr"
+                      href="Notice Jardin Mental.pdf"
+                      download
                     >
                       <img src="images/icon/download.png" alt="" style={{width:"1em"}}/>
                     </a>
@@ -318,7 +319,7 @@ const Index = () => {
                 Notice{" "}
                 </h6>
                 <div className="flex justify-center shadow-xl">
-                <a href="images/other/Notice Jardin Mental_v1.01_compressed.pdf" download>
+                <a href="Notice Jardin Mental.pdf" download>
                 <img   
                   className="h-40"ß
                   src="images/other/preview.png"
@@ -332,7 +333,7 @@ const Index = () => {
                 Flyer usager {" "}
                 </h6>
                 <div className="flex justify-center shadow-xl">
-                <a href="images/other/Notice Jardin Mental_v1.01_compressed.pdf" download>
+                <a href="Notice Jardin Mental.pdf" download>
                 <img   
                   className="h-20"
                   src="images/other/flyerUsager2.png"
@@ -353,7 +354,7 @@ const Index = () => {
                 Affiche {" "}
                 </h6>
                 <div className="flex justify-center shadow-xl">
-                <a href="images/other/Notice Jardin Mental_v1.01_compressed.pdf" download>
+                <a href="Notice Jardin Mental.pdf" download>
                 <img   
                   className="h-40"ß
                   src="images/other/affiche.png"
