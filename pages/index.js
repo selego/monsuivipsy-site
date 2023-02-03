@@ -18,7 +18,7 @@ export default function Index() {
         style={{ backgroundImage: `url("images/other/hero-bg.svg")` }}
       >
         <Navigation />
-        <div className="container flex pt-20 pb-32">
+        <div className="container flex pt-20">
           <div className="w-full lg:w-1/2">
             <h3 className="text-xl font-bold text-center md:text-left lg:text-2xl text-turqoise-500">
               Mon&nbsp;Suivi&nbsp;Psy change de nom et devient
@@ -74,6 +74,11 @@ export default function Index() {
             <img src="images/other/hero.png" alt="" />
           </div>
         </div>
+        <div className="container flex space-x-4">
+          <img src="images/logo_fab.png" alt=""/>
+          <img src="images/logo_ars.png" alt=""/>
+          <img src="images/logo_barth.png" alt=""/>
+        </div>
       </header>
       <main>
         <div className="bg-gray-50">
@@ -93,7 +98,7 @@ export default function Index() {
                 </h6>
                 <p className="text-sm text-black">
                   Les troubles psychiques sont bien plus fréquents qu’on ne
-                  l’imagine. Selon l'OMS 1 personne sur 5 souffrira d'une
+                  l’imagine. Selon l'OMS, 1 personne sur 5 souffrira d'une
                   maladie mentale au cours de sa vie. En France, par exemple, 12
                   millions de personnes sont actuellement concernées.
                 </p>
@@ -208,7 +213,7 @@ export default function Index() {
               Je crée un questionnaire quotidien personnalisé qui me permet de suivre mon état 
               de santé mentale et son évolution
             </p>
-            <p className="text-xl text-center text-black">
+            <p className="text-xl py-4 text-center text-black">
               Je note mes prises médicamenteuses et tous les évènements importants de ma journée, 
               afin de mieux comprendre ce qui influe sur mon état de santé mentale
             </p>
@@ -241,23 +246,23 @@ export default function Index() {
                 <h6 className="mb-2 text-lg font-bold text-denim-800">
                 Télécharger la notice et nos conseils d’utilisation{" "}
                 </h6>
-                <div className="flex justify-center">
-                <a href="images/other/Notice Jardin Mental_v1.01_compressed.pdf" download>
-                <img   
-                  className="h-60"ß
-                  src="images/other/preview.png"
-                  alt=""
-                />
-                </a>
+                <div className="flex justify-center shadow-lg">
+                  <a href="Notice Jardin Mental.pdf" download>
+                  <img   
+                    className="h-60"ß
+                    src="images/other/preview.png"
+                    alt=""
+                  />
+                  </a>
                 </div>
                 
               </div>
-              <div className="p-12 bg-white  rounded-2xl h-100 space-y-6 w-3/4">
+              <div className="p-12 bg-white  rounded-2xl space-y-6 w-3/4">
                 <h6 className="mb-2 text-lg font-bold text-denim-800">
                   Contacter l’équipe de Jardin Mental pour :
                 </h6>
                 <div>
-                  <ul className="text-xs list-disc list-inside space-y-4">
+                  <ul className="text-sm list-disc list-inside space-y-4">
                     <li>
                       Poser vos questions sur l’application et son utilisation
                     </li>
@@ -275,7 +280,7 @@ export default function Index() {
                 <div>
                 <a
                     href="mailto: jardinmental@fabrique.social.gouv.fr "
-                    className="flex-center px-4 py-2 text-xs text-white transition-all rounded-md bg-turqoise-500 hover:bg-turqoise-600 lg:text-sm"
+                    className="flex-center px-4 py-2 text-sm text-white transition-all rounded-md bg-turqoise-500 hover:bg-turqoise-600 lg:text-sm"
                   > jardinmental@fabrique.social.gouv.fr </a>
                 </div>
                </div>
@@ -456,14 +461,14 @@ const QuestionTwo = ({ imageName }) => (
       </ul>
       <div className="p-3 mb-3 rounded-md bg-yellow-50">
         <h6 className="text-sm font-bold text-yellow-700">Besoin d’aide ?</h6>
-        <p className="text-xs text-yellow-700">
+        <p className="text-sm text-yellow-700">
           Si je ne sais pas quel indicateur suivre ou ajouter, j’en parle au
           professionnel qui me suit.
         </p>
       </div>
       <div className="p-3 mb-3 rounded-md bg-denim-100">
-        <h6 className="text-sm font-bold text-denim-800">Astuces : </h6>
-        <ul className="text-xs list-disc list-inside text-denim-800">
+        <h6 className="text-base font-bold text-denim-800">Astuces : </h6>
+        <ul className="text-sm list-disc list-inside text-denim-800">
           <li>
             Il est normal de ne pas savoir exactement lesquels choisir au début. 
             Vous pourrez faire évoluer vos indicateurs (en supprimer ou en ajouter) au fur et à mesure que 
@@ -507,13 +512,13 @@ const QuestionThree = ({ imageName }) => (
       </ul>
       <div className="p-3 mb-3 rounded-md bg-yellow-50 ">
         <h6 className="text-sm font-bold text-yellow-700">Besoin d'aide ?</h6>
-        <p className="text-xs list-disc list-inside text-yellow-700">
+        <p className="text-sm list-disc list-inside text-yellow-700">
         Je peux demander à mon professionnel de santé de m’aider à définir des objectifs
         </p>
       </div>
       <div className="p-3 mb-3 rounded-md bg-denim-100">
-        <h6 className="text-sm font-bold text-denim-800 ">Bon à savoir :</h6>
-        <ul className="text-xs text-denim-800 list-disc list-inside">
+        <h6 className="text-base font-bold text-denim-800 ">Astuces :</h6>
+        <ul className="text-sm text-denim-800 list-disc list-inside">
           <li>
           Certains objectifs sont difficilement réalisables tous les jours. Je limite mon nombre d’objectifs et 
           je paramètre la récurrence de chacun de mes objectifs pour commencer en douceur.
@@ -559,8 +564,8 @@ const QuestionFour = ({ imageName }) => (
         </li>
       </ul>
       <div className="p-3 mb-3 rounded-md bg-denim-100">
-        <h6 className="text-sm font-bold text-denim-800">Astuces : </h6>
-        <ul className="text-xs list-disc list-inside text-denim-800">
+        <h6 className="text-base font-bold text-denim-800">Astuces : </h6>
+        <ul className="text-sm list-disc list-inside text-denim-800">
           <li>
             Grâce à la barre de recherche, je peux trouver mon traitement dans la liste 
             déroulante grâce à son nom commercial ou au nom de sa molécule{" "}
@@ -594,8 +599,8 @@ const QuestionFive = ({ imageName }) => (
         </li>
       </ul>
       <div className="p-3 mb-3 rounded-md bg-denim-100">
-        <h6 className="text-sm font-bold text-denim-800">Astuces :</h6>
-        <p className="text-xs list-disc list-inside text-denim-800">
+        <h6 className="text-base font-bold text-denim-800">Astuces :</h6>
+        <p className="text-sm list-disc list-inside text-denim-800">
           Je le programme à l’heure où je suis le plus disponible ou à l’heure
           qui me paraît la plus adaptée pour faire un point sur ma journée
           (plutôt en soirée donc)
@@ -636,8 +641,8 @@ const QuestionSix = ({ imageName }) => (
         </li>
       </ul>
       <div className="p-3 mb-3 rounded-md bg-denim-100">
-        <h6 className="text-sm font-bold text-denim-800">Astuces : </h6>
-        <ul className="text-xs list-disc list-inside text-denim-800">
+        <h6 className="text-base font-bold text-denim-800">Astuces : </h6>
+        <ul className="text-sm list-disc list-inside text-denim-800">
           <li>
           Si je n’aime pas la manière dont un indicateur est évalué (par exemple avec une jauge), 
           je peux créer mon propre indicateur et choisir si je veux l’évaluer avec des emojis, une jauge ou un « oui/non ».{" "}
@@ -697,8 +702,8 @@ const QuestionSeven = ({ imageName }) => (
         </li>
       </ul>
       <div className="p-3 mb-3 rounded-md bg-denim-100">
-        <h6 className="text-sm font-bold text-denim-800">Astuces :</h6>
-        <ul className="text-xs list-disc list-inside text-denim-800">
+        <h6 className="text-base font-bold text-denim-800">Astuces :</h6>
+        <ul className="text-sm list-disc list-inside text-denim-800">
           <li>
             Je peux utiliser les outils d’analyse (frises, statistiques et déclencheurs) sur la période de mon choix.{" "}
           </li>
@@ -740,8 +745,8 @@ const QuestionEight= ({ imageName }) => (
         </li>
       </ul>
       <div className="p-3 mb-3 rounded-md bg-yellow-50">
-        <h6 className="text-sm font-bold text-yellow-700">Bon à savoir :</h6>
-        <p className="text-xs text-yellow-700">
+        <h6 className="text-base font-bold text-yellow-700">Bon à savoir :</h6>
+        <p className="text-sm text-yellow-700">
           Les colonnes de Beck sont classiquement utilisées en psychothérapie. C’est un exercice qui peut être réalisé seul(e), 
           mais qui peut nécessiter des explications afin d’être correctement utilisé. N’hésitez pas à en parler à un professionnel
           de santé pour être accompagné(e).
@@ -784,8 +789,8 @@ const QuestionNine = ({ imageName }) => (
         </li>
       </ul>
       <div className="p-3 mb-3 rounded-md bg-denim-100">
-        <h6 className="text-sm font-bold text-denim-800">Astuces :</h6>
-        <ul className="text-xs list-disc list-inside text-denim-800">
+        <h6 className="text-base font-bold text-denim-800">Astuces :</h6>
+        <ul className="text-sm list-disc list-inside text-denim-800">
           <li>
             L’envoi est anonyme au nom de Jardin Mental, 
             n’oubliez pas de prévenir le professionnel qui vous suit que vous lui adressez le mail.
