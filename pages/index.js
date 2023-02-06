@@ -75,9 +75,9 @@ export default function Index() {
           </div>
         </div>
         <div className="container flex space-x-4">
-          <img src="images/logo_fab.png" alt=""/>
-          <img src="images/logo_ars.png" alt=""/>
-          <img src="images/logo_barth.png" alt=""/>
+          <img className="h-16" src="images/logo_fab.png" alt=""/>
+          <img className="h-16" src="images/logo_ars.jpeg" alt=""/>
+          <img className=" h-16" src="images/logo_barth.jpeg" alt=""/>
         </div>
       </header>
       <main>
@@ -279,7 +279,7 @@ export default function Index() {
                 </div>
                 <div>
                 <a
-                    href="mailto: jardinmental@fabrique.social.gouv.fr "
+                    href="mailto:jardinmental@fabrique.social.gouv.fr "
                     className="flex-center px-4 py-2 text-sm text-white transition-all rounded-md bg-turqoise-500 hover:bg-turqoise-600 lg:text-sm"
                   > jardinmental@fabrique.social.gouv.fr </a>
                 </div>
