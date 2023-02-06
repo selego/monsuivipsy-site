@@ -118,7 +118,7 @@ const Index = () => {
               <Video src="/videos/presentationMSP.mp4" />
             </div>
           </div>
-          <div className="container py-20">
+          <div className="container  py-20">
             <div className="w-full mx-auto mb-6 md:w-8/12 lg:mb-10">
               <h3 className="mb-2 text-2xl font-bold text-center lg:text-4xl text-denim-800">
                 Pour quels professionnels de santé ?
@@ -130,7 +130,13 @@ const Index = () => {
                 spécialisés, etc...
               </p>
             </div>
-            <div className="grid grid-cols-1 lg:grid-cols-3 pt-10">
+            <div class="absolute hidden lg:block">
+                <svg height="500" width="400" style={{fill:"white"}}>
+                    <polygon points="280,160, 380,100, 380, 140" />
+                    Sorry, your browser does not support inline SVG.
+                </svg>
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-3 pt-10 pb-20">
               <div className="justify-self-center items-center flex">
                 <img className="h-44" src="images/icon/bulles_icon.png" alt=""/>
               </div>
@@ -141,7 +147,7 @@ const Index = () => {
                       et de diagnostiquer un trouble bipolaire”
                     </p>
                 </div>
-                <div className="p-4 bg-white flex items-center rounded-2xl ">
+                <div className="pb-4 bg-white flex items-center rounded-2xl ">
                     <p className="text-sm text-center text-black">
                       “La patiente m’a dit qu’elle allait très bien. Mais en regardant le niveau d’anxiété, 
                       je me suis rendu compte qu’il était toujours élevé. J’ai donc pu adapter le traitement avec 
@@ -173,9 +179,9 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            <div className="p-8 lg:pl-8 ">
-              <div className="grid grid-cols-1 lg:grid-cols-3 items-center gap-8">
-                <div>
+            <div className="p-8 lg:pl-8">
+              <div className="flex items-center flex-wrap lg:flex-nowrap gap-12 justify-around">
+                <div className="w-60">
                   <a href="https://www.psyway.fr/jardin-mental-une-appli-daide-a-la-prise-de-conscience-des-troubles/">
                     <img className="" src="images/icon/logo_psyway.png" alt=""/>
                   </a>
@@ -188,18 +194,18 @@ const Index = () => {
                 </div>
                 <div>
                   <a href="https://www.lemonde.fr/sciences/article/2022/10/11/un-journal-de-bord-numerique-pour-evaluer-sa-sante-mentale_6145320_1650684.html">
-                    <img className="" src="images/icon/logo_lemonde.png" alt=""/>
+                    <img className="w-72" src="images/icon/logo_lemonde.png" alt=""/>
                   </a>
                 </div>
               </div>
-              <div className="grid grid-cols-1 lg:grid-cols-4 pt-4 items-center gap-8">
+              <div className="flex pt-4 items-center gap-12 lg:flex-nowrap flex-wrap">
                 <div>
                   <a href="https://www.concourspluripro.fr/parcours-de-soin/e-sante/appli-mon-suivi-psy-3000-patients-et-3000-professionnels-de-sante-lont">
                     <img className="" src="images/icon/logo_pluripro.png" alt=""/>
                   </a>
                 </div>
-              <div className="flex justify-center">
-                  <a className="h-1/2 w-1/2" href="https://www.youtube.com/watch?v=WfvxoP7M6Ww&ab_channel=LaPsychiatrieduSoleil">
+              <div className="flex justify-center h-60 w-60 items-center">
+                  <a className="" href="https://www.youtube.com/watch?v=WfvxoP7M6Ww&ab_channel=LaPsychiatrieduSoleil">
                     <img src="images/icon/logo_psysoleil.png" alt=""/>
                   </a>
                 </div>
@@ -237,7 +243,7 @@ const Index = () => {
           <div className="w-full space-y-6 lg:w-6/12">
             <div className="justify-start p-4 rounded-lg flex-center bg-turqoise-0">
               <div className="relative flex items-center justify-center flex-none w-5 h-5 mr-3 border rounded-full border-turqoise-500">
-                <span className="absolute text-xs font-bold text-turqoise-500">
+                <span className="absolute text-sm font-bold text-turqoise-500">
                   1
                 </span>
               </div>
@@ -256,7 +262,7 @@ const Index = () => {
                   Un flyer usagers :{" "}
                     <a
                       className="ml-1 text-lg"
-                      href="MonSuiviPsykitComplet.pdf"
+                      href="Flyer_usager_Jardin_Mental.pdf"
                       download
                       >
                       <img src="images/icon/download.png" alt="" style={{width:"1em"}}/>
@@ -281,7 +287,7 @@ const Index = () => {
             </div>
             <div className="justify-start p-4 rounded-lg flex-center bg-turqoise-0">
               <div className="relative flex items-center justify-center flex-none w-5 h-5 mr-3 border rounded-full border-turqoise-500">
-                <span className="absolute text-xs font-bold text-turqoise-500">
+                <span className="absolute text-sm font-bold text-turqoise-500">
                   2
                 </span>
               </div>
@@ -313,7 +319,7 @@ const Index = () => {
               setQuestionNumber={setQuestionNumber}
             />
           </div>
-          <div className="bg-gray-50 py-10 flex justify-center">
+          <div className="bg-gray-50 py-10 flex justify-center flex-wrap">
             <div className="p-12 bg-white rounded-2xl ml-8">
                 <h6 className="mb-2 text-lg font-bold text-denim-800 text-center">
                 Notice{" "}
@@ -333,7 +339,7 @@ const Index = () => {
                 Flyer usager {" "}
                 </h6>
                 <div className="flex justify-center shadow-xl">
-                <a href="Notice Jardin Mental.pdf" download>
+                <a href="Flyer_usager_Jardin_Mental.pdf" download>
                 <img   
                   className="h-20"
                   src="images/other/flyerUsager2.png"
@@ -354,7 +360,7 @@ const Index = () => {
                 Affiche {" "}
                 </h6>
                 <div className="flex justify-center shadow-xl">
-                <a href="Notice Jardin Mental.pdf" download>
+                <a href="Affiche_Jardin_Mental.pdf" download>
                 <img   
                   className="h-40"ß
                   src="images/other/affiche.png"
@@ -368,7 +374,7 @@ const Index = () => {
                   Contacter l’équipe de Jardin Mental pour :
                 </h6>
                 <div>
-                  <ul className="text-xs list-disc list-inside space-y-4">
+                  <ul className="text-sm list-disc list-inside space-y-4">
                     <li>
                       Recevoir des flyers, affiches, cartes ou stickers Jardin Mental par la poste                    
                       </li>
@@ -379,7 +385,7 @@ const Index = () => {
                 </div>
                 <div>
                 <a
-                    href="mailto: jardinmental@fabrique.social.gouv.fr "
+                    href="mailto:jardinmental@fabrique.social.gouv.fr "
                     className="flex-center px-4 py-2 text-xs text-white transition-all rounded-md bg-turqoise-500 hover:bg-turqoise-600 lg:text-sm"
                   > jardinmental@fabrique.social.gouv.fr </a>
                 </div>
@@ -422,7 +428,7 @@ const Checklist = ({ title, subtitle }) => (
 const Numlist = ({ number, content }) => (
   <div className="justify-start p-4 rounded-lg flex-center bg-turqoise-0">
     <div className="relative flex items-center justify-center flex-none w-5 h-5 mr-3 border rounded-full border-turqoise-500">
-      <span className="absolute text-xs font-bold text-turqoise-500">
+      <span className="absolute text-sm font-bold text-turqoise-500">
         {number}
       </span>
     </div>
@@ -459,7 +465,7 @@ const Tabs = ({ questionNumber, setQuestionNumber }) => {
           }`}
         >
           <span
-            className={`text-xs ${
+            className={`text-sm ${
               number === questionNumber ? "text-white" : "text-denim-800"
             }`}
           >
@@ -577,14 +583,14 @@ const QuestionTwo = ({ imageName }) => (
       </ul>
       <div className="p-3 mb-3 rounded-md bg-yellow-50">
         <h6 className="text-sm font-bold text-yellow-700">Besoin d’aide ?</h6>
-        <p className="text-xs text-yellow-700">
+        <p className="text-sm text-yellow-700">
           Si je ne sais pas quel indicateur suivre ou ajouter, j’en parle au
           professionnel qui me suit.
         </p>
       </div>
       <div className="p-3 mb-3 rounded-md bg-denim-100">
         <h6 className="text-sm font-bold text-denim-800">Astuces : </h6>
-        <ul className="text-xs list-disc list-inside text-denim-800">
+        <ul className="text-sm list-disc list-inside text-denim-800">
           <li>
             Il est normal de ne pas savoir exactement lesquels choisir au début. 
             Vous pourrez faire évoluer vos indicateurs (en supprimer ou en ajouter) au fur et à mesure que 
@@ -628,13 +634,13 @@ const QuestionThree = ({ imageName }) => (
       </ul>
       <div className="p-3 mb-3 rounded-md bg-yellow-50 ">
         <h6 className="text-sm font-bold text-yellow-700">Besoin d'aide ?</h6>
-        <p className="text-xs list-disc list-inside text-yellow-700">
+        <p className="text-sm list-disc list-inside text-yellow-700">
         Je peux demander à mon professionnel de santé de m’aider à définir des objectifs
         </p>
       </div>
       <div className="p-3 mb-3 rounded-md bg-denim-100">
         <h6 className="text-sm font-bold text-denim-800 ">Bon à savoir :</h6>
-        <ul className="text-xs text-denim-800 list-disc list-inside">
+        <ul className="text-sm text-denim-800 list-disc list-inside">
           <li>
           Certains objectifs sont difficilement réalisables tous les jours. Je limite mon nombre d’objectifs et 
           je paramètre la récurrence de chacun de mes objectifs pour commencer en douceur.
@@ -681,7 +687,7 @@ const QuestionFour = ({ imageName }) => (
       </ul>
       <div className="p-3 mb-3 rounded-md bg-denim-100">
         <h6 className="text-sm font-bold text-denim-800">Astuces : </h6>
-        <ul className="text-xs list-disc list-inside text-denim-800">
+        <ul className="text-sm list-disc list-inside text-denim-800">
           <li>
             Grâce à la barre de recherche, je peux trouver mon traitement dans la liste 
             déroulante grâce à son nom commercial ou au nom de sa molécule{" "}
@@ -716,7 +722,7 @@ const QuestionFive = ({ imageName }) => (
       </ul>
       <div className="p-3 mb-3 rounded-md bg-denim-100">
         <h6 className="text-sm font-bold text-denim-800">Astuces :</h6>
-        <p className="text-xs list-disc list-inside text-denim-800">
+        <p className="text-sm list-disc list-inside text-denim-800">
           Je le programme à l’heure où je suis le plus disponible ou à l’heure
           qui me paraît la plus adaptée pour faire un point sur ma journée
           (plutôt en soirée donc)
@@ -758,7 +764,7 @@ const QuestionSix = ({ imageName }) => (
       </ul>
       <div className="p-3 mb-3 rounded-md bg-denim-100">
         <h6 className="text-sm font-bold text-denim-800">Astuces : </h6>
-        <ul className="text-xs list-disc list-inside text-denim-800">
+        <ul className="text-sm list-disc list-inside text-denim-800">
           <li>
           Si je n’aime pas la manière dont un indicateur est évalué (par exemple avec une jauge), 
           je peux créer mon propre indicateur et choisir si je veux l’évaluer avec des emojis, une jauge ou un « oui/non ».{" "}
@@ -819,7 +825,7 @@ const QuestionSeven = ({ imageName }) => (
       </ul>
       <div className="p-3 mb-3 rounded-md bg-denim-100">
         <h6 className="text-sm font-bold text-denim-800">Astuces :</h6>
-        <ul className="text-xs list-disc list-inside text-denim-800">
+        <ul className="text-sm list-disc list-inside text-denim-800">
           <li>
             Je peux utiliser les outils d’analyse (frises, statistiques et déclencheurs) sur la période de mon choix.{" "}
           </li>
@@ -862,7 +868,7 @@ const QuestionEight= ({ imageName }) => (
       </ul>
       <div className="p-3 mb-3 rounded-md bg-yellow-50">
         <h6 className="text-sm font-bold text-yellow-700">Bon à savoir :</h6>
-        <p className="text-xs text-yellow-700">
+        <p className="text-sm text-yellow-700">
           Les colonnes de Beck sont classiquement utilisées en psychothérapie. C’est un exercice qui peut être réalisé seul(e), 
           mais qui peut nécessiter des explications afin d’être correctement utilisé. N’hésitez pas à en parler à un professionnel
           de santé pour être accompagné(e).
@@ -906,7 +912,7 @@ const QuestionNine = ({ imageName }) => (
       </ul>
       <div className="p-3 mb-3 rounded-md bg-denim-100">
         <h6 className="text-sm font-bold text-denim-800">Astuces :</h6>
-        <ul className="text-xs list-disc list-inside text-denim-800">
+        <ul className="text-sm list-disc list-inside text-denim-800">
           <li>
             L’envoi est anonyme au nom de Jardin Mental, 
             n’oubliez pas de prévenir le professionnel qui vous suit que vous lui adressez le mail.
