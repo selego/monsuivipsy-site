@@ -20,7 +20,7 @@ class MyApp extends App {
           <title>Jardin Mental</title>
           <link rel="shortcut icon" href="/favicon.ico" />
         </Head>
-        <Component {...pageProps} />;
+        <Component {...pageProps} />
       </>
     );
   }
