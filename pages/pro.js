@@ -437,8 +437,8 @@ const Index = () => {
               </div>
               <div>
                 <a
-                  href="mailto:jardinmental@fabrique.social.gouv.fr "
-                  className="flex-center px-4 py-2 text-xs text-white transition-all rounded-md bg-turqoise-500 hover:bg-turqoise-600 lg:text-sm"
+                  className="text-base font-bold break-all md:text-lg text-turqoise-500"
+                  href="mailto:jardinmental@fabrique.social.gouv.fr"
                 >
                   jardinmental@fabrique.social.gouv.fr
                 </a>
