@@ -241,7 +241,11 @@ export default function Index() {
                   Télécharger la notice et nos conseils d’utilisation{" "}
                 </h6>
                 <div className="flex justify-center shadow-lg">
-                  <a href="Notice Jardin Mental.pdf" download>
+                  <a
+                    className="shadow-lg"
+                    href="Notice Jardin Mental.pdf"
+                    download
+                  >
                     <img
                       className="h-60"
                       src="images/other/preview.png"
