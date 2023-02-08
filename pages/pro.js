@@ -147,15 +147,15 @@ const Index = () => {
                       et de diagnostiquer un trouble bipolaire”
                     </p>
                 </div>
-                <div className="pb-4 bg-white flex items-center rounded-2xl ">
+                <div className="p-4 bg-white flex items-center rounded-2xl ">
                     <p className="text-sm text-center text-black">
                       “La patiente m’a dit qu’elle allait très bien. Mais en regardant le niveau d’anxiété, 
                       je me suis rendu compte qu’il était toujours élevé. J’ai donc pu adapter le traitement avec 
                       cette information“
                     </p>
                 </div>
-                <div className="p-4 bg-white flex items-center text-center rounded-2xl">
-                    <p className="text-sm text-black">
+                <div className="p-4 bg-white flex items-center  rounded-2xl">
+                    <p className="text-sm text-center text-black">
                       "C’est un moyen pour le patient d’accroître sa motivation entre deux séances et d’être plus autonome 
                       dans la prise en charge de sa maladie“
                     </p>
@@ -319,8 +319,8 @@ const Index = () => {
               setQuestionNumber={setQuestionNumber}
             />
           </div>
-          <div className="bg-gray-50 py-10 flex justify-center flex-wrap">
-            <div className="p-12 bg-white rounded-2xl ml-8">
+          <div className="bg-gray-50 p-12 flex justify-center flex-wrap gap-8">
+            <div className="p-12 bg-white rounded-2xl">
                 <h6 className="mb-2 text-lg font-bold text-denim-800 text-center">
                 Notice{" "}
                 </h6>
@@ -334,7 +334,7 @@ const Index = () => {
                 </a>
                 </div>
             </div>
-            <div className="p-12 bg-white rounded-2xl ml-8">
+            <div className="p-12 bg-white rounded-2xl">
                 <h6 className="mb-2 text-lg font-bold text-denim-800 text-center">
                 Flyer usager {" "}
                 </h6>
@@ -347,7 +347,7 @@ const Index = () => {
                   //style={{transform:"rotate(-90deg)"}}
                 />
                 <img   
-                  className="h-24"
+                  className="h-20"
                   src="images/other/flyerUsager.png"
                   alt=""
                   //style={{transform:"rotate(-90deg)"}}
@@ -355,7 +355,7 @@ const Index = () => {
                 </a>
                 </div>
             </div>
-            <div className="p-12 bg-white rounded-2xl ml-8">
+            <div className="p-12 bg-white rounded-2xl">
                 <h6 className="mb-2 text-center text-lg font-bold text-denim-800">
                 Affiche {" "}
                 </h6>
@@ -369,7 +369,7 @@ const Index = () => {
                 </a>
                 </div>
             </div>
-            <div className="p-12 bg-white rounded-2xl ml-8 space-y-6">
+            <div className="p-12 bg-white rounded-2xl space-y-6">
                 <h6 className="mb-2 text-lg font-bold text-denim-800 text-center">
                   Contacter l’équipe de Jardin Mental pour :
                 </h6>
