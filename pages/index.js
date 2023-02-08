@@ -70,11 +70,11 @@ export default function Index() {
               />
             </div>
           </div>
-          <div className="items-center justify-center hidden w-3/4 lg:flex">
+          <div className="items-center justify-center hidden w-7/12 lg:flex">
             <img src="images/other/hero.png" alt="" />
           </div>
         </div>
-        <div className="container flex space-x-4">
+        <div className="container flex space-x-4 pb-12">
           <img className="h-16" src="images/logo_fab.png" alt=""/>
           <img className="h-16" src="images/logo_ars.jpeg" alt=""/>
           <img className=" h-16" src="images/logo_barth.jpeg" alt=""/>
@@ -242,12 +242,12 @@ export default function Index() {
           </div>
           <div className="container bg-gray-50 w-full md:w-3/4 py-10">
             <div className="grid grid-cols-1 gap-8 lg:gap-8 lg:grid-cols-2">
-              <div className="p-12 bg-white rounded-2xl w-3/4">
+              <div className="p-12 bg-white rounded-2xl lg:w-3/4">
                 <h6 className="mb-2 text-lg font-bold text-denim-800">
                 Télécharger la notice et nos conseils d’utilisation{" "}
                 </h6>
-                <div className="flex justify-center shadow-lg">
-                  <a href="Notice Jardin Mental.pdf" download>
+                <div className="flex justify-center">
+                  <a className="shadow-lg" href="Notice Jardin Mental.pdf" download>
                   <img   
                     className="h-60"ß
                     src="images/other/preview.png"
@@ -257,7 +257,7 @@ export default function Index() {
                 </div>
                 
               </div>
-              <div className="p-12 bg-white  rounded-2xl space-y-6 w-3/4">
+              <div className="p-12 bg-white  rounded-2xl space-y-6">
                 <h6 className="mb-2 text-lg font-bold text-denim-800">
                   Contacter l’équipe de Jardin Mental pour :
                 </h6>
@@ -277,11 +277,13 @@ export default function Index() {
                     </li>
                   </ul>
                 </div>
-                <div>
+                <div> 
                 <a
                     href="mailto:jardinmental@fabrique.social.gouv.fr "
                     className="flex-center px-4 py-2 text-sm text-white transition-all rounded-md bg-turqoise-500 hover:bg-turqoise-600 lg:text-sm"
-                  > jardinmental@fabrique.social.gouv.fr </a>
+                  > 
+                  jardinmental@fabrique.social.gouv.fr
+                   </a>
                 </div>
                </div>
             </div>
